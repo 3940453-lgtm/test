@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization desc="Sankey Diagram" drop-zones="plugins.Sankey.SankeyDropZones" editor-model="plugins.Sankey.SankeyEditorModel" is-mojo="true" scope="16" style-name="Sankey" widget-type="7" summary="Present weighted networks, i.e. flows" use-case="Example: Number of people migrating from one country to another" requirements="Uses 2+ ##attributes### and 1+ #metrics###" desc-id="Sankey.73" categories="More" summary-id="Sankey.70" use-case-id="Sankey.71" requirements-id="Sankey.72" use-react-config="true"/>
+  </visualization-list>
+</visualizations>

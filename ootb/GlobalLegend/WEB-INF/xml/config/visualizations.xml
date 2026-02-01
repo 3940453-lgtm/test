@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization desc="GlobalLegend" drop-zones="plugins.GlobalLegend.GlobalLegendDropZones" editor-model="plugins.GlobalLegend.GlobalLegendEditorModel" is-mojo="true" scope="16" style-name="GlobalLegend" widget-type="7" summary="Use as legend for target visualizations to highlight selected legend items" use-case=" Example: TBD." requirements="Select target visualization to link with the legend chart." desc-id="GlobalLegend.4" categories="Custom" summary-id="GlobalLegend.5" use-case-id="GlobalLegend.7" requirements-id="GlobalLegend.6" use-react-config="true" use-binary-data="false"/>
+  </visualization-list>
+</visualizations>

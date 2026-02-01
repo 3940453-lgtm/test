@@ -1,0 +1,38 @@
+<svg width="160" height="100" viewBox="0 0 160 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <mask id="path-1-inside-1_2132_6461" fill="white">
+    <rect y="28" width="88" height="63" rx="4" />
+  </mask>
+  <rect y="28" width="88" height="63" rx="4" fill="#DDEBFE" stroke="#90BCFC" stroke-width="12"
+    mask="url(#path-1-inside-1_2132_6461)" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M37 91H51V96H37V91Z" fill="#64A2FB" />
+  <path d="M28 100C28 97.7909 29.7909 96 32 96H56C58.2091 96 60 97.7909 60 100H28Z" fill="#90BCFC" />
+  <rect x="2" y="99" width="14" height="1" rx="0.5" fill="#0E6FF9" fill-opacity="0.15" />
+  <rect x="95" y="99" width="10" height="1" rx="0.5" fill="#0E6FF9" fill-opacity="0.15" />
+  <rect x="89" y="99" width="4" height="1" rx="0.5" fill="#0E6FF9" fill-opacity="0.15" />
+  <rect x="10" y="95" width="10" height="1" rx="0.5" fill="#0E6FF9" fill-opacity="0.15" />
+  <rect x="22" y="95" width="4" height="1" rx="0.5" fill="#0E6FF9" fill-opacity="0.15" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M112 61C112 59.8954 112.895 59 114 59H152C153.105 59 154 59.8954 154 61V98C154 99.1046 153.105 100 152 100H114C112.895 100 112 99.1046 112 98V61Z"
+    fill="#BDD8FD" />
+  <rect x="107" y="46" width="53" height="15" rx="2" fill="#64A2FB" />
+  <rect x="107" y="63.8877" width="53" height="15" rx="2" fill="#64A2FB" />
+  <rect x="107" y="81.7754" width="53" height="15" rx="2" fill="#64A2FB" />
+  <circle cx="115.5" cy="53.5" r="2.5" fill="#DDEBFE" />
+  <circle cx="115.5" cy="71.3877" r="2.5" fill="#DDEBFE" />
+  <circle cx="115.5" cy="89.2754" r="2.5" fill="#DDEBFE" />
+  <rect x="120" y="53" width="13" height="1" rx="0.5" fill="#DDEBFE" />
+  <rect x="120" y="71" width="13" height="1" rx="0.5" fill="#DDEBFE" />
+  <rect x="120.25" y="89.0625" width="13.25" height="0.6625" rx="0.33125" fill="#DDEBFE" />
+  <path
+    d="M49 25V15C49 12.7909 50.7909 11 53 11H78.5M148 43V15C148 12.7909 146.209 11 144 11H126.25"
+    stroke="#90BCFC" stroke-dasharray="4 2" />
+  <path
+    d="M82 13C80.8954 13 80 12.1046 80 11C80 9.89543 80.8954 9 82 9C83.1046 9 84 9.89543 84 11C84 12.1046 83.1046 13 82 13Z"
+    stroke="#90BCFC" />
+  <path
+    d="M123 13C121.895 13 121 12.1046 121 11C121 9.89543 121.895 9 123 9C124.105 9 125 9.89543 125 11C125 12.1046 124.105 13 123 13Z"
+    stroke="#90BCFC" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M100.172 0H106.429L102.953 7.64788H108.518L96 26.42L101.005 12.5147H96L100.172 0Z"
+    fill="#BDD8FD" />
+</svg>

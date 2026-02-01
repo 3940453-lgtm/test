@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization desc="DonutChart" drop-zones="plugins.DonutChart.DonutChartDropZones" editor-model="plugins.DonutChart.DonutChartEditorModel" is-mojo="true" scope="16" style-name="DonutChart" widget-type="7" summary="Shows the composition of a total value divided by category, with the total displayed in the center." use-case=" Example: Compare the proportions of funding sources for a university, with labels displayed in the center." requirements="Uses 1 ##attribute### and 1 #metric###" desc-id="DonutChart.4" categories="Pie" summary-id="DonutChart.5" use-case-id="DonutChart.7" requirements-id="DonutChart.6" use-react-config="true" use-binary-data="false"/>
+  </visualization-list>
+</visualizations>

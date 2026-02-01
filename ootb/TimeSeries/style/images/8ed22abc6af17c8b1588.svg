@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1657px" height="479px" viewBox="0 0 1657 479" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dataset</title>
+    <g id="dataset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="Group-3-Copy-4" fill="#9F795C" opacity="0">
+                <rect id="Rectangle-2961-Copy-12" x="0" y="0" width="18" height="18"></rect>
+            </g>
+            <g id="Group-10" transform="translate(3.000000, 3.000000)">
+                <circle id="Oval-93" stroke="#3FB582" fill="#74CEA7" cx="6" cy="6" r="5.5"></circle>
+                <polyline id="Path-4" stroke="#FFFFFF" points="5.5 2.5 5.5 6.5 9.5 6.5"></polyline>
+            </g>
+        </g>
+		 <g id="Group" transform="translate(30.000000, 0.000000)">
+            <g id="metric-copy" transform="translate(4.000000, 4.000000)" stroke="#E99D41">
+                <rect id="Rectangle-433" fill="#F7ECDE" x="-0.5" y="-0.5" width="6" height="12"></rect>
+                <line x1="1" y1="2.5" x2="5" y2="2.5" id="Line"></line>
+                <line x1="1" y1="8.5" x2="5" y2="8.5" id="Line-Copy-18"></line>
+                <line x1="2" y1="5.5" x2="5" y2="5.5" id="Line-Copy-17"></line>
+                <rect id="Rectangle-433-Copy" fill="#F7ECDE" x="5.5" y="2.5" width="3" height="9"></rect>
+                <rect id="Rectangle-433-Copy-2" fill="#F7ECDE" x="8.5" y="5.5" width="2" height="6"></rect>
+            </g>
+            <rect id="Rectangle-2961-Copy-12" fill="#9F795C" opacity="0" x="0" y="0" width="18" height="18"></rect>
+        </g>
+		
+       
+    </g>
+</svg>

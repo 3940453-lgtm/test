@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE StyleCatalog SYSTEM "styleCatalog.dtd">
+<StyleCatalog name="Empty style catalog">
+  <BeanDefns/>
+  <LayoutParserDefns/>
+  <TransformDefns/>
+  <LayoutSourceDefns/>
+  <MapperDefns/>
+  <StyleMaps/>
+  <Styles>
+    <Style name="MultiMetricKPI"
+      transform="ReportAjaxMojoVisualizationTransform">
+      <ActualParameters>
+        <ActualParameter name="documentStyle"
+          value="RWGridJsonStyle"/>
+        <ActualParameter name="reportXMLStyle"
+          value="VisualizationServerJsonDataStyle"/>
+        <ActualParameter name="mojoClassName"
+          value="plugins.MultiMetricKPI.MultiMetricKPI"/>
+      </ActualParameters>
+      <Layouts>
+        <Layout layout_source="AppLayoutSourceFile"><![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]></Layout>
+      </Layouts>
+    </Style>
+    <Style name="ComparisonKPI"
+      transform="ReportAjaxMojoVisualizationTransform">
+      <ActualParameters>
+        <ActualParameter name="documentStyle"
+          value="RWGridJsonStyle"/>
+        <ActualParameter name="reportXMLStyle"
+          value="VisualizationServerJsonDataStyle"/>
+        <ActualParameter name="mojoClassName"
+          value="plugins.ComparisonKPI.ComparisonKPI"/>
+      </ActualParameters>
+      <Layouts>
+        <Layout layout_source="AppLayoutSourceFile"><![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]></Layout>
+      </Layouts>
+    </Style>
+  </Styles>
+</StyleCatalog>

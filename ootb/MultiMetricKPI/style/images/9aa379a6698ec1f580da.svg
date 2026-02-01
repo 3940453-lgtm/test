@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>MultiMetricKPI</title>
+    <defs>
+        <rect id="path-8" x="0" y="0" width="30" height="30"></rect>
+    </defs>
+    <g id="custom-Viz-image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Smart-KPI" transform="translate(0.000000, 0.000000)">
+            <mask id="mask-9" fill="white">
+                <use xlink:href="#path-8"></use>
+            </mask>
+            <g id="bounding-box"></g>
+            <g id="Group-2" mask="url(#mask-9)">
+                <g transform="translate(-0.942192, 15.272727)">
+                    <path
+                        d="M0,13.4919948 C0.942191994,12.8662207 1.71256359,12.4813089 2.8250181,13.3088824 C3.93747262,14.136456 4.90133913,14.8537422 7.63144167,12.3110077 C10.3615442,9.76827318 11.2684613,10.672856 12.2686567,11.4919319 C13.2688522,12.3110077 13.7654825,12.5505559 15.4823938,11.8323608 C17.1993052,11.1141657 17.8735478,10.6496604 19.6063359,12.4993448 C21.339124,14.3490293 22.6088587,14.3490293 25.1721318,11.8323608 C27.7354049,9.31569232 29.7781903,9.58618884 31.4645206,10.6992163"
+                        id="line" stroke="#0092F4" stroke-width="1.36363636" fill="none" opacity="0.6"></path>
+                    <g id="arrow-green" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                        transform="translate(27.570980, 4.102273) rotate(-180.000000) translate(-27.570980, -4.102273) translate(25.487647, 1.393939)">
+                        <rect id="Rectangle-4" fill="#83C861" x="1.43939394" y="0" width="1.36363636" height="5"
+                            rx="0.449384141"></rect>
+                        <polyline id="Line-4" stroke="#83C861" stroke-width="1.36363636" stroke-linecap="round"
+                            points="0 3.33333333 2.08333333 5.41666667 4.16666667 3.33333333"></polyline>
+                    </g>
+                    <rect id="underline" stroke="none" fill="#444649" fill-rule="evenodd" opacity="0.2" x="0.942191994"
+                        y="8.06060606" width="19.7901049" height="1"></rect>
+                    <text id="16%" stroke="none" fill="none" font-family="Helvetica-Bold, Helvetica"
+                        font-size="7.42132875" font-weight="bold">
+                        <tspan x="0.942191994" y="8" fill="#696B6D">16%</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-2" mask="url(#mask-9)">
+                <g transform="translate(-0.942192, -1.363636)">
+                    <path
+                        d="M0,13.4616921 C0.942191994,12.8359181 1.71256359,12.4510062 2.8250181,13.2785798 C3.93747262,14.1061533 4.0680058,14.8234396 6.79810834,12.2807051 C9.52821087,9.73797056 11.2684613,10.6425534 12.2686567,11.4616292 C13.2688522,12.2807051 14.2252806,13.4836306 15.942192,12.7654355 C17.6591033,12.0472403 18.9593632,12.1043966 20.5509566,13.2785798 C22.1425501,14.452763 22.6842371,13.4616921 25.3094609,12.2807051 C27.9346847,11.099718 29.7781903,12.9326997 31.4645206,14.0457272"
+                        id="line" stroke="#0092F4" stroke-width="1.36363636" fill="none" opacity="0.6"></path>
+                    <g id="arrow-red" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                        transform="translate(25.487647, 1.363636)">
+                        <rect id="Rectangle-4" fill="#F1968A" x="1.36363636" y="0" width="1.36363636" height="5"
+                            rx="0.449384141"></rect>
+                        <polyline id="Line-4" stroke="#F1968A" stroke-width="1.36363636" stroke-linecap="round"
+                            points="0 3.33333333 2.08333333 5.41666667 4.16666667 3.33333333"></polyline>
+                    </g>
+                    <rect id="underline" stroke="none" fill="#444649" fill-rule="evenodd" opacity="0.2" x="0.942191994"
+                        y="8.03030303" width="19.7901049" height="1"></rect>
+                    <text id="-12%" stroke="none" fill="none" font-family="Helvetica-Bold, Helvetica"
+                        font-size="7.42132875" font-weight="bold">
+                        <tspan x="0.942191994" y="8" fill="#696B6D">-12%</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1 @@
+mstrmojo.plugins.GlobalLegend||(mstrmojo.plugins.GlobalLegend={}),mstrmojo.requiresCls("mstrmojo.vi.models.CustomVisDropZones"),mstrmojo.plugins.GlobalLegend.GlobalLegendDropZones=mstrmojo.declare(mstrmojo.vi.models.CustomVisDropZones,null,{instructionEditorContext:{},getCustomDropZones:function(){return[]},hideDropZones:!0});

@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization desc="Auto Narratives" drop-zones="plugins.AutoNarratives.AutoNarrativesDropZones" editor-model="plugins.AutoNarratives.AutoNarrativesEditorModel" is-mojo="true" scope="16" style-name="AutoNarratives" widget-type="7" summary="Use this to summarize page or visualization data. Perfect for quick, natural language insights" use-case="Example: Summarize highlights and lowlights from the Weekly Sales Analysis visualization" requirements="" desc-id="AutoNarratives.12" categories="Insight" summary-id="AutoNarratives.10" use-case-id="AutoNarratives.11" requirements-id="" use-react-config="true"/>
+  </visualization-list>
+</visualizations>

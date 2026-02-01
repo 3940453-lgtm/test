@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>dataset</title>
+    <g id="dataset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="Group-3-Copy-4" fill="#9F795C" opacity="0">
+                <rect id="Rectangle-2961-Copy-12" x="0" y="0" width="18" height="18"></rect>
+            </g>
+            <g id="Group-10" transform="translate(3.000000, 3.000000)">
+                <circle id="Oval-93" stroke="#3FB582" fill="#74CEA7" cx="6" cy="6" r="5.5"></circle>
+                <polyline id="Path-4" stroke="#FFFFFF" points="5.5 2.5 5.5 6.5 9.5 6.5"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization desc="Gauge" drop-zones="plugins.Gauge.GaugeDropZones" editor-model="plugins.Gauge.GaugeEditorModel" is-mojo="true" scope="16" style-name="Gauge" widget-type="7" summary="Measure key indicators progress to particular target" use-case="Example: Compare number of delayed flights versus number of all flights" requirements="Uses 1+ #metrics###" desc-id="Gauge.67" categories="KPI" summary-id="Gauge.68" use-case-id="Gauge.70" requirements-id="Gauge.69" use-react-config="true"/>
+  </visualization-list>
+</visualizations>

@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization desc="KeyDriver" drop-zones="plugins.KeyDriver.KeyDriverDropZones" editor-model="plugins.KeyDriver.KeyDriverEditorModel" is-mojo="true" scope="16" style-name="KeyDriver" widget-type="7" summary="Use this to analyze the factors that drive a specific outcome" use-case="Example: Analyze drivers impacting sales price" requirements="Uses 1 #metric### as a target, and 1+ ##attributes### as potential drivers" desc-id="KeyDriver.4" categories="Insight" summary-id="KeyDriver.2" use-case-id="KeyDriver.3" requirements-id="KeyDriver.1" use-react-config="true"/>
+  </visualization-list>
+</visualizations>

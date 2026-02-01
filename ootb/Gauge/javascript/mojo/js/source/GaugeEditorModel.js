@@ -1,0 +1,1 @@
+mstrmojo.plugins.Gauge||(mstrmojo.plugins.Gauge={}),mstrmojo.requiresCls("mstrmojo.vi.models.editors.CustomVisEditorModel"),mstrmojo.plugins.Gauge.GaugeEditorModel=mstrmojo.declare(mstrmojo.vi.models.editors.CustomVisEditorModel,null,{scriptClass:"mstrmojo.plugins.Gauge.GaugeEditorModel",cssClass:"gauge-editor-model"});
