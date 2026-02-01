@@ -1,0 +1,19 @@
+<visualizations>
+    <visualization-list name="ajax"
+        show-in-web="true"
+        view-mode="51">
+        <visualization attribute-minimum="1"
+            metric-minimum="1"
+            desc="Time Series"
+            drop-zones="plugins.TimeSeries.TimeSeriesDropZones"
+            editor-model="plugins.TimeSeries.TimeSeriesEditorModel"
+            is-mojo="true"
+            scope="19"
+            style-name="TimeSeries"
+            widget-type="7"
+            use-react-config="true"
+            summary="Presents values that change over time"
+            requirements="Uses 1 &lt;span class='icon ts-tooltip-attr-time'&gt;time attribute&lt;/span&gt; and 1+ #metrics###"
+            use-case="Example: Stock price movements over time" />
+    </visualization-list>
+</visualizations>

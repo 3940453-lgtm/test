@@ -1,0 +1,15 @@
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-NarrativeScienceNLG>div>div {
+    background-image: url(images/icon.png);
+    background-position: 0 0;	    
+	margin: 5px;
+}
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgNarrativeScienceNLG {
+    background:url(images/icon.png)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgNarrativeScienceNLG {
+    background:url(images/icon.png)  no-repeat scroll 4px;
+    background-size: 16px;
+}

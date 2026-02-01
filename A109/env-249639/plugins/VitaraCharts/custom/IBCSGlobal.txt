@@ -1,0 +1,21 @@
+#Version = 2.3
+
+#start a line with # mark for comments
+#use commas to separate multiple values of a property
+
+
+#uncomment to render charts by default in IBCS mode
+#UseIBCSAsDefaultViewMode= true
+
+
+#Data Types as per IBCS standard data classification
+#usage: DT.<dataType> = metricTitle1, metricTitle2 (can be both metric titles and attribute values)
+#defaults included below add/change values with comma seperated
+DT.AC= AC, Actual
+DT.FC= FC, Forecast
+DT.PL= PL, Planned
+DT.PY= PY, Previous Year
+
+
+#Support for negative metrics. Add metric names separated by comma
+#negativeMetrics=AC

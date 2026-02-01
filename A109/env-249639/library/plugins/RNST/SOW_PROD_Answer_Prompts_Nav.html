@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+   <title>Share of Wallet 2.0</title>
+    <style>
+      pre {
+        width: 100;
+      }
+
+    </style>
+    <script type="text/javascript" src="https://renasant.cloud.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+  </head>
+
+  <body>
+  <div style="width: 20%; background-color: white; float:left;">
+    <div id="nav" style="width: 100%;"></div>
+  </div>
+  <div style="width: 80%; background-color: white; float:right;">
+    <div id="myDossier" style="width: 100%;"></div>
+  </div>
+
+<script type="text/javascript">
+
+/* These are the parameters ----------------------------- */
+baseRestURL = "https://renasant.cloud.microstrategy.com/MicroStrategyLibrary";
+projectID   = "521FF83011EA9C6E9EBD0080EFC5F3D9";
+dossierID    = "161BFA9511EA9BA3253C0080EFB5FE8D";
+promptID	= "F27C71654C2211A4174B5DAAE1D1050E";
+username    = "mstr_lib_edit";
+password    = "";
+//dossier link with parameter - file://psfilesrv1/UserFolder/go010818/My%20Documents/MicroStrategy/Scripts/SOW_PROD_Answer_Prompts.html?param=390930
+/* End of configuration parameters  ----------------------------- */
+
+
+var urlParams = new URLSearchParams(window.location.search);
+var inputParam = urlParams.get('param');
+
+/* Generate some helper variables and functions */
+const loginOptions = {
+	method: 'POST',
+	credentials: 'include', /* include cookie */
+	mode: 'cors', /* set as CORS mode for cross origin resource sharing */
+	headers: { 'Content-Type': 'application/json' },
+	body: JSON.stringify({
+		/* loginMode: 8 */ /* Login as guest user. */
+		"loginMode": 1, /* standard login mode */
+		"username": username,
+		"password": password
+	})
+};
+
+
+/* Function to fetch auth token from REST API */
+const getAuthToken = () => {
+	return fetch(baseRestURL + '/api/auth/login', loginOptions).then((response) => {
+		if (response.ok) {
+			return response.headers.get('x-mstr-authToken');
+		} else if (response.status === 401) {
+			/* try again */
+			return getAuthToken();
+		} else {
+			response.json().then((json) => {
+				console.log(json);
+			});
+		}
+	}).catch((error) => {
+		console.log(error);
+	});
+};
+
+const getlogin = {
+	method: 'GET',
+	credentials: 'include', /* include cookie */
+	mode: 'cors', /* set as CORS mode for cross origin resource sharing */
+	headers: { 'Content-Type': 'application/json' }
+	};
+
+const getToken = () => {
+	return fetch(baseRestURL + '/api/auth/token',getlogin).then((response) => {
+		if (response.ok) {
+			return response.headers.get('x-mstr-authToken');
+		} else if (response.status === 401) {
+			/* try again */
+			//return getToken();//
+			console.log(error);
+			throw new Error('Login failed');
+		} else {
+			response.json().then((json) => {
+				console.log(json);
+			});
+		}
+	}).catch((error) => {
+		console.log(error);
+	});
+};
+			
+/* ----------------------------- */
+/* This is where we fetch the auth token and then use it to get data */
+/* This uses helper functions that are defined further down. */
+getToken()
+.then(token => {
+   // Make a POST request to create a dossier instance
+	fetch(
+		baseRestURL + '/api/dossiers/' + dossierID + '/instances',
+		{
+			method: 'POST',
+			credentials: 'include', /* include cookie */
+			mode: 'cors', /* set as CORS mode for cross origin resource sharing */
+			headers: {
+				'Content-Type': 'application/json',
+				'Accept': 'application/json',
+				'X-MSTR-AuthToken': token,
+				'X-MSTR-ProjectID': projectID
+			}
+		}
+	).then(response => {
+		return response.json();
+	}).then(instance => {
+		/* ------------ */
+		/* Use the data */
+		/* ------------ */
+		console.log(instance);
+		var instanceID = instance.mid;	   
+
+	   // Make a GET request to get the list of prompts for the dossier instance
+		fetch(
+			baseRestURL + '/api/documents/' + dossierID + '/instances/' + instanceID + '/prompts?id=' + dossierID + '&instanceId=' + instanceID,
+			{
+				method: 'GET',
+				credentials: 'include', // include cookie //
+				mode: 'cors', // set as CORS mode for cross origin resource sharing //
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json',
+					'X-MSTR-AuthToken': token,
+					'X-MSTR-ProjectID': projectID
+				}
+			}
+		).then(response => {
+		return response.json();
+		}).then(prompts => {
+		/* ------------ */
+		/* Use the data */
+		/* ------------ */
+			console.log(prompts);	
+		   // Answer a specified prompt using the input parameter (replace {promptId} with the actual prompt ID)
+			prompts.forEach(prompt => {
+				  if (prompts.promptId === promptID) {
+					prompts.answers = inputParam;
+					//prompts.answer = '390930';			
+				  }
+				});
+			console.log(JSON.stringify(prompts));
+			console.log(inputParam);
+			console.log(promptID);
+			var raw = JSON.stringify({
+					  "prompts": [
+						{
+						  "id": promptID,
+						  "type": "VALUE",
+						  "answers": inputParam,
+						  "defaultAnswer": inputParam,
+						  "required":true,
+						  "closed": false,
+						  "dataType": "NUMERIC"
+						}
+					  ]
+					});
+			console.log(raw);
+		// Make a PUT request to answer the prompts
+		fetch(
+			baseRestURL + '/api/documents/' + dossierID + '/instances/' + instanceID + '/prompts/answers',
+			{
+				method: 'PUT',
+				credentials: 'include', // include cookie //
+				mode: 'cors', // set as CORS mode for cross origin resource sharing //
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json',
+					'X-MSTR-AuthToken': token,
+					'X-MSTR-ProjectID': projectID
+				},
+				body: raw
+				//JSON.stringify(prompts)
+			}
+			).then(response => response.text())
+			 .then(result => console.log(result))
+			 .catch(error => console.log('error', error));
+
+		  // Redirect the page to the created dossier instance
+//				console.log(baseRestURL + '/api/' + 'dossiers/' + dossierID + '/instances/' + instanceID);	  
+//	 		    window.location.href = baseRestURL + '/api/' + 'dossiers/' + dossierID + '/instances/' + instanceID; 
+				var placeHolderDiv = document.getElementById("myDossier");
+				var dossierUrl = baseRestURL + '/app/' + projectID + '/' + dossierID;
+				var objinstance = instance;
+				microstrategy.dossier.create({
+				  placeholder: placeHolderDiv,
+				  url: dossierUrl,
+				  instance: objinstance,
+				  enableResponsive: true,
+				  containerHeight: '1000px',
+			      customAuthenticationType: microstrategy.dossier.CustomAuthenticationType.AUTH_TOKEN,
+				  
+//		  	      dockedTOC: {
+//					dockedPosition: "left",
+//					theme: "light",
+//					canClose: false,
+//					dockChangeable: false,
+//					isDocked: true
+//					},			  
+        })
+		.then(function(dossier) {
+		  var navDiv = document.getElementByID("nav");
+		  createChapterPageNav(dossier, navDiv);
+		})
+		.catch(e => {
+          console.log(e.message)
+        });
+
+		}).catch((error) => {
+			console.log(error);
+		});	
+		}).catch((error) => {
+			console.log(error);
+		});	
+}).catch(error => { console.log(error); });
+/* ----------------------------- */
+//call and function to embed TOC beside dossier
+//add any code you want to run after dossier loads
+
+// Function to build Navigation
+	function createChapterPageNav(dossier, div) {
+	  var navData = dossier.getTableContent();
+	  var pill = document.createElement("ul");
+	  pill.className = "nav nav-pills nav-stacked";
+	  var child = document.createElement("li");
+	  child.className = "active";
+	  var href = document.createElement("a");
+	  href.href = "#";
+	  href.innerHTML = "Navigation";
+	  child.appendChild(href);
+	  pill.appendChild(child);
+	  for (var i = 0; i < navData.chapters.length; i++) {
+	    var chapter = navData.chapters[i];
+	    for (var j = 0; j < chapter.pages.length; j++) {
+	  	var page = chapter.pages[j];
+	  	var newChild = null;
+	  	var newHREF = null;
+	  	newChild = document.createElement("li");
+	  	newHREF = document.createElement("a");
+	  	newHREF.href = "#";
+	  	newHREF.innerHTML = chapter.name + ": " + page.name;
+	  	newHREF.id = page.nodeKey;
+	  	console.log(newHREF.id);
+	  	newHREF.onclick = function() {
+	  	  console.log("trying to navigate to: " + this.id)
+	  	  dossier.navigateToPage(dossier.getPageByNodeKey(this.id))
+	  	};
+	  	newChild.appendChild(newHREF);
+	  	pill.appendChild(newChild);
+	    }
+	  }
+	  div.appendChild(pill);
+	}
+
+/* Standard format of API call
+fetch('Api_address') 
+  .then(response => { 
+	if (response.ok) { 
+	  return response.json(); // Parse the response data as JSON 
+	} else { 
+	  throw new Error('API request failed'); 
+	} 
+  }) 
+  .then(data => { 
+	// Process the response data here 
+	console.log(data); // Example: Logging the data to the console 
+  }) 
+  .catch(error => { 
+	// Handle any errors here 
+	console.error(error); // Example: Logging the error to the console 
+  });
+*/
+ 
+</script>
+
+</body>
+</html>

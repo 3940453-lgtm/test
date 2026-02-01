@@ -1,0 +1,39 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+<mstrlayout:layout>
+ 	<table>
+
+    <tr>
+      <td colspan="2" align="right">Up Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="waterfallUpColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#A1D99B" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="right">Down Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="waterfallDownColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#FDAE6B" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="right">Total Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="waterfallTotalColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#9ECAE1" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+  </table>
+
+
+
+</mstrlayout:layout>

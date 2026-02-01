@@ -1,0 +1,23 @@
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgOrgCharWorld {
+    background:url(images/icon.png)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgOrgCharWorld {
+    background:url(images/icon.png) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+.custom-vis-layout.orgcharworld td.google-visualization-orgcharworld-node {
+ border: 1px solid lightgray;
+ padding: 8px 16px;
+ border-radius: 4px;
+ box-shadow: rgba(0, 0, 0, 0.0784314) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 1px 1px 0px, rgba(0, 0, 0, 0.0980392) 0px 2px 4px 0px;
+ transition: all 0.2s ease-out;
+ background: white;
+ }
+
+.custom-vis-layout.orgcharworld .google-visualization-orgcharworld-linebottom {
+ border-bottom: 1px solid rgb(31, 119, 180);
+ }
+

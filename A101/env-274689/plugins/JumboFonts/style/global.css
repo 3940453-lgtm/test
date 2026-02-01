@@ -1,0 +1,13 @@
+@font-face {
+ font-family: "Jumbo TheSans";
+ src: url('fonts/JThSaB5_.ttf'),
+      url('fonts/JThSaB5i.ttf'),
+      url('fonts/JThSaB7_.ttf'),
+      url('fonts/JThSaB7i.ttf'),
+      url('fonts/JThSaB9_.ttf'),
+      url('fonts/JThSaB9i.ttf');
+}
+@font-face {
+ font-family: "JumboMindset";
+ src: url('fonts/JumboMindset.ttf');
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+
+  <table>
+
+    <tr>
+      <td colspan="2" align="right">Domain</td>
+      <td>
+          <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="calDomain" />
+          <mstrlayout:argument type="string" value="month^month|year^year|week^week|day^day|hour^hour" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="right">Sub Domain</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="calSubDomain" />
+          <mstrlayout:argument type="string" value="x_day^day|month^month|week^week|x_hour^hour|x_min^min" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+  </table>
+
+<table>
+      <tr>
+      <td colspan="2" align="right">Cell Size</td>
+      <td>
+          <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="cellsize" />
+          <mstrlayout:argument type="string" value="35^default|40^Large|30^Medium|25^Small" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+  </table>  
+    <table>
+      <tr>
+      <td colspan="2" align="right">WeekStartDay</td>
+      <td>
+          <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="Week_Start_Day" />
+          <mstrlayout:argument type="string" value="1^Monday|0^Sunday" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+</table>
+ <table>
+      <tr>
+      <td colspan="2" align="right">Input Date Format</td>
+      <td>
+          <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="Input_Date_Format" />
+          <mstrlayout:argument type="string" value="D-M-YYYY^22-09-2016||M-D-YYYY^04-22-2016|D/M/YYYY^10/08/2016(Oct 8th)|M/D/YYYY^01/20/2016|MMM YYYY^Jan 2016|YYYYMMDD^20160922(Sep 22nd)|DDMMYYYY^30012016(Jan 30th)|MMDDYYYY^02252016|YYYYDDMM^20161804|YYYY-M-D HH:mm:s^2016-09-13 05:40:39|YYYY-M-D HH:mm^2016-09-13 05:40|D-M-YYYY HH:mm^22-09-2016 10:40|M-D-YYYY HH:mm^04-22-2016 10:40|M-D-YYYY HH:mm:s^04-22-2016 10:40:59|D/M/YYYY HH:mm^10/08/2016(Oct 8th) 09:45|M/D/YYYY HH:mm:s^01/20/2016 10:30:12|MMMM^March|MMM^Mar|dddd^Tuesday|ddd^Tue" />
+        </mstrlayout:render>
+      </td>
+      </tr>
+      
+</table>
+ <table>
+    <tr>
+      <td colspan="2" align="right">Custom Date Format</td>
+      <td>
+          <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="customDateFormat" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="right"></td>
+        <td colspan="2" align="right">( D/M/YYYY HH:mm:s , M-D-YY )</td>
+    </tr>
+    
+</table>
+
+</mstrlayout:layout>

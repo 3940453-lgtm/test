@@ -1,0 +1,15 @@
+<mc>
+    <ec>
+        <apps>
+
+                </apps>
+    </ec>
+
+        <!-- Google map configuration -->
+        <!-- <gc></gc> -->
+
+        <!-- MapBox configuration -->
+        <mbc>
+        <tk><![CDATA[00000000017a88cefb74639045f2b532678155041014dbfbed143dd6139768c97a34df2e3471132724036cc4381e4b6fe3b944064daa7be325c3e71cfa77229dd3f012a054d2655f4501c11a7be7c19f91d7060f30da3d5c96638741ec24241f17dcc0a2d403c37467d6ce717283073bed648f295333e881beb5dd057dc960c450bfc796737debbc649df84bc4610b5efa18739fba657dd3bea14246fdf944f9857ffe4ec4d3800661d38ae952705407f9a1821b2d982ef55976ec4d19aef86f34eb26a900464e966ab23982248a7cf8ff4a3bdd931c197a7f95af1cc53ff3391d047ae2a1ffd780209fbb]]></tk>
+        </mbc>
+</mc>

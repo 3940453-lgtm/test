@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nameConversions>
+<!--
+  Scope for ESRI - 1
+  Scope for MSTR - 2
+  Scope for MapBox - 4
+-->
+
+	<elem id="2" n="USA" scope="1">United States</elem>
+	<elem id="3" n="Cote d'Ivoire" scope="1">Côte d'Ivoire</elem>
+	<elem id="4" n="Democratic Republic of the Congo" scope="1">Congo</elem>
+	<elem id="5" n="Reunion" scope="1">Réunion</elem>
+	<elem id="6" n="Swaziland" scope="1">Eswatini</elem>
+
+</nameConversions>

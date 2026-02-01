@@ -1,0 +1,62 @@
+<framework>
+    <pages>
+        <page name="landingPage">
+            <templates>
+                <template file-name="@LandingPage:/html/index.html"></template>
+            </templates>
+        </page>
+        <page desc="Login" desc-id="mstrWeb.26" feature-id="" login-required="false" name="login" persist-mode="8" track="false">
+            <javascripts>
+                <javascript base-bean="" event="onload" feature-id="!is-portlet;!usher-authentication-enabled" javascript-code="focusLogin();" name="onLoad1"/>
+                <javascript base-bean="" event="onload" feature-id="usher-authentication-enabled" javascript-code="mstrLoginUtils.showUsher()" name="onLoad2"/>
+            </javascripts>
+            <templates>
+                <template XMLmerge_id="1" error-title-id="mstrWeb.806">
+                    <page-sections use-default="true">
+                        <page-section file-name="/jsp/Login_ShortcutsBar.jsp" name="header" />
+                        <page-section file-name="/jsp/Empty_Path.jsp" name="path" />
+                        <page-section file-name="/jsp/Copyright_Footer.jsp" name="footer" />
+                        <page-section file-name="/plugins/LandingPage/jsp/Login_Links.jsp" name="links" />
+                    </page-sections>
+                    <shortcut-list-set name="default" use-default="false">
+                        <shortcut-list name="help" use-default="false">
+                            <shortcut append-state="false" desc="Why do I need to log in" desc-id="mstrWeb.603" extra-url="#QA1" href="" iframe="false" name="help1" target="_new">
+                                <event XMLmerge_id="1" event-id="com.microstrategy.web.app.beans.EnumServletEvents.WebEventOpenFAQs">
+                                    <argument name="com.microstrategy.web.app.beans.EnumServletEvents.WebEventArgumentSubPage" value="help_1.htm" />
+                                </event>
+                            </shortcut>
+                            <shortcut append-state="false" desc="What is a cookie and how cookies are used at this web site?" desc-id="mstrWeb.604" extra-url="#QA2" href="" iframe="false" name="help2" target="_new">
+                                <event XMLmerge_id="1" event-id="com.microstrategy.web.app.beans.EnumServletEvents.WebEventOpenFAQs">
+                                    <argument name="com.microstrategy.web.app.beans.EnumServletEvents.WebEventArgumentSubPage" value="help_1.htm" />
+                                </event>
+                            </shortcut>
+                            <shortcut append-state="false" desc="What does it mean to log in as a guest" desc-id="mstrWeb.605" extra-url="#QA3" href="" iframe="false" name="help3" target="_new">
+                                <event XMLmerge_id="1" event-id="com.microstrategy.web.app.beans.EnumServletEvents.WebEventOpenFAQs">
+                                    <argument name="com.microstrategy.web.app.beans.EnumServletEvents.WebEventArgumentSubPage" value="help_1.htm" />
+                                </event>
+                            </shortcut>
+                            <shortcut append-state="false" desc="Can you tell me about the security subsystem?" desc-id="mstrWeb.602" extra-url="#QA4" href="" iframe="false" name="help4" target="_new">
+                                <event XMLmerge_id="1" event-id="com.microstrategy.web.app.beans.EnumServletEvents.WebEventOpenFAQs">
+                                    <argument name="com.microstrategy.web.app.beans.EnumServletEvents.WebEventArgumentSubPage" value="help_1.htm" />
+                                </event>
+                            </shortcut>
+                        </shortcut-list>
+                    </shortcut-list-set>
+                </template>
+            </templates>
+            <web-beans>
+                <web-bean name="smartBanner" persist-mode="2" sys-bean="IOSSmartBannerBean">
+                    <request-properties>
+                        <property name="share" source="request" type="boolean" value="share"/>
+                        <property name="srcEvent" source="request" type="int" value="evt"/>
+                    </request-properties>
+                </web-bean>
+                <web-bean name="lb" persist-mode="2" sys-bean="LoginBean">
+                    <styles>
+                        <style name="LoginStyle" />
+                    </styles>
+                </web-bean>
+            </web-beans>
+        </page>
+    </pages>
+</framework>

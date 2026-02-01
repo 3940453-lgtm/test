@@ -1,0 +1,9 @@
+<visualizations>
+    <visualization-list name="ajax">
+        <visualization id="D3BubbleChartNew" desc="D3 Bubble Chart" scope="19" projects="" style-name="D3BubbleChartNew"
+                       is-mojo="true" attribute-minimum="2" metric-minimum="1"
+                       drop-zones="plugins.D3BubbleChartNew.D3BubbleChartNewDropZones"
+                       editor-model="plugins.D3BubbleChartNew.D3BubbleChartNewEditorModel"
+                       widget-type="7"/>
+    </visualization-list>
+</visualizations>

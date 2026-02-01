@@ -1,0 +1,25 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+    <table>
+      <tr>
+        <td style="font-weight:bold;" colspan="3">Series Colors</td>
+      </tr>
+      <tr>
+        <td colspan="2">Color Palette</td>
+        <td>
+          <mstrlayout:render name="SelectBox">
+            <mstrlayout:argument type="String" value="seriesColors" /> <!-- prop name for 'even row'-->
+            <mstrlayout:argument type="String" value="default^Select|Corporate1^Corporate1|Corporate2^Corporate2|Corporate3^Corporate3|Accent^Accent|Paired^Paired|Pastel1^Pastel 1|Pastel2^Pastel 2|Set1^Set 1|Set2^Set 2|Set3^Set 3" />
+          </mstrlayout:render>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="right">Invert the palette</td>
+        <td>
+          <mstrlayout:render name="checkbox">
+            <mstrlayout:argument type="String" value="invertColors" />
+            </mstrlayout:render>
+        </td>
+      </tr>
+    </table>
+ </mstrlayout:layout>

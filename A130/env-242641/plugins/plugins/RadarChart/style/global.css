@@ -1,0 +1,18 @@
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgRadarChart {
+    background:url(images/radar.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgRadarChart {
+    background:url(images/radar.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuLayoutxml #mnuInsertWgRadarChart {
+    background:url(images/radar.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuEditorLayoutxml  #mnuInsertWgRadarChart {
+    background:url(images/radar.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}

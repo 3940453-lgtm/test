@@ -1,0 +1,56 @@
+
+	.mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	A.mstrLink:hover .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	* HTML .mstrLogo {
+		filter: 		progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../plugins/WebPlugin/style/images/limagrain_logo.gif', sizingMethod='scale');
+	}
+	* HTML A.mstrLink:hover .mstrLogo {
+		filter: 		progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../plugins/WebPlugin/style/images/limagrain_logo.gif', sizingMethod='scale');
+	}
+	.Blue .opened .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.Carbon .opened .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.Red .opened .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.opened .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.mstrWeb.Carbon .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.Carbon A.mstrLink:hover .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.mojoPath .mstrLogo {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.mojoPath .opened .mstrLogo {
+		background: 		transparent url(images/project.gif) no-repeat scroll center;
+	}
+	.mojoPath .opened .mstrLogo:hover {
+		background: 		transparent url(images/limagrain_logo.gif) no-repeat scroll center;
+	}
+	.Red .mstrPath>TABLE {
+		border-bottom-color: 		#84BD00;
+	}
+	.Red .mstrListView thead td {
+		background: 		rgba(181,215,102, 0.6) url(images/theme/red/panelHeader.gif) repeat-x scroll left top;
+	}
+	.mscld-create {
+		background-color: 		#84BD00;
+		border: 		1px solid #84BD00;
+	}
+	.mscld-create:hover {
+		background: 		rgba(181,215,102, 0.6);
+	}
+	.mscld-create.open {
+		background: 		rgba(181,215,102, 0.6) none;
+	}

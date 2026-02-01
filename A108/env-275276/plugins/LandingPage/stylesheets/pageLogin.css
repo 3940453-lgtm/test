@@ -1,0 +1,33 @@
+.mstrLoginButtonBarLeft.mobile {
+  float: none;
+}
+
+.mstrLoginButtonBarLeft .mstrButton.mobile {
+  margin-top: 75px;
+  width: 80%;
+}
+
+.mstrLoginContainer.std .mstrButton.mobile {
+  margin-top: 0;
+}
+
+.mstrLoginContainer.usherLogin.usherMobileLogin {
+  min-height: 200px;
+}
+
+.mstrLoginContainer.std #divLogin {
+  top: 31px;
+  height: auto;
+}
+
+.mstrLoginContainer.std .mstrLoginButtonBarLeft.mobile {
+  visibility: hidden;
+}
+
+.mstrmojo-UsherLogin-Container.usherLogin {
+  height: 0;
+}
+
+.pageLoginMobile {
+  visibility: hidden;
+}

@@ -1,0 +1,23 @@
+<visualizations>
+	
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="1" desc="D3 Funnel" drop-zones="plugins.D3Funnel.D3FunnelDropZones" editor-model="plugins.D3Funnel.D3FunnelEditorModel" is-mojo="true" metric-minimum="1" scope="19" style-name="D3Funnel" widget-type="7"/>
+  </visualization-list>
+
+  <visualization-list name="ipad" show-in-web="false" view-mode="71">
+    <visualization attribute-minimum="1" desc="D3 Funnel" drop-zones="plugins.D3Funnel.D3FunnelDropZones" editor-model="plugins.D3Funnel.D3FunnelEditorModel" is-mojo="true" metric-minimum="1" scope="19" style-name="D3Funnel" widget-type="7"/>
+  </visualization-list>
+
+  <visualization-list name="iphone" show-in-web="false" view-mode="70">
+    <visualization attribute-minimum="1" desc="D3 Funnel" drop-zones="plugins.D3Funnel.D3FunnelDropZones" editor-model="plugins.D3Funnel.D3FunnelEditorModel" is-mojo="true" metric-minimum="1" scope="19" style-name="D3Funnel" widget-type="7"/>
+  </visualization-list>
+
+  <visualization-list name="android" show-in-web="false" view-mode="72">
+    <visualization attribute-minimum="1" desc="D3 Funnel" drop-zones="plugins.D3Funnel.D3FunnelDropZones" editor-model="plugins.D3Funnel.D3FunnelEditorModel" is-mojo="true" metric-minimum="1" scope="19" style-name="D3Funnel" widget-type="7"/>
+  </visualization-list>
+
+  <visualization-list name="androidTablet" show-in-web="false" view-mode="73">
+    <visualization attribute-minimum="1" desc="D3 Funnel" drop-zones="plugins.D3Funnel.D3FunnelDropZones" editor-model="plugins.D3Funnel.D3FunnelEditorModel" is-mojo="true" metric-minimum="1" scope="19" style-name="D3Funnel" widget-type="7"/>
+  </visualization-list>
+
+</visualizations>

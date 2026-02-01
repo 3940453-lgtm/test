@@ -1,0 +1,85 @@
+.custom-vis-layout.paracoordataprocessing .parcoords > svg, .custom-vis-layout.paracoordataprocessing .parcoords > canvas {
+ font-style: normal;
+ font-variant: normal;
+ font-weight: normal;
+ font-stretch: normal;
+ font-size: 14px;
+ line-height: normal;
+ font-family: sans-serif;
+ position: absolute;
+ }
+
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgParaCoorDataProcessingStyle {
+    background:url(images/paracoor.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgParaCoorDataProcessingStyle {
+    background:url(images/paracoor.svg) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+/*.custom-vis-layout.paracoordataprocessing .parcoords .axis line:hover {
+    background-color: red;
+}   */
+
+
+/*.custom-vis-layout.paracoordataprocessing svg {
+    background-color: red;
+} */
+
+/*.custom-vis-layout.paracoordataprocessing .parcoords > svg > g .dimension .axis .tick line:hover{
+    color:yellow;
+}
+
+.custom-vis-layout.paracoordataprocessing line:hover{
+    color:yellow;
+}
+*/
+
+.custom-vis-layout.paracoordataprocessing .parcoords > canvas {
+ pointer-events: none;
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords text.label {
+ cursor: default;
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords rect.background {
+ fill: transparent;
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords rect.background:hover {
+ fill: rgba(120, 120, 120, 0.2);
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords .resize rect {
+ fill: rgba(0, 0, 0, 0.0980392);
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords rect.extent {
+ fill: rgba(255, 255, 255, 0.247059);
+ stroke: rgba(0, 0, 0, 0.6);
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords .axis line, .custom-vis-layout.paracoordataprocessing .parcoords .axis path {
+ fill: none;
+ stroke: rgb(34, 34, 34);
+ shape-rendering: crispEdges;
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords canvas {
+ opacity: 1;
+ transition: opacity 0.3s;
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords canvas.faded {
+ opacity: 0.25;
+ }
+
+.custom-vis-layout.paracoordataprocessing .parcoords {
+ -webkit-user-select: none;
+ background-color: white;
+ }
+

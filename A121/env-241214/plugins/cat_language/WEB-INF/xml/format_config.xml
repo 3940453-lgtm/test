@@ -1,0 +1,752 @@
+<formatting version="1.0">
+	<locale language="de" country="DE">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>dd.MM.yyyy</out>
+			<in>d.M.yy</in>
+			<in>d.M.yyyy</in>
+			<in>yyyy-M-d</in>
+			<display>dd.MM.yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>HH:mm:ss</out>
+			<in>HH:mm</in>
+			<in>HH:mm:ss</in>
+			<in>HH:mm 'Uhr'</in>
+			<in>HH:mm:ss z</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="da" country="DK">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>dd-MM-yyyy</out>
+			<in>dd-MM-yyyy</in>
+			<in>dd-MM-yy</in>
+			<in>yyyy-MM-dd</in>
+			<in>yyyy MM dd</in>
+			<display>dd-MM-yyyy</display>
+		</data-type>
+		<data-type name="time">
+			<out>HH:mm:ss</out>
+			<in>HH:mm:ss</in>
+			<in>H:mm:ss</in>
+			<in>HH:mm</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>
+    <locale language="de" country="CH">
+        <list-separator>;</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#'##0</in>
+            <!-- display node for this data type currently not in use -->
+           <display>#'##0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#'##0.###</in>
+            <in>0.###E0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>#'##0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>dd.MM.yyyy</out>
+            <in>dd.MM.yyyy</in>
+            <in>dd.MM.yy</in>
+            <in>d.MM.yy</in>
+            <in>dd. M. yy</in>
+            <in>d.M.yy</in>
+            <in>yyyy-MM-dd</in>
+            <display>dd.MM.yyyy</display>
+        </data-type>
+        <data-type name="time">
+            <out>HH:mm:ss</out>
+            <in>HH:mm:ss</in>
+            <in>H:mm:ss</in>
+            <in>H.mm' h'</in>
+            <in>HH.mm' h'</in>
+            <in>H.mm' Uhr'</in>
+            <display>HH:mm:ss</display>
+        </data-type>
+    </locale>
+	<locale language="en" country="US">
+		<list-separator>,</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#,##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0.##########</out>
+			<in>#,##0.###</in>
+             <in>0.###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0.##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>M/d/yyyy</out>
+			<in>M/d/yy</in>
+			<in>M/d/yyyy</in>
+			<in>MMM d, yy</in>
+			<in>yyyy-MM-dd</in>
+                        <display>M/d/yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>h:mm:ss a</out>
+			<in>h:mm a</in>
+			<in>H:mm</in>
+			<in>h:mm:ss a</in>
+			<in>H:mm:ss</in>
+			<in>h:mm:ss a z</in>
+                        <display>h:mm:ss a</display>
+		</data-type>
+	</locale>
+	<locale language="en" country="GB">
+		<list-separator>,</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#,##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0.##########</out>
+			<in>#,##0.###</in>
+            <in>0.###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0.##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>dd/MM/yyyy</out>
+			<in>dd/MM/yy</in>
+			<in>dd/MM/yyyy</in>
+			<in>dd-MMM-yy</in>
+			<in>dd MMMM yy</in>
+                        <display>dd/MM/yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>HH:mm:ss</out>
+			<in>HH:mm</in>
+			<in>HH:mm:ss</in>
+			<in>HH:mm:ss z</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="es" country="ES">
+		<list-separator>,</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>d/MM/yyyy</out>
+			<in>d/M/yyyy</in>
+			<in>d/M/yy</in>
+			<in>d-M-yy</in>
+			<in>d.M.yy</in>
+			<in>yyyy-M-d</in>
+                        <display>d/MM/yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm</in>
+			<in>H:mm:ss</in>
+			<in>H'H'mm''</in>
+			<in>H:mm:ss z</in>
+                        <display>H:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="fr" country="FR">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in># ##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in># ##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>dd/MM/yyyy</out>
+			<in>d/M/yy</in>
+			<in>d/M/yyyy</in>
+			<in>d.M.yy</in>
+			<in>d-M-yy</in>
+			<in>yyyy-M-d</in>
+                        <display>dd/MM/yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>HH:mm:ss</out>
+			<in>H:m</in>
+			<in>H:m:s</in>
+			<in>H 'h' m</in>
+			<in>H:m:s z</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="it" country="IT">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>dd/MM/yyyy</out>
+			<in>d/M/yy</in>
+			<in>d/M/yyyy</in>
+			<in>d.M.yy</in>
+			<in>yyyy-M-d</in>
+                        <display>dd/MM/yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H.mm.ss</out>
+			<in>H.mm</in>
+			<in>H.mm.ss</in>
+			<in>H.mm.ss z</in>
+			<in>H:mm:ss</in>
+                        <display>H.mm.ss</display>
+		</data-type>
+	</locale>
+    <locale language="fr" country="CH">
+        <list-separator>;</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#'##0</in>
+            <!-- display node for this data type currently not in use -->
+           <display>#'##0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#'##0.###</in>
+            <in>0.###E0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>#'##0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>dd.MM.yyyy</out>
+            <in>dd.MM.yyyy</in>
+            <in>dd.MM.yy</in>
+            <in>dd. M. yy</in>
+            <in>d.M.yy</in>
+            <in>yyyy.MM.dd</in>
+            <display>dd.MM.yyyy</display>
+        </data-type>
+        <data-type name="time">
+            <out>HH:mm:ss</out>
+            <in>HH:mm:ss</in>
+            <in>H:mm:ss</in>
+            <in>H.mm' h'</in>
+            <display>HH:mm:ss</display>
+        </data-type>
+    </locale>
+   <locale language="fr" country="BE">
+        <list-separator>;</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+            <display>###0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0,##########</out>
+            <in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+            <display>###0,##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>d/MM/yyyy</out>
+            <in>d/MM/yyyy</in>
+            <in>d/MM/yy</in>
+            <in>dd.MM.yy</in>
+            <in>yy/MM/dd</in>
+            <in>dd-MM-yy</in>
+            <in>dd/MM/yyyy</in>
+            <in>yyyy-MM-dd</in>
+            <in>dd/MM/yy</in>
+            <in>dddd d MMMM yyyy</in>
+            <in>dd MMMM yyyy</in>
+            <in>dd-MMM-yyyy</in>
+                        <display>d/MM/yyyy</display>
+        </data-type>
+        <data-type name="time">
+            <out>H:mm:ss</out>
+           <in>H:mm:ss</in>
+           <in>HH:mm:ss</in>
+           <in>H.mm</in>
+           <in>H' h 'mm</in>
+           <in>H' h 'm' min 's' s '</in>
+                        <display>H:mm:ss</display>
+        </data-type>
+    </locale> 
+    <locale language="it" country="CH">
+        <list-separator>;</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#'##0</in>
+            <!-- display node for this data type currently not in use -->
+           <display>#'##0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#'##0.###</in>
+            <in>0.###E0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>#'##0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>dd.MM.yyyy</out>
+            <in>dd.MM.yyyy</in>
+            <in>dd.MM.yy</in>
+            <in>dd. MM. yy</in>
+            <in>d/M/yy</in>
+            <in>dd.M.yy</in>
+            <in>yyyy-MM-dd</in>
+            <display>dd.MM.yyyy</display>
+        </data-type>
+        <data-type name="time">
+            <out>HH:mm:ss</out>
+            <in>HH:mm:ss</in>
+            <in>H:mm:ss</in>
+            <in>H.mm' h'</in>
+            <display>HH:mm:ss</display>
+        </data-type>
+    </locale>
+	<locale language="ja" country="JP">
+		<list-separator>,</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#,##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0.##########</out>
+			<in>#,##0.###</in>
+             <in>0.###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0.##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>yyyy/MM/dd</out>
+			<in>yy/MM/dd</in>
+			<in>yyyy/MM/dd</in>
+			<in>yy/MM/dd (E)</in>
+			<in>yyyy/MM/dd (E)</in>
+			<in>yyyy-MM-dd</in>
+                        <display>yy/MM/dd</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm</in>
+			<in>H:mm:ss</in>
+			<in>H:mm:ss:z</in>
+                        <display>H:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="ko" country="KR">
+		<list-separator>,</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#,##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0.##########</out>
+			<in>#,##0.###</in>
+            <in>0.###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0.##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>yyyy-MM-dd</out>
+			<in>yy-M-d</in>
+			<in>yyyy-M-d</in>
+                        <display>yy-M-d</display>
+		</data-type>
+		<data-type name="time">
+			<out>a h:mm:ss</out>
+			<in>H:m</in>
+			<in>H:m:s</in>
+			<in>a h:m</in>
+			<in>a h:m:s</in>
+                        <display>a h:m:s</display>
+		</data-type>
+	</locale>
+	<locale language="pt" country="BR">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,#########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,#########</display>
+		</data-type>
+		<data-type name="date">
+			<out>dd/MM/yyyy</out>
+			<in>d/M/yy</in>
+			<in>d/M/yyyy</in>
+			<in>d-M-yy</in>
+			<in>d-M-yyyy</in>
+			<in>d.M.yy</in>
+			<in>d.M.yyyy</in>
+			<in>yyyy.M.d</in>
+			<in>yyyy-M-d</in>
+                        <display>dd/MM/yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm</in>
+			<in>H:mm:ss</in>
+			<in>H:mm:ss z</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="sv" country="SE">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in># ##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in># ##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>yyyy-MM-dd</out>
+			<in>yy-M-d</in>
+			<in>yyyy-M-d</in>
+                        <display>yyyy-MM-dd</display>
+		</data-type>
+		<data-type name="time">
+			<out>HH:mm:ss</out>
+			<in>H:m</in>
+			<in>H:m:s</in>
+			<in>H:m:s z</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>
+    <locale language="zh" country="CN">
+        <list-separator>,</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#,##0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>###0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#,##0.###</in>
+            <in>0.###E0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>###0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>yyyy-MM-dd</out>
+            <in>yy-M-d</in>
+            <in>yyyy-M-d</in>
+            <in>yyyy/M/d</in>
+            <display>yy-M-d</display>
+        </data-type>
+        <data-type name="time">
+            <out>a h:mm:ss</out>
+            <in>H:m</in>
+            <in>H:m:s</in>
+            <in>a h:m</in>
+            <in>a h:m:s</in>
+            <display>H:mm:ss</display>
+        </data-type>
+    </locale>
+    <locale language="zh" country="TW">
+        <list-separator>,</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#,##0</in>
+            <!-- display node for this data type currently not in use -->
+           <display>###0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#,##0.###</in>
+            <in>0.###E0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>###0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>yyyy/MM/dd</out>
+            <in>yyyy/M/d</in>
+            <in>yyyy-MM-dd</in>
+            <in>M/d</in>
+            <in>M/d/yy</in>
+            <display>yyyy/M/d</display>
+        </data-type>
+        <data-type name="time">
+            <out>H:mm:ss</out>
+            <in>H:m:s</in>
+            <in>H:m</in>
+            <in>h:m a</in>
+            <in>H:m:s a</in>
+            <in>a hh:mm:ss</in>
+            <display>a hh:mm:ss</display>
+        </data-type>
+</locale>
+	<locale language="nl" country="NL">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>d-M-yyyy</out>
+			<in>d-M-yy</in>
+			<in>dd-MM-yy</in>
+			<in>dd.MM.yy</in>
+			<in>dd/MM/yy</in>
+			<in>yyyy-MM-dd</in>
+			<in>d-M-yyyy</in>
+			<display>d-M-yyyy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm:ss</in>
+			<in>HH:mm:ss</in>
+			<in>H:mm</in>
+			<in>H.mm</in>
+			<in>HH.mm.ss' uur'</in>
+			<in>HH:mm:ss' uur'</in>
+                        <display>H:mm:ss</display>
+		</data-type>
+    </locale>
+	<locale language="nl" country="BL">
+		<list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>d/MM/yyyy</out>
+			<in> d/MM/yyyy</in>
+			<in> d/MM/yy</in>
+			<in>dd-MM-yy</in>
+			<in>dd.MM.yy</in>
+			<in>yyyy-MM-dd</in>
+		<display>d/MM/yyyy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm:ss</in>
+			<in>HH:mm:ss</in>
+			<in>H:mm</in>
+			<in>H.mm</in>
+			<in>HH.mm.ss' uur'</in>
+			<in>HH:mm:ss' uur'</in>
+                        <display>H:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="ru" country="RU">
+        <list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#&#xa0;##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#&#xa0;##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>dd.MM.yyyy</out>
+			<in>dd.MM.yyyy</in>
+			<in>dd.MM.yy</in>
+			<in>d.M.yyyy</in>
+			<in>dd/MM/yy</in>
+			<in>yyyy-MM-dd</in>
+		<display>dd.MM.yyyy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm:ss</in>
+			<in>HH:mm:ss</in>
+                        <display>H:mm:ss</display>
+		</data-type>
+     </locale>
+	<locale language="pl" country="PL">
+        <list-separator>;</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#&#xa0;##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#&#xa0;##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>yyyy-MM-dd</out>
+			<in>yyyy-MM-dd</in>
+			<in>yy-MM-dd</in>
+			<in>dd.MM.yyyy</in>
+		<display>yyyy-MM-dd</display>
+		</data-type>
+		<data-type name="time">
+			<out>HH:mm:ss</out>
+			<in>HH:mm:ss</in>
+			<in>H:mm:ss</in>
+                        <display>HH:mm:ss</display>
+		</data-type>
+	</locale>
+	<locale language="zh" country="Hans">
+        <list-separator>,</list-separator>
+        <data-type name="integer">
+            <out>###0</out>
+            <in>#,##0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>###0</display>
+        </data-type>
+        <data-type name="number">
+            <out>###0.##########</out>
+            <in>#,##0.###</in>
+            <in>0.###E0</in>
+            <!-- display node for this data type currently not in use -->
+            <display>###0.##########</display>
+        </data-type>
+        <data-type name="date">
+            <out>yyyy-MM-dd</out>
+            <in>yy-M-d</in>
+            <in>yyyy-M-d</in>
+            <in>yyyy/M/d</in>
+            <display>yy-M-d</display>
+        </data-type>
+        <data-type name="time">
+            <out>a h:mm:ss</out>
+            <in>H:m</in>
+            <in>H:m:s</in>
+            <in>a h:m</in>
+            <in>a h:m:s</in>
+            <display>H:mm:ss</display>
+        </data-type>
+    </locale>
+	<locale language="cat" country="ES">
+		<list-separator>,</list-separator>
+		<data-type name="integer">
+			<out>###0</out>
+			<in>#.##0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0</display>
+		</data-type>
+		<data-type name="number">
+			<out>###0,##########</out>
+			<in>#.##0,###</in>
+            <in>0,###E0</in>
+                        <!-- display node for this data type currently not in use -->
+			<display>###0,##########</display>
+		</data-type>
+		<data-type name="date">
+			<out>d/MM/yyyy</out>
+			<in>d/M/yyyy</in>
+			<in>d/M/yy</in>
+			<in>d-M-yy</in>
+			<in>d.M.yy</in>
+			<in>yyyy-M-d</in>
+                        <display>d/MM/yy</display>
+		</data-type>
+		<data-type name="time">
+			<out>H:mm:ss</out>
+			<in>H:mm</in>
+			<in>H:mm:ss</in>
+			<in>H'H'mm''</in>
+			<in>H:mm:ss z</in>
+                        <display>H:mm:ss</display>
+		</data-type>
+	</locale>
+	
+</formatting>

@@ -1,0 +1,20 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+    <div>
+    <mstrlayout:render name="Tabs">
+      <mstrlayout:argument type="String" value="Color Scale,Appearance"  />
+    </mstrlayout:render>
+
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="2" ty="tab">
+  ]]>
+  <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/CalHeatMapTemplate.xml"></mstrlayout:include>
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="1" ty="tab">
+  ]]>
+  <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/ColorStopsPropertiesTab.xml"></mstrlayout:include>
+    
+  </div>
+ </mstrlayout:layout>

@@ -1,0 +1,19 @@
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgGoogleSankey {
+    background:url(images/sankey.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgGoogleSankey {
+    background:url(images/sankey.svg) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuLayoutxml #mnuInsertWgGoogleSankey {
+    background:url(images/sankey.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuEditorLayoutxml  #mnuInsertWgGoogleSankey {
+    background:url(images/sankey.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}

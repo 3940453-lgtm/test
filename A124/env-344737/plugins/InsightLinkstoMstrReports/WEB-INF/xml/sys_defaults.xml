@@ -1,0 +1,3 @@
+<prs version="1.0">
+  <pr des="Automatically select a connected IServer with the relevant project" n="automaticallyFindIServer" scp="server" v="1" dt="boolean"/>
+</prs>

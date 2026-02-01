@@ -1,0 +1,8 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="0" desc="RadarChart" drop-zones="plugins.RadarChart.RadarChartDropZones" editor-model="plugins.RadarChart.RadarChartEditorModel" is-mojo="true" metric-minimum="0" scope="18" style-name="RadarChart" widget-type="7"/>
+  </visualization-list>
+  <visualization-list name="ipad" show-in-web="false" view-mode="71">
+    <visualization attribute-minimum="0" desc="RadarChart" drop-zones="plugins.RadarChart.RadarChartDropZones" editor-model="plugins.RadarChart.RadarChartEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="RadarChart" widget-type="7"/>
+  </visualization-list>
+</visualizations>

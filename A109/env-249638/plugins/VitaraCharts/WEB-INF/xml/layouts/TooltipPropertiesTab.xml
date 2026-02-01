@@ -1,0 +1,25 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+  <table>
+    <tr>
+      <td colspan="2" align="right">Enable Tooltip</td>
+      <td>
+        <mstrlayout:render name="checkbox">
+          <mstrlayout:argument type="String" value="tooltipEnable"/>
+          <mstrlayout:argument type="String" value="1"/>
+<!--           <mstrlayout:argument type="String" value="onchange^require(['propsEditorHandler'], function( pe ) {pe.onChangeCheckBox(this);});"/>
+ -->        </mstrlayout:render>
+      </td>
+    </tr>
+<!--     <tr>
+      <td colspan="3">Format</td>
+      <td style="font-weight:bold;" colspan="2">
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="tooltipFormat" />
+          <mstrlayout:argument type="string" value="default^Select|numberFormatterWithCategory^FormatWithcategory|mapNumberFormatterWithCategories^HeatmapFormatter" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+ -->    
+  </table>
+</mstrlayout:layout>

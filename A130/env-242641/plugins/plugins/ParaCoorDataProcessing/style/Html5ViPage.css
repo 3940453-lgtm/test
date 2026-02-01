@@ -1,0 +1,8 @@
+
+ .mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-ParaCoorDataProcessingStyle > div > div {
+    background-image: url("../style/images/paracoor.svg");
+background-position: 0 0;
+}.mojo-theme-dark .mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-ParaCoorDataProcessingStyle > div > div {
+    background-image: url("../style/images/paracoor.svg");
+background-position: 0 0;
+}

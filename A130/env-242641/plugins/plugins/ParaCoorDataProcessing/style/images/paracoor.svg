@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 37</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Dossier-Editor-Designer-Use" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-37">
+            <rect id="Rectangle-22" fill="#FFFFFF" x="0" y="0" width="30" height="30"></rect>
+            <g id="Group-36" transform="translate(0.000000, 1.000000)">
+                <path d="M1.5,0.5 L1.5,26.5" id="Line-2" stroke="#D0D1D1" stroke-linecap="square"></path>
+                <path d="M27.5,0.5 L27.5,26.5" id="Line-2-Copy" stroke="#D0D1D1" stroke-linecap="square"></path>
+                <path d="M14.5,0.5 L14.5,26.5" id="Line-2-Copy-2" stroke="#D0D1D1" stroke-linecap="square"></path>
+                <polyline id="Path-5" stroke="#3B92ED" points="1 1 14 10 28 2"></polyline>
+                <circle id="Oval" fill="#3B92ED" cx="1.5" cy="1.5" r="1.5"></circle>
+                <circle id="Oval-Copy-2" fill="#3B92ED" cx="27.5" cy="2.5" r="1.5"></circle>
+                <circle id="Oval-Copy" fill="#3B92ED" cx="14.5" cy="9.5" r="1.5"></circle>
+                <polyline id="Path-6" stroke="#FC7D2C" stroke-linecap="round" stroke-linejoin="round" points="2 7 14 2 27 10"></polyline>
+                <polyline id="Path-7" stroke="#84C484" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.500000, 15.000000) scale(1, -1) translate(-14.500000, -15.000000) " points="2 14 14.5 18 27 12"></polyline>
+                <polyline id="Path-8" stroke="#B6B6B6" stroke-linecap="round" points="2 19 14.5 26 27 19"></polyline>
+                <polyline id="Path-9" stroke="#9E95C9" stroke-linecap="round" stroke-linejoin="round" points="2 25 14 19 27 25"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

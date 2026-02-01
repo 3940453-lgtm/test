@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script type="text/javascript"
+    src="https://demo.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+  <!-- This is for the jsfiddle button. You don't need it in your application.  -->
+  <script type="text/javascript" src="js/jsfiddle.js"></script>
+
+</head>
+
+<body>
+
+  <div>This example shows how to use Embedding SDK to show single visualization. </div>
+
+  <div id="visualPanel">
+    <select id="visualSelector"></select>
+    <button onclick="resizeVisual('maximized')">Max Size</button>
+    <button onclick="resizeVisual('normal')">Normal Size</button>
+    <input type="checkbox" id="resizeButtonVisible" checked><span>Resize Button</span>
+  </div>
+
+  <div id="mydossier"></div>
+  <script type="text/javascript">
+
+    var url = "https://demo.microstrategy.com/MicroStrategyLibrary/app/EC70648611E7A2F962E90080EFD58751/B9AD59BA4AD8B047047212BAE1A236A3";
+    var key = "W367";
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      var container = document.getElementById("mydossier");
+      //This page has multiple visualizations
+
+      microstrategy.dossier.create({
+        url: url,
+        enableResponsive: true,
+        placeholder: container,
+        containerHeight: '1000px',
+        enableCollaboration: false,
+        dockedTOC: {
+          canClose: true,
+          dockChangeable: false,
+          isDocked: false
+        },
+        navigationBar: {
+          enabled: false
+        },
+        //Config the visualization appearances
+        visualizationAppearances: [{
+          visualizationKey: key,
+          size: "maximized",
+          resizeButtonVisible: false
+        }]
+      }).then((dossier) => {
+        d = dossier;
+        d.registerEventHandler(microstrategy.dossier.EventType.ON_PAGE_SWITCHED, updateVisuals);
+        d.registerEventHandler(microstrategy.dossier.EventType.ON_PAGE_LOADED, updateVisuals);
+        d.registerEventHandler(microstrategy.dossier.EventType.ON_VISUALIZATION_RESIZED, handleVisualizationResized);
+        updateVisuals();
+      })
+    });
+
+    //Event handler for visualization resized.
+    handleVisualizationResized = function (e) {
+      //Add your code here
+      console.log("Visualization Resized Event");
+    }
+
+    //Populate the visualization selector
+    updateVisuals = function () {
+
+      d.getCurrentPageVisualizationList().then((visuals) => {
+
+        let s = document.getElementById("visualSelector");
+        while (s.firstChild) {
+          s.removeChild(s.lastChild);
+        }
+        for (visual of visuals) {
+
+          let o = document.createElement("option");
+          o.value = visual.key;
+          o.innerText = visual.name;
+          if (visual.key === key) {
+            o.selected = true;
+          }
+          s.appendChild(o);
+        }
+      })
+    }
+
+    resizeVisual = function (size) {
+      //Change Visualization Size programmatically 
+      let visualSelector = document.getElementById("visualSelector");
+      let key = visualSelector.selectedOptions[0].value;
+      let resizeButtonVisible = document.getElementById("resizeButtonVisible").checked;
+      d.changeVisualizationSize({
+        visualizationKey: key,
+        size: size,
+        resizeButtonVisible: resizeButtonVisible
+      })
+        .then((visualization) => {
+          console.log(
+            "The follow visualization is resized: ",
+            visualization
+          );
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+
+  </script>
+</body>
+
+</html>

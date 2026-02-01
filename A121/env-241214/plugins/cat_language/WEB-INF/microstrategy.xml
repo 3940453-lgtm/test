@@ -1,0 +1,6 @@
+<application>
+  <global>
+    <parameter name="localesFile" value="/plugins/cat_language/WEB-INF/xml/locales.xml"/>
+	<parameter name="serverFormatterFile" value="/plugins/cat_language/WEB-INF/xml/format_config.xml"/>
+  </global>
+</application>

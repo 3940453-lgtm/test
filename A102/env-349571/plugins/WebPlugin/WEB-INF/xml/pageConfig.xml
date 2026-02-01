@@ -1,0 +1,20 @@
+<framework>
+  <pages>
+    <page desc-id="" feature-id="" name="-1">
+      <templates>
+        <template file-name="@WebPlugin:/jsp/mstrWeb.jsp"/>
+        <template file-name="@WebPlugin:/jsp/Wait.jsp" status="com.microstrategy.web.beans.EnumRequestStatus.WebBeanRequestProcessing"/>
+      </templates>
+    </page>
+    <page name="error">
+      <templates>
+        <template file-name="@WebPlugin:/jsp/Error_Template.jsp"/>
+      </templates>
+    </page>
+    <page name="Html5Vi">
+      <templates>
+        <template file-name="@WebPlugin:/jsp/Mojo_Template.jsp"/>
+      </templates>
+    </page>
+  </pages>
+</framework>

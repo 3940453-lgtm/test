@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="General-icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-13" transform="translate(-1.000000, -1.000000)">
+            <rect id="Rectangle-146" x="0" y="0" width="30" height="30"></rect>
+            <g id="Group" transform="translate(1.000000, 1.000000)" fill="#E5E5E5">
+                <rect id="Rectangle-211" x="0" y="0" width="1" height="29"></rect>
+                <rect id="Rectangle-211-Copy" x="7" y="0" width="1" height="29"></rect>
+                <rect id="Rectangle-211-Copy-2" x="14" y="0" width="1" height="29"></rect>
+                <rect id="Rectangle-211-Copy-3" x="21" y="0" width="1" height="29"></rect>
+                <rect id="Rectangle-211-Copy-4" x="28" y="0" width="1" height="29"></rect>
+            </g>
+            <g id="Group-12" transform="translate(2.000000, 1.000000)" fill="#E5E5E5">
+                <rect id="Rectangle-211-Copy" transform="translate(14.000000, 7.500000) rotate(-270.000000) translate(-14.000000, -7.500000) " x="13.5" y="-6.5" width="1" height="28"></rect>
+                <rect id="Rectangle-211-Copy-6" transform="translate(14.000000, 0.500000) rotate(-270.000000) translate(-14.000000, -0.500000) " x="13.5" y="-13.5" width="1" height="28"></rect>
+                <rect id="Rectangle-211-Copy-2" transform="translate(14.000000, 14.500000) rotate(-270.000000) translate(-14.000000, -14.500000) " x="13.5" y="0.5" width="1" height="28"></rect>
+                <rect id="Rectangle-211-Copy-3" transform="translate(14.000000, 21.500000) rotate(-270.000000) translate(-14.000000, -21.500000) " x="13.5" y="7.5" width="1" height="28"></rect>
+                <rect id="Rectangle-211-Copy-4" transform="translate(14.000000, 28.500000) rotate(-270.000000) translate(-14.000000, -28.500000) " x="13.5" y="14.5" width="1" height="28"></rect>
+            </g>
+            <polyline id="Path-131" stroke="#1C91DC" points="2 9 8 14 15.5 7.6769438 22.2051197 10.1886241 29.0771935 5.26842689"></polyline>
+            <polyline id="Path-131" stroke="#FF915D" points="2 15 8 8 15 17 23 13 29 15"></polyline>
+            <polyline id="Path-131" stroke="#F9C75D" points="2 22 8 19 16 24 23 20 29 22"></polyline>
+        </g>
+    </g>
+</svg>

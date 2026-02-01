@@ -1,0 +1,11 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+      <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/HCPropsSeriesEditorTemplate.xml">
+        <mstrlayout:replace slot="tabs">    
+          <mstrlayout:render name="Tabs">
+            <mstrlayout:argument type="String" value="Appearance, Axes, Data Labels, Legend, Tooltip, Color Scale" />
+            <!-- <mstrlayout:argument type="String" value="Axes" /> -->
+          </mstrlayout:render>
+        </mstrlayout:replace>
+      </mstrlayout:include>
+ </mstrlayout:layout>

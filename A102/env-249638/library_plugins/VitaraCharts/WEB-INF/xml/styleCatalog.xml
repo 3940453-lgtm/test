@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE StyleCatalog SYSTEM "styleCatalog.dtd">
+<StyleCatalog version="2.0">
+    <TransformDefns>
+            <TransformDefn
+                class="com.vitara.sf.transform.VitaraReportAjaxMojoVisualizationTransform"
+                name="VitaraReportAjaxMojoVisualizationTransform" />
+            <TransformDefn
+			    class="com.vitara.sf.transform.VitaraMojoVisualizationSimplifiedDataTransform"
+			    name="VitaraMojoVisualizationSimplifiedDataTransform" />
+    </TransformDefns>
+    <Styles>
+        <Style name="VitaraReportXmlStyle" transform="VitaraMojoVisualizationSimplifiedDataTransform">
+                <ActualParameters>
+                <ActualParameter name="contentType" type="1" value="JSON" />
+                <ActualParameter name="includeThreshold" type="4" value="true" />
+                <ActualParameter name="includeCSS" type="4" value="false" />
+                <ActualParameter name="includeGridHeaders" type="4" value="true" />
+                <ActualParameter name="includeColWidths" type="4" value="false" />
+                <ActualParameter name="includeElementID" type="4" value="true" />
+                <ActualParameter name="useRawValues" type="4" value="true" />
+                </ActualParameters>
+        </Style>
+       <Style name="HCBarChart" description="Vitara HC Bar Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCBarChartLibrary.VitaraHCBarChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCStackedBarChart" description="Vitara HC Stacked Bar Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCStackedBarChartLibrary.VitaraHCStackedBarChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCLineChart" description="Vitara HC Line Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCLineChartLibrary.VitaraHCLineChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCAreaChart" description="Vitara HC Area Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCAreaChartLibrary.VitaraHCAreaChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCBubbleChart" description="Vitara HC Bubble Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCBubbleChartLibrary.VitaraHCBubbleChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+         <Style name="HCScatterChart" description="Vitara HC Scatter Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCScatterChartLibrary.VitaraHCScatterChartLibrary"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCSparklineChart" description="Vitara HC Sparkline Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCSparklineChartLibrary.VitaraHCSparklineChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCColumnChart" description="Vitara HC Column Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCColumnChartLibrary.VitaraHCColumnChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCStackedColumnChart" description="Vitara HC Stacked Column Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCStackedColumnChartLibrary.VitaraHCStackedColumnChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCPieChart" description="Vitara HC Pie Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCPieChartLibrary.VitaraHCPieChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCKPIRingChart" description="Vitara HC KPI Ring Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCKPIRingChartLibrary.VitaraHCKPIRingChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCTornadoChart" description="Vitara HC Tornado Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCTornadoChartLibrary.VitaraHCTornadoChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCSpacer" description="Vitara Text" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCSpacerChartLibrary.VitaraHCSpacerChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCFilterChart" description="Vitara Filter Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCFilterChartLibrary.VitaraHCFilterChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCFunnelChart" description="Vitara HC Funnel Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCFunnelChartLibrary.VitaraHCFunnelChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCHeatmapChart" description="Vitara HC Heatmap Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCHeatmapChartLibrary.VitaraHCHeatmapChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCBulletChart" description="Vitara HC Bullet Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCBulletChartLibrary.VitaraHCBulletChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCColumnRangeChart" description="Vitara HC ColumnRange Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCColumnRangeChartLibrary.VitaraHCColumnRangeChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCDumbbellChart" description="Vitara Dumbbell Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCDumbbellChartLibrary.VitaraHCDumbbellChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCWaterfallChart" description="Vitara HC Waterfall Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCWaterfallChartLibrary.VitaraHCWaterfallChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="D3KPIAnimationChart" description="Vitara D3 KPI Animation Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraD3KPIAnimationChartLibrary.VitaraD3KPIAnimationChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="VitaraD3CalHeatMapChart" description="Vitara D3 Calender Heatmap Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraD3CalHeatMapChartLibrary.VitaraD3CalHeatMapChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+
+          <Style name="VitaraHCTrellisChart" description="Vitara HC Trellis Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCTrellisChartLibrary.VitaraHCTrellisChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="SimpleKPIChart" description="Vitara Simple KPI Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraSimpleKPIChartLibrary.VitaraSimpleKPIChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+      
+        <Style name="GridChart" description="Vitara Simple Grid Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraGridChartLibrary.VitaraGridChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="D3SparklineChart" description="Vitara D3 Sparkline Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraCharts.VitaraNVD3SparklineChart"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="D3SunburstChart" description="Vitara D3 Sunburst Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraCharts.VitaraD3SunburstChart"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="VitaraD3WordCloudStyle" description="Vitara Word Cloud" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCWordCloudLibrary.VitaraHCWordCloudLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="VitaraWordCloudStyle" description="Vitara Word Cloud" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCWordCloudLibrary.VitaraHCWordCloudLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="VitaraMekkoChart" description="Vitara Mekko Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCMekkoChartLibrary.VitaraHCMekkoChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="VitaraMicroChart" description="Vitara Micro Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraMicroChartLibrary.VitaraMicroChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>    
+        <Style name="D3WaffleChart" description="Vitara D3Waffle Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraD3WaffleChartLibrary.VitaraD3WaffleChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCHistogramChart" description="Vitara Histogram Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCHistogramChartLibrary.VitaraHCHistogramChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCSlopeChart" description="Vitara Slope Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCSlopeChartLibrary.VitaraHCSlopeChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="D3CirclePackingChart" description="Vitara Circle Packing Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraD3CirclePackingChartLibrary.VitaraD3CirclePackingChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCAngularGaugeChart" description="Vitara HC Angular Gauge Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCAngularGaugeChartLibrary.VitaraHCAngularGaugeChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+        <Style name="HCSankeyChart" description="Vitara Sankey Chart" transform="VitaraReportAjaxMojoVisualizationTransform">
+            <ActualParameters>
+                <ActualParameter name="documentStyle" type="1" value="RWGridJsonStyle" />
+                <ActualParameter name="reportXMLStyle" type="1" value="VitaraReportXmlStyle" />
+                <ActualParameter name="mojoClassName" type="1" value="plugins.VitaraHCSankeyChartLibrary.VitaraHCSankeyChartLibraryv533169"/>
+            </ActualParameters>
+            <Layouts>
+                <Layout layout_source="AppLayoutSourceFile" order="1">
+                    <![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]>
+                </Layout>
+            </Layouts>
+        </Style>
+    </Styles>
+</StyleCatalog>

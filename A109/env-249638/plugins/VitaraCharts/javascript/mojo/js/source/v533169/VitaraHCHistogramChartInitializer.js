@@ -1,0 +1,12 @@
+mstrmojo.plugins.VitaraCharts = mstrmojo.plugins.VitaraCharts || {};
+mstrmojo.plugins.VitaraCharts.v533169 = mstrmojo.plugins.VitaraCharts.v533169 || {};
+mstrmojo.plugins.VitaraCharts.v533169.VitaraHCHistogramChartInitializer = mstrmojo.plugins.VitaraCharts.v533169.VitaraHCHistogramChartInitializer || {};mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.34');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.42');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.48');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.33');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.35');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.38');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.41');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.VitaraMstrLibs');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.272');
+mstrmojo.requiresCls('mstrmojo.plugins.VitaraCharts.v533169.89');

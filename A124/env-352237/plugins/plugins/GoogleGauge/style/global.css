@@ -1,0 +1,20 @@
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgGoogleGauge {
+    background:url(images/gauage.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgGoogleGauge {
+    background:url(images/gauage.svg) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuLayoutxml #mnuInsertWgGoogleGauge {
+    background:url(images/gauage.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuEditorLayoutxml  #mnuInsertWgGoogleGauge {
+    background:url(images/gauage.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}

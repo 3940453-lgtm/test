@@ -1,0 +1,48 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+    <div>
+    <mstrlayout:render name="Tabs">
+      <mstrlayout:argument type="String" value="Appearance" />
+      <!-- <mstrlayout:argument type="String" value="Axes" /> -->
+    </mstrlayout:render>
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="1" ty="tab">
+  ]]>
+    <table>
+
+    <tr>
+      <td colspan="2" align="right">Circle Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="animKPICircleColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#4575B4" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="right">Wave Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="animKPIWaveColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#74ADD1" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="right">Text Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="animKPITextColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#000000" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+  </table>
+
+
+  </div>
+ </mstrlayout:layout>

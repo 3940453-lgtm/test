@@ -1,0 +1,669 @@
+Category Axis
+Value Axis
+Shared Value Axis
+Force Sort Category Axis
+Auto Compute Start Value
+Bar
+Bars
+Bar Width
+Play By First Attribute
+Map Bubble
+Pie
+X Value
+Y Value
+Plot Area Border Properties
+Display Axis at the right
+Platform
+Cell
+Cell Size
+Auto
+Start Value
+End Value
+Filter
+Horizontal
+Min Value
+Max Value
+Main Label Horizontal Alignment
+Main Label Vertical Alignment
+SubLabel Horizontal Alignment
+Main Label Font Properties
+SubLabel Font Properties
+Copy Chart Error Log
+Reversed Direction of Data
+Enable Background 
+Image Name/Path
+Opacity
+Alignment
+Horizontal
+Left 
+Center
+Right
+Custom
+Vertical 
+Top
+Middle
+Bottom
+Scale
+Original
+Fit to Chart
+Fill Chart
+Custom
+Choropleth Map
+Horizontal Alignment
+Vertical Alignment
+Format
+Map Symbols
+Legend
+Enable Legend
+Day in a Month
+Auto Compute Total
+Axes
+Body Style
+Save
+Select
+Map Type
+Custom
+Border Width On Hover
+Label Rotation
+Series
+Series Value Axis
+Series Type
+Series Color
+Line Color
+Display Axis on the Top
+Drilling
+Data Labels
+Enable data labels
+Enable only Min Max & Last Labels
+Label Type
+Secondary Value Axis
+Primary Value Axis
+Background Color
+Title Font
+Source
+Metric
+Gauge
+Dash Style
+Solid
+ShortDash
+ShortDot
+Dash
+LongDash
+DashDot
+Band 1
+Band 2
+Band 3
+Aggregation
+Select Aggregation
+Percentile
+Row Value
+Sum
+Avg
+Count
+Min
+First Value
+Max
+First
+Last
+Percentage
+Select Column
+Value Aggregation
+Start Value Aggregation
+End Value Aggregation
+Small Multiples
+Enable Small Multiples
+Number of Columns
+Grouped Row Height
+Low
+High
+Target
+Type
+Marker Color
+Display Axis at the left
+Row Height
+Customize Palette
+Format for
+Horizontal Position
+Vertical Position
+Cancel
+Color
+Export
+To CSV
+Triangle
+Wrap Text
+About
+Manage
+Day in a Week
+Browser
+Show Title on Line
+End Color
+Title
+Fit all Columns to Content
+Shortened(Default)
+Use Metric Formatting
+Color
+Border Color
+Metric Format
+Primary
+Secondary
+Condition
+Scatter
+Editor Layout
+Right to left
+Center
+Items Layout
+Break By
+Data Limit (Top)
+Background
+Total
+Define Color Stops for the Data
+Last Value
+Header
+Header Style
+Start Value Marker
+End Value Marker
+Bar/Column Spacing
+GridLine Width
+Animation
+Line Style
+Hide Axis
+Border Width
+Week
+Overlay Bar/Column
+Total Bar Color
+Invert Palette
+Fixed Value
+Rule based colors can be changed in the Thresholds tab
+Show Label Outside Bar/Column
+Horizontal Position
+Layout
+Between Percentage
+Apply
+Icon Color
+Font Style
+Text Color
+Orientation
+Grid (Percentage Metric Value)
+Linear
+Label
+Labels
+Advance Sorting
+Display Calendar as
+Value
+Format Property
+Body
+Tile shape
+Tile Properties
+Chart Type
+Week Start Day
+Show all Category labels
+Line Type
+Metric Value
+Main Label
+Minimum Height of a Chart
+Angular
+Series Border Properties
+Color By Last Attribute
+None
+Label Style
+Enable only Min & Max Labels
+Line Width
+Show Overlapping Labels
+Label Display Format
+Day
+Minimum Width of a Chart
+Select
+Hour in a Day
+Axis Label Rotation
+Num of Rings to Display
+Ring One Max
+Ring Two Max
+Ring Three Max
+Top Percentage
+Truncate Axis Lables
+Font Family
+Border Style
+Border Properties
+Border Radius
+Custom Date Format
+Title Text Style
+Top X %
+Show Variation
+Format Target
+Percentage
+Series Properties
+Format Column
+Calendar Style
+Number Format
+Hour
+Operator
+Row
+Column
+Columns
+Day in a Year
+Week in a Month
+Plot Area
+Chart Area
+Chart Background
+Title Alignment
+Header Height
+Fit all Columns to Grid Width
+Invert Axes
+Group
+Bin Size
+Enable bin total
+Background Bar
+Pointer
+Stops
+Customize Stops
+Size
+Show Total in Center Label
+Symbol
+Large
+Toogle Animation
+Month
+Title Properties
+Icon Only
+Value Zero
+UnGroup
+Stack by Percentage
+Calendar
+Alias
+Stacked Bar/Column Width
+Line Options
+Rotation
+PlotLines
+No PlotLine(s) found
+Above The Line
+Below The Line
+Month in a Year
+Wave
+Circle
+Circle Color
+Wave Color
+Text Style
+Current Value
+Sub Label
+Map Layer
+Font Alignment
+Hour in a Week
+Default
+Max Font Size
+Disable Grid Lines
+Start Color
+Data Label Style
+Year
+List (Percentage to Total)
+Block (Percentage to Total)
+Hijri
+Icon
+Map
+Default Color
+Small
+Color Palette
+Input Date Format
+Shaded Area
+Vertical
+Tooltip
+Enable Tooltip
+Show Cumulative Sum
+Invert Colors
+% to chart
+Color Scale
+Week in a Year
+Min Font Size
+Grid Row Height
+Version
+Grand Totals
+Visiblity
+Show
+Hide
+Position
+Top
+Bottom
+Sorting
+Clear
+Enable header labels
+Value(s)
+Detailed Label
+Percentage Only
+Metric Only
+Date
+Medium
+Appearance
+Hide Children Count
+Main Label
+Top X
+Bottom X
+Add
+Label Format Properties
+Display Format
+Number Format
+Down Value Color
+Up Value Color
+Title Font Color
+Metric Value
+Attribute Label
+Combined Format
+Text
+Title
+Edit Theme
+Grouping
+Enable Grouping
+Reset Columns
+Clear Sorting
+Clear Thresholds
+Clear Pinned Columns
+Clear Filters
+Clear Grouping
+Clear Column Grouping
+Auto Size
+Fit this Column to Content
+Fit to Content
+Fit to Grid Width
+Show/Hide Columns
+Show
+Hide
+Dropzones
+To CSV(Include Hidden Columns)
+Manage Sorting
+Axis Line
+Axis Line Width
+Show Axis Line
+Other
+Grid Theme
+Move to Top
+Move to Rows
+Clear Formatting
+Ratio
+Choose Column
+Manage Column Grouping
+Hide Column
+Filter Data
+High
+Top
+Bottom
+Middle
+Odd
+Even
+Chart updates and user documentation
+Thresholds
+Manage Thresholds
+Number of Thresholds
+No threshold(s) found
+Five Scale Thresholds
+Select Condition
+Equal To
+Greater Than
+Less Than
+Greater Than Equal To
+Less Than Equal To
+Between
+Top Percentage
+Bottom Percentage
+Above Average
+Below Average
+Gradient Threshold
+n Scale Thresholds
+No Grouping
+Enter "&" to use macros:
+Marker
+Marker Size
+Marker Type
+Enable Marker
+Align
+Drag here to set row groups
+Drag here to set column labels
+Sankey
+Links Color
+Links
+Nodes
+Apply at Node Level
+Enable Link Labels
+Enable Node Labels
+Data Label
+Center Label
+Line
+Trellis 
+Area
+Word Cloud
+Bullet
+Waffle
+Waterfall
+Enable Connector Lines
+Non Additive
+KPI Ring
+Dumbbell
+Histogram
+Packed Bubble
+Edit
+Delete
+Ascending
+Descending
+Grouped Columns
+Multi-tier Bar Options
+Variance
+Multi-tier Column Options
+Absolute Variance
+Relative Variance
+Actual
+Actual Data
+Actual Data Options
+Add Sub Total
+Aggregate By
+Aggregate Data Options
+Aggregate Rest By
+Average
+Category
+Center Text Style
+Chart Limit
+Click
+Data Indicator
+Data Indicator Metrics
+Data Markers
+Data Type
+Deduct Value
+Delta By
+Delta Down Color
+Delta Up Color
+Delta Primary
+Delta Secondary
+Delta Views
+Up Color
+Down Color
+Enable Absolute Delta
+Enable Absolute Variance
+Enable IBCS View
+Enable Percentage Delta
+Enable Percentage Variance
+Enable Scaling Group
+End After
+Force Sort Axis Data
+Forecast
+Forecast Data
+Group 1
+Group 2
+Group 3
+Group 4
+Group By
+Group Charts By
+Header Label Style
+IBCS Attribute
+IBCS Features
+IBCS Small Multiples Options
+No of Charts
+Planned
+Planned Data
+Previous
+Previous Year Data
+Relative Variance
+Scaling Group
+Scaling Group Options
+Secondary Delta Options
+Select Chart Type
+Select Scaling Group
+Select View Type
+Show Average
+Show Top Categories
+Sort By
+Sort Options
+Sort Type
+Sync Options
+Use as Master
+Vertical Waterfall Options
+View Type
+Waterfall(1) Options
+Waterfall(2) Options
+Show Chart Title
+Chart Title
+Text / Title
+Alignment
+Marker Properties are moved to Series properties.
+Copy Chart Info For Support
+Polar Layout
+Enable Polar Layout
+Start Angle
+End Angle
+Outer Size
+Inner Size
+Coordinate System
+Enable Polar Mode
+Polar Pane Properties
+Outer Pane Size
+Inner Pane Size
+Dynamic Width
+Dynamic Width Axis
+Display Axis at the bottom
+Tick Interval
+Bar/Column Dynamic Width
+Repeat Marker
+Marker Only
+Units per Row
+Keep Aspect Ratio
+Fill
+Fill Direction
+Fill Percentage
+Unfilled Color
+Date(s)
+Animation Duration (ms)
+Heatmap
+Cell Border Properties
+Outer Ring
+Middle Ring
+Inner Ring
+Thickness
+Outer Radius
+Inner Radius
+Pie Start Angle
+Pie End Angle
+Sankey Data Markers
+Link By
+Depth/Direction
+Bar/Column Width
+Bar/Column Spacing
+Enable Checkbox
+Font Vertical Alignment
+Use Body Styles
+Metric Totals
+Group Selection Checkbox
+Show Attribute ID
+Check across all charts
+Show Error Bars
+Low Value
+High Value
+Show Aggregate
+Enable Layout Auto Hide
+Stacked Bar/Column
+Stack by Metric
+Bubble
+Minimum Size
+Maximum Size
+Text Properties
+Show Label Outside
+Use Date Attributes
+Start
+KPI Animation
+Date Format
+Show Title
+Grid Dropzones
+Grouping/Pivot Dropzone
+Show Detail Rows
+Value Formatting
+SubTotals
+Column Totals
+Row Subtotals
+Title Formatting
+Add Symbol
+Dial
+Render Options
+Link Color
+Hover Options
+Highlight End to End
+Configuration attributes
+Ring Properties
+Width
+Column Range
+Identify format across metrics
+Background Image file should be available on the MicroStrategy web and Library server. Please ensure the file is also available on the Library server at the same path
+NOTE
+No SVG File at provided URL.
+Please use "Title" under "Data Labels" tab to format the chart title
+Shapes
+Directional
+Finance
+Transportation
+Office
+Miscellaneous
+SVG Path
+Only svg files are supported
+Custom marker file should be available on the MicroStrategy web and Library server.
+Please ensure the file is also available on the Library server at the same path
+Axis Label Display Format
+Use Axis Label Format In Data Labels & Tooltips
+Absolute Variance Title
+Relative Variance Title
+Ratio For
+Numerator
+Denominator
+Precision
+Show Ratio as %
+Fresh
+Blue
+Dark
+White
+Scaling Conflict
+Trend Line Options for
+Select Column
+Chart Type
+Negative Color
+Final Spot Color
+Remove
+Measure
+OK
+Line Chart
+Bar Chart
+Bullet Chart
+Variance %
+Same across cells
+Apply at each cell
+Add New
+Delete Group
+Drag & Drop into group
+Group Title
+Manage Scaling Grouping
+Pin Column
+Pin Left
+Pin Right
+No Pin
+Display Style
+More Options...
+Custom Markers
+AutoSize
+Custom Markers Options
+Grouping Level
+Scaling
+Fixed
+Fixed Range
+Fill Metric
+Max Number
+Map data to scale

@@ -1,0 +1,20 @@
+{
+  "name": "mstr-landing-page",
+  "version": "0.0.1",
+  "authors": [
+    "Andrew Thomas <athomas@microstrategy.com>"
+  ],
+  "description": "MicroStrategy's Secure Cloud landing page",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-validation": "^1.17.0"
+  }
+}

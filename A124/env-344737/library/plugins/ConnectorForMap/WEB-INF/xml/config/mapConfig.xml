@@ -1,0 +1,17 @@
+<mc>
+	<!-- ESRI map configuration -->
+	<ec>
+		<apps>
+		</apps>
+	</ec>
+
+	<!-- Google map configuration -->
+	<!-- <gc></gc> -->
+
+	<!-- MapBox configuration -->
+	<mbc>
+		<tk>
+			<![CDATA[0000000001f5f3f1db18d7c05f9d62b25de7f667ca3e4ff01709a94dd2bb9c8eac3a5028b9262157cf1307ccfe807a9036aea93fe24963e7be5ca0c988bb2c9e221c0ff96c6a66ce75c988e9d9e38a42e587ca4f9ebc5cec7dce4ee802267d5c4b452840a312cb485c127ca2330d5b24ea063c13ecda51f31e848bd0b1dfeb9b2255868dafe6e32cef48d894507a19e84c6f04a01edfa522a0dac98f01e55b98c7ba902f7ddad5f74d1984098182c0601127daac4893a9fab8a5e36d2f8b6ffd774c0f59b748e001798f4889f257b43beae3e68cbf6b87829e9d9c23f0d75492a825b62e3a6b41db90d01a]]>
+		</tk>
+	</mbc>
+</mc>

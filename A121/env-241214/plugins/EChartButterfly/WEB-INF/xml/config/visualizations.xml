@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="0" desc="EChartButterfly" drop-zones="plugins.EChartButterfly.EChartButterflyDropZones" editor-model="plugins.EChartButterfly.EChartButterflyEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="EChartButterfly" widget-type="7"/>
+  </visualization-list>
+</visualizations>

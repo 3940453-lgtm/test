@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nameConversions>
+<!--
+  Scope for ESRI - 1
+  Scope for MSTR - 2
+  Scope for MapBox - 4
+-->
+<!-- Custom Countries names-->
+	<elem id="2" n="USA" scope="1">United States</elem>
+	<elem id="3" n="Cote d'Ivoire" scope="1">Côte d'Ivoire</elem>
+	<elem id="4" n="Democratic Republic of the Congo" scope="1">Congo</elem>
+	<elem id="5" n="Reunion" scope="1">Réunion</elem>
+	<elem id="6" n="Swaziland" scope="1">Eswatini</elem>
+
+<!-- Custom States names-->
+	<elem id="7" n="Para" scope="1" shapeId="500" sfv="Brazil">Pará</elem>
+	<elem id="8" n="Amapa" scope="1" shapeId="500" sfv="Brazil">Amapá</elem>
+	<elem id="9" n="Ceara" scope="1" shapeId="500" sfv="Brazil">Ceará</elem>
+	<elem id="10" n="Espirito Santo" scope="1" shapeId="500" sfv="Brazil">Espírito Santo</elem>
+	<elem id="11" n="Goias" scope="1" shapeId="500" sfv="Brazil">Goiás</elem>
+	<elem id="12" n="Maranhao" scope="1" shapeId="500" sfv="Brazil">Maranhão</elem>
+	<elem id="13" n="Paraiba" scope="1" shapeId="500" sfv="Brazil">Paraíba</elem>
+	<elem id="14" n="Parana" scope="1" shapeId="500" sfv="Brazil">Paraná</elem>
+	<elem id="15" n="Piaui" scope="1" shapeId="500" sfv="Brazil">Piauí</elem>
+	<elem id="16" n="Rondonia" scope="1" shapeId="500" sfv="Brazil">Rondônia</elem>
+	<elem id="17" n="Sao Paulo" scope="1" shapeId="500" sfv="Brazil">São Paulo</elem>
+
+</nameConversions>

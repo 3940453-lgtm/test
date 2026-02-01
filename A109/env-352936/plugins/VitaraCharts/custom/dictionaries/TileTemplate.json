@@ -1,0 +1,206 @@
+{
+  "Alabama": {
+    "x": 6,
+    "y": 7
+  },
+  "Alaska": {
+    "x": 0,
+    "y": 0
+  },
+  "Arizona": {
+    "x": 5,
+    "y": 3
+  },
+  "Arkansas": {
+    "x": 5,
+    "y": 6
+  },
+  "California": {
+    "x": 5,
+    "y": 2
+  },
+  "Colorado": {
+    "x": 4,
+    "y": 3
+  },
+  "Connecticut": {
+    "x": 3,
+    "y": 11
+  },
+  "Delaware": {
+    "x": 4,
+    "y": 9
+  },
+  "District of Columbia": {
+    "x": 4,
+    "y": 10
+  },
+  "Florida": {
+    "x": 8,
+    "y": 8
+  },
+  "Georgia": {
+    "x": 7,
+    "y": 8
+  },
+  "Hawaii": {
+    "x": 8,
+    "y": 0
+  },
+  "Idaho": {
+    "x": 3,
+    "y": 2
+  },
+  "Illinois": {
+    "x": 3,
+    "y": 6
+  },
+  "Indiana": {
+    "x": 3,
+    "y": 7
+  },
+  "Iowa": {
+    "x": 3,
+    "y": 5
+  },
+  "Kansas": {
+    "x": 5,
+    "y": 5
+  },
+  "Kentucky": {
+    "x": 4,
+    "y": 6
+  },
+  "Louisiana": {
+    "x": 6,
+    "y": 5
+  },
+  "Maine": {
+    "x": 0,
+    "y": 11
+  },
+  "Maryland": {
+    "x": 4,
+    "y": 8
+  },
+  "Massachusetts": {
+    "x": 2,
+    "y": 10
+  },
+  "Michigan": {
+    "x": 2,
+    "y": 7
+  },
+  "Minnesota": {
+    "x": 2,
+    "y": 4
+  },
+  "Mississippi": {
+    "x": 6,
+    "y": 6
+  },
+  "Missouri": {
+    "x": 4,
+    "y": 5
+  },
+  "Montana": {
+    "x": 2,
+    "y": 2
+  },
+  "Nebraska": {
+    "x": 4,
+    "y": 4
+  },
+  "Nevada": {
+    "x": 4,
+    "y": 2
+  },
+  "New Hampshire": {
+    "x": 1,
+    "y": 11
+  },
+  "New Jersey": {
+    "x": 3,
+    "y": 10
+  },
+  "New Mexico": {
+    "x": 6,
+    "y": 3
+  },
+  "New York": {
+    "x": 2,
+    "y": 9
+  },
+  "North Carolina": {
+    "x": 5,
+    "y": 9
+  },
+  "North Dakota": {
+    "x": 2,
+    "y": 3
+  },
+  "Ohio": {
+    "x": 3,
+    "y": 8
+  },
+  "Oklahoma": {
+    "x": 6,
+    "y": 4
+  },
+  "Oregon": {
+    "x": 4,
+    "y": 1
+  },
+  "Pennsylvania": {
+    "x": 3,
+    "y": 9
+  },
+  "Rhode Island": {
+    "x": 2,
+    "y": 11
+  },
+  "South Carolina": {
+    "x": 6,
+    "y": 8
+  },
+  "South Dakota": {
+    "x": 3,
+    "y": 4
+  },
+  "Tennessee": {
+    "x": 5,
+    "y": 7
+  },
+  "Texas": {
+    "x": 7,
+    "y": 4
+  },
+  "Utah": {
+    "x": 5,
+    "y": 4
+  },
+  "Vermont": {
+    "x": 1,
+    "y": 10
+  },
+  "Virginia": {
+    "x": 5,
+    "y": 8
+  },
+  "Washington": {
+    "x": 2,
+    "y": 1
+  },
+  "West Virginia": {
+    "x": 4,
+    "y": 7
+  },
+  "Wisconsin": {
+    "x": 2,
+    "y": 5
+  },
+  "Wyoming": {
+    "x": 3,
+    "y": 3
+  }
+}

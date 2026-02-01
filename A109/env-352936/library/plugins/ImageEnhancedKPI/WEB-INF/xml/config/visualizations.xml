@@ -1,0 +1,24 @@
+<visualizations>
+    <visualization-list name="ajax"
+        show-in-web="true"
+        view-mode="51">
+        <visualization attribute-minimum="0"
+            metric-minimum="1"
+            categories="KPI"
+            desc="Enhanced KPI"
+            desc-id="IMGKPI.52"
+            drop-zones="plugins.ImageEnhancedKPI.ImageEnhancedKPIDropZones"
+            editor-model="plugins.ImageEnhancedKPI.ImageEnhancedKPIEditorModel"
+            is-mojo="true"
+            scope="16"
+            style-name="ImageEnhancedKPI"
+            widget-type="7"
+            use-react-config="true"
+            summary="The Enhanced KPI provides a more visually appealing representation of key metrics and trends."
+            summary-id="IMGKPI.53"
+            requirements="Uses 1 #metrics### and 1 ##attributes###"
+            requirements-id="IMGKPI.54"
+            use-case="Example: Display revenue, inventory, and customer count, each with its representative icon."
+            use-case-id="IMGKPI.55" />
+    </visualization-list>
+</visualizations>

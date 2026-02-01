@@ -1,0 +1,54 @@
+<shape-config>
+	<layers>
+		<layer id="612"  title="States" ml="StatesAUS.kml"></layer>
+		<layer id="618"  title="Post Codes" ml="PostsAUS.kml"></layer>
+		<layer id="619"  title="Suburbs" ml="SSC_2011_AUST.shp"></layer>
+	</layers>
+	<shapes>                
+		<shape id="612" 
+			custom="true" 
+			plugin="ConnectorForMap"
+			default="false" 
+			desc="States" 
+			roleId="2" 
+			type="Polygon" 
+			descWeb="mstrweb.9229" 
+			descFlash="mstr.1622" 
+			descDesktop="26973"
+			layerId="612" />
+		<shape id="618" 
+			custom="true" 
+			plugin="ConnectorForMap"
+			default="false" 
+			desc="Post Codes" 
+			roleId="8" 
+			type="Polygon" 
+			descWeb="mstrweb.9229" 
+			descFlash="mstr.1622" 
+			descDesktop="26973"
+			layerId="618" />
+		<shape id="619" 
+			custom="true" 
+			plugin="ConnectorForMap"
+			default="false" 
+			desc="Suburbs" 
+			roleId="9" 
+			type="Polygon" 
+			shapeKey="SSC_NAME"
+			descWeb="mstrweb.9229" 
+			descFlash="mstr.1622" 
+			descDesktop="26973"
+			layerId="619" />
+	</shapes>
+	<roles>
+		<role id="1" name="City" />
+		<role id="2" name="State" />
+		<role id="3" name="Country" />
+		<role id="4" name="Location" />
+		<role id="5" name="Latitiude" />
+		<role id="6" name="Longitude" />
+		<role id="7" name="Other" />
+		<role id="8" name="ZipCode" />
+		<role id="9" name="County" />
+	</roles>
+</shape-config>

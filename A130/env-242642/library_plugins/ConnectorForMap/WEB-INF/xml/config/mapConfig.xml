@@ -1,0 +1,30 @@
+<?xml version="1.0" ?><mc>
+	<!-- ESRI map configuration -->
+    <ec>
+    	<apps>
+		<key><![CDATA[0000000001218da726b2a608ad2a687529183cae991f3489ae2bccf18fb4018456d51a6bd12fc67c34f7701870ea8298c264b490cf68bc944c7ccb14980bfea653224829990cf04dde6f8e1041c0dd4e88eb9c67fd1dbb27d5a456cf83e119e79fa82acb191f639e28977ad6655131516981d2bdef6167381b03e2180421ab22682b5698dc3a00d902b2d532510afa]]></key></apps>
+		<urlPrefixes>
+			<urlPrefix id="1">www.arcgis.com</urlPrefix>
+			<urlPrefix id="2">services.arcgis.com</urlPrefix>
+			<urlPrefix id="3">js.arcgis.com</urlPrefix>
+			<urlPrefix id="4">static.arcgis.com</urlPrefix>
+			<urlPrefix id="5">geocode.arcgis.com</urlPrefix>
+			<urlPrefix id="6">services.arcgisonline.com</urlPrefix>
+			<urlPrefix id="7">cdn.arcgis.com</urlPrefix>
+			<urlPrefix id="8">basemaps.arcgis.com</urlPrefix>
+			<urlPrefix id="9">basemaps-api.arcgis.com</urlPrefix>
+			<urlPrefix id="10">server.arcgisonline.com</urlPrefix>
+			<urlPrefix id="11">sampleserver1.arcgisonline.com</urlPrefix>
+			<urlPrefix id="12">sampleserver2.arcgisonline.com</urlPrefix>
+			<urlPrefix id="13">msfvzm4ehacvflca.maps.arcgis.com</urlPrefix>
+		</urlPrefixes>
+    </ec>
+
+	<!-- Google map configuration -->
+	<!-- <gc></gc> -->
+
+	<!-- MapBox configuration -->
+	<mbc>
+		<tk/>
+	</mbc>
+</mc>

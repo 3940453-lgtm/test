@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- include the embeddinglib.js from the library -->
+    <script src="https://analytics-dev.limagrain.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+</head>
+<body onload="showDossier()">
+<div id="myDossier" height="100%" width="100%"></div>
+<script>
+
+    var BASE_URL = "https://analytics-dev.limagrain.com/MicroStrategyLibrary";
+    var projectId = "1969863E11E9F53C745A0080EF450A6D";
+    var dossierId = "420ECD4711E820BEB5590080EFE5F8EE";
+
+    var placeHolderDiv = document.getElementById("myDossier");
+
+    function showDossier() {
+        var dossierUrl = BASE_URL + '/app/' + projectId + '/' + dossierId;
+        microstrategy.dossier.create({
+            placeholder: placeHolderDiv,
+            url: dossierUrl,
+            enableCustomAuthentication: true,
+            enableResponsive: true,
+            customAuthenticationType: microstrategy.dossier.CustomAuthenticationType.AUTH_TOKEN,
+            getLoginToken: login
+        });
+    }
+
+    function login() {
+
+    }
+
+</script>
+
+</body>
+</html>

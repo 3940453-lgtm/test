@@ -1,0 +1,974 @@
+/* Normalizing */
+html, body, h1, h2, h3, h4, h5, h6, div {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 200;
+}
+
+/* Normalizing */
+
+/* Variables */
+$red-banner-padding: 77px;
+$solutions-padding: 60px;
+$solutions-panel-margin: 30px;
+$resources-padding: 55px;
+$resources-card-margin: 15px;
+$resources-card-reveal-margin: 25px;
+$connections-padding: 20px;
+$connections-margin: 30px;
+$connections-checkbox-click-margin: 10px;
+$security-padding: 85px;
+$footer-icon-margin: 5px;
+
+$medium-screen-plus-1: 993px !default;
+
+// use some of Materialize's variables
+// Media Query Ranges
+$small-screen-up: 601px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+$small-screen: 600px !default;
+$medium-screen: 992px !default;
+$large-screen: 1200px !default;
+
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+
+/* Variables */
+/* Color overrides */
+.blue-text {
+    color: #4A90E2 !important;
+}
+.grey-text {
+    pointer-events: none;
+}
+
+.btn, .btn-large {
+    background-color: #4A90E2;
+}
+
+/* Color */
+
+/* Icons */
+.svg {
+    background-image: url("../images/icons.svg");
+}
+
+.svg.microstrategy-logo {
+    background-position: -1px -537px;
+    background-repeat: no-repeat;
+    width: 158px;
+    height: 25px;
+}
+
+.svg.solutions-panel-create-icon {
+    background-position: -17px 0px;
+    background-repeat: no-repeat;
+    width: 177px;
+    height: 135px;
+}
+
+.svg.solutions-panel-share-icon {
+    background-position: -210px 0px;
+    background-repeat: no-repeat;
+    width: 212px;
+    height: 135px;
+}
+
+.svg.solutions-panel-manage-icon {
+    background-position: -469px 0px;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 135px;
+}
+
+.svg.card-mstr-mobile {
+    background-position: -1006px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-library-mobile {
+    background-position: -920px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-library {
+    background-position: -80px -200px;
+
+    // I am unsure of this one's position. monitor carefully
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-mstr {
+    background-position: -164px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-desktop {
+    background-position: -246px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-mstr-gear {
+    background-position: -329px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-purple-db {
+    background-position: -419px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-identity-manager {
+    background-position: -505px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-db {
+    background-position: -585px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-badge {
+    background-position: -669px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-lock {
+    background-position: -749px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.card-communicator {
+    background-position: -833px -200px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin-left: $resources-card-margin;
+}
+
+.svg.vnav-solutions.active {
+    background-position: -51px -461px;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 46px;
+}
+
+.svg.vnav-resources.active {
+    background-position: -103px -461px;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 46px;
+}
+
+.svg.vnav-security.active {
+    background-position: 0px -461px;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 46px;
+}
+
+/* Icons */
+
+/* Navbar */
+.nav-wrapper {
+    padding-right: env(safe-area-inset-right);
+    padding-left: env(safe-area-inset-left);
+    padding-top: env(safe-area-inset-top);
+
+    ul li a, a {
+        color: #515151;
+    }
+
+    .brand-logo {
+        height: 100%;
+
+        img {
+            height: 30px;
+            vertical-align: middle;
+        }
+    }
+}
+
+.side-nav.center-align {
+    padding-top: env(safe-area-inset-top);
+
+    li a {
+        color: #515151;
+        padding-left: env(safe-area-inset-left);
+    }
+}
+
+/* Navbar */
+
+/* Side vNav */
+
+.vNav {
+    position: fixed;
+    top: calc(50% - 69px);
+    left: 20px;
+    z-index: 1000000;
+    list-style-type: none;
+
+    ul {
+        position: relative;
+        background-color: #eeeeee;
+        width: 46px;
+        border-radius: 100px;
+        box-shadow: 0px 0px 4px rgba(102, 102, 102, 0.5);
+
+        li.active {
+            z-index: 10;
+        }
+
+        li {
+            position: relative;
+            z-index: 5;
+
+            a {
+                div {
+                    display: block;
+                    width: 46px;
+                    height: 46px;
+                    text-indent: -9999px;
+                    border-radius: 50%;
+
+                    // border: 2px solid;
+                    // border-color: rgb(113, 135, 133);
+                    text-decoration: none;
+                }
+
+                div.label {
+                    background-color: #d8d8d8;
+                    border: 16.5px solid #eeeeee;
+                }
+
+                div.label.active {
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+/* Red Banner */
+.red-banner {
+    background: linear-gradient(180deg, #EC0B16 0%, rgba(236, 11, 22, 0.75) 100%);
+    padding-top: $red-banner-padding;
+    padding-bottom: $red-banner-padding;
+
+    h3, p {
+        color: white;
+    }
+
+    h3 {
+        @media only screen and (min-width: 0) {
+            font-size: 47px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 47.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 48px;
+        }
+    }
+
+    p {
+        margin-bottom: 0px;
+        @media only screen and (min-width: 0) {
+            font-size: 15px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 15.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 16px;
+        }
+    }
+}
+
+/* Red Banner */
+
+/* Solutions Section */
+.solutions-section {
+    background-color: #fff;
+    padding-top: $solutions-padding;
+
+    // padding-bottom: $solutions-padding;
+}
+
+.solutions-intro {
+    h4, p {
+        color: #515151;
+    }
+
+    h4 {
+        font-weight: 700;
+
+        @media only screen and (min-width: 0) {
+            font-size: 35px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 35.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 36px;
+        }
+    }
+
+    p {
+        margin: 0px;
+        @media only screen and (min-width: 0) {
+            font-size: 15px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 15.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 16px;
+        }
+    }
+}
+
+.solutions-panel {
+    margin-bottom: $solutions-panel-margin;
+
+    h5, p {
+        color: #444649;
+    }
+
+    h5 {
+        font-weight: 500;
+        margin-bottom: 15px;
+
+        @media only screen and (min-width: 0) {
+            font-size: 21px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 21.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 22px;
+        }
+    }
+
+    p {
+        font-weight: 200;
+        margin: 0px;
+
+        @media only screen and (min-width: 0) {
+            font-size: 12px;
+            height: 60px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 12.5px;
+        }
+
+        @media only screen and (min-width: $medium-screen-plus-1) {
+            height: 75px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 13px;
+        }
+    }
+
+    .btn {
+        padding: 0 1rem;
+    }
+}
+
+/* Solutions */
+/* Resources Section */
+.resources-section {
+    background-color: #fff;
+    padding-top: $resources-padding;
+
+    // padding-bottom: $resources-padding;
+}
+
+.resources-intro {
+    h4, p {
+        color: #515151;
+    }
+
+    h4 {
+        font-weight: 700;
+
+        @media only screen and (min-width: 0) {
+            font-size: 35px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 35.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 36px;
+        }
+    }
+
+    p {
+        @media only screen and (min-width: 0) {
+            font-size: 15px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 15.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 16px;
+        }
+    }
+}
+
+.card {
+    color: #515151;
+
+    @media only screen and (min-width: 0) {
+        height: auto;
+    }
+
+    @media only screen and (min-width: $medium-screen-plus-1) {
+        min-height: 180px;
+        max-height: 180px;
+
+        &.medium-large {
+            max-height: 360px;
+        }
+    }
+
+    .card-content .card-title {
+        font-weight: 700;
+        line-height: 19px;
+
+        @media only screen and (min-width: 0) {
+            font-size: 15px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 15.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 16px;
+        }
+    }
+
+    .card-content {
+        line-height: 15px;
+
+        @media only screen and (min-width: 0) {
+            font-size: 12px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 12.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 13px;
+        }
+    }
+
+    .card-action {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        div div {
+            display: inline-block;
+        }
+
+        @media only screen and (min-width: 0) {
+            font-size: 13px;
+            display: block;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 13.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 14px;
+        }
+
+        @media only screen and (min-width: $medium-screen-plus-1) {
+            display: none;
+        }
+
+        a {
+            margin-right: 0px;
+        }
+    }
+
+    .card-reveal {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 0px;
+        overflow: hidden;
+        transform: translateY(-100%);
+
+        .row {
+            margin-bottom: 0px;
+            height: 100%;
+        }
+
+        p {
+            margin-bottom: 0px;
+
+            @media only screen and (min-width: 0) {
+                font-size: 12px;
+            }
+
+            @media only screen and (min-width: $medium-screen) {
+                font-size: 12.5px;
+            }
+
+            @media only screen and (min-width: $large-screen) {
+                font-size: 13px;
+            }
+        }
+
+        .inline-block {
+            display: inline-block;
+            margin-left: $resources-card-reveal-margin;
+            margin-right: $resources-card-reveal-margin;
+        }
+    }
+}
+
+.svg-apple {
+    background-image: url("../images/apple.svg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.svg-windows {
+    background-image: url("../images/windows.svg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+#resources-cards .row {
+    margin-bottom: 0px;
+}
+
+/* Resources */
+/* Essential Connections */
+.connections-section {
+    margin-top: $connections-margin;
+    background-color: #F6F6F6;
+    padding-top: $connections-padding;
+    padding-bottom: $connections-padding;
+
+    .valign-wrapper-md-plus-1-and-up {
+        @media only screen and (min-width: $medium-screen-plus-1) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .connections-header {
+        padding-left: 15px;
+        padding-right: 30px;
+
+        h5 {
+            font-weight: 700;
+            line-height: 19px;
+            color: #444649;
+
+            @media only screen and (min-width: 0) {
+                font-size: 15px;
+            }
+
+            @media only screen and (min-width: $medium-screen) {
+                font-size: 15.5px;
+            }
+
+            @media only screen and (min-width: $large-screen) {
+                font-size: 16px;
+            }
+        }
+
+        p {
+            color: #787878;
+
+            @media only screen and (min-width: 0) {
+                font-size: 12px;
+            }
+
+            @media only screen and (min-width: $medium-screen) {
+                font-size: 12.5px;
+            }
+
+            @media only screen and (min-width: $large-screen) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .connections-connections {
+        padding-top: $connections-padding;
+        padding-bottom: $connections-padding;
+
+        .row {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .col.s6 {
+            padding-bottom: 10px;
+            word-wrap: break-word;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        h6 {
+            color: #444649;
+            font-weight: 350;
+            padding-bottom: 5px;
+
+            @media only screen and (min-width: 0) {
+                font-size: 14px;
+            }
+
+            @media only screen and (min-width: $medium-screen) {
+                font-size: 14.5px;
+            }
+
+            @media only screen and (min-width: $large-screen) {
+                font-size: 15px;
+            }
+        }
+
+        a {
+            color: #787878;
+            word-break: break-all;
+
+            @media only screen and (min-width: 0) {
+                font-size: 12px;
+            }
+
+            @media only screen and (min-width: $medium-screen) {
+                font-size: 12.5px;
+            }
+
+            @media only screen and (min-width: $large-screen) {
+                font-size: 13px;
+            }
+        }
+
+        span {
+            color: #9A9A9A;
+            font-style: italic;
+            
+            @media only screen and (min-width: 0) {
+                font-size: 12px;
+            }
+
+            @media only screen and (min-width: $medium-screen) {
+                font-size: 12.5px;
+            }
+
+            @media only screen and (min-width: $large-screen) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    #connections-main-row {
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin: 0px 0px 10px 0px;
+        word-wrap: break-word;
+    }
+
+    .line {
+        @media only screen and (min-width: 0) {
+            border-top: 1px solid #DDDDDD;
+
+            .connections-connections {
+                padding-top: 20px;
+            }
+        }
+
+        @media only screen and (min-width: $medium-screen-plus-1) {
+            border-top: none;
+            border-left: 1px solid #DDDDDD;
+        }
+    }
+}
+
+.svg.icon-green-checkmark {
+    background-position: -36px -320px;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: $connections-checkbox-click-margin;
+    display: inline-block;
+}
+
+.material-tooltip {
+    @media only screen and (min-width: 0) {
+        font-size: 12px;
+    }
+
+    @media only screen and (min-width: $medium-screen) {
+        font-size: 12.5px;
+    }
+
+    @media only screen and (min-width: $large-screen) {
+        font-size: 13px;
+    }
+}
+
+/* Connections */
+/* Security section */
+.security-section {
+    background-color: #fff;
+    padding-top: $security-padding;
+    padding-bottom: $security-padding;
+}
+
+.security-intro {
+    h4, p {
+        color: #515151;
+    }
+
+    h4 {
+        font-weight: 700;
+
+        @media only screen and (min-width: 0) {
+            font-size: 35px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 35.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 36px;
+        }
+    }
+
+    p {
+        @media only screen and (min-width: 0) {
+            font-size: 15px;
+        }
+
+        @media only screen and (min-width: $medium-screen) {
+            font-size: 15.5px;
+        }
+
+        @media only screen and (min-width: $large-screen) {
+            font-size: 16px;
+        }
+    }
+}
+
+#security-cards .row {
+    margin-bottom: 0px;
+}
+
+/* Security */
+/* Footer */
+.page-footer .footer-copyright {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 30px;
+    background-color: #F2F2F2;
+    border: 1px solid #CCCCCC;
+    overflow: visible;
+    padding: 0px;
+    padding-bottom: env(safe-area-inset-bottom);
+    line-height: 30px;
+    z-index: 1000000000;
+
+    ul.footer-buttons {
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+        li.footer-buttons-li {
+            transition: background-color .3s;
+            float: left;
+            padding: 0;
+
+            div {
+                color: #444649;
+            }
+
+            a.footer-buttons-button {
+                margin-left: 25px;
+                margin-right: 25px;
+                transition: background-color .3s;
+                font-size: 13px;
+                color: #444649;
+                display: inline-block;
+                padding-top: 0;
+                padding-right: 0;
+                cursor: pointer;
+            }
+
+            a.footer-buttons-button:hover {
+                color: #4990E2;
+
+                div {
+                    color: #4990E2;
+                }
+            }
+
+            ul.dropdown-content.language {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 0px;
+                padding-left: 0px;
+                transform: translateY(-30px);
+
+                li {
+                    padding: 0px;
+                    min-height: 0px;
+
+                    a {
+                        line-height: 15px;
+                        padding: 6px 0 5px 22px;
+                        cursor: pointer;
+                        color: #444649;
+                    }
+
+                    a:hover {
+                        background-color: #F5F5F5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer-contact-modal {
+    color: #515151;
+    background-color: #ffffff;
+
+    .modal-content {
+        padding: 0px;
+
+        h4 {
+            background-color: #fafafa;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    label {
+        color: #515151;
+    }
+
+    input.browser-default {
+        padding: 5px;
+        width: 100%;
+    }
+
+    textarea {
+        padding: 5px;
+        width: 100%;
+        border-color: #eeeeee;
+        resize: none;
+        height: auto;
+    }
+
+    div.checkbox {
+        padding-top: 10px;
+    }
+
+    .label {
+        padding-bottom: 5px;
+    }
+
+    .errorlabel {
+        color: #ff0000;
+        padding-left: 5px;
+    }
+}
+
+.svg.icon-grey-globe {
+    background-position: -67px -321px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: $footer-icon-margin;
+    display: inline-block;
+}
+
+.svg.icon-blue-globe {
+    background-position: -97px -321px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right: $footer-icon-margin;
+    display: inline-block;
+}
+
+/* Footer */

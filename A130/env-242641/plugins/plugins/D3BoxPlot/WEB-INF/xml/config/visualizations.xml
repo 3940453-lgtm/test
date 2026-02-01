@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax">
+    <visualization attribute-minimum="2" desc="D3 Box Plot" is-mojo="true" metric-minimum="1" scope="19" style-name="D3BoxPlot" drop-zones="plugins.D3BoxPlot.D3BoxPlotDropZones" widget-type="7"/>
+  </visualization-list>
+</visualizations>

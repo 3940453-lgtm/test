@@ -1,0 +1,44 @@
+/**
+	Uncomment to introduce new font-family and make it available
+	@font-face {
+	    font-family: lato;
+	    src: url(../style/fonts/lato/lato-regular.woff);
+	}
+**/
+
+/**
+Introduce any new font you need into the font-family list below
+**/
+
+.vitara-theme-custom.vitara-chart-container{
+    font-family: Arial, Helvetica, Verdana, sans-serif !important;
+}
+
+/*Support for legacy styles. Default styling in v4.1*/
+/* .vitara-theme-custom .vitara-tooltip {
+    font-size: 9px;
+}
+.vitara-theme-custom .vitara-datalabel {
+    font-size: 11px;
+}
+.vitara-theme-custom .vitara-axis {
+    font-size: 9px;
+}
+.vitara-theme-custom .vitara-axis .vitara-axis-title > text > tspan {
+	font-size: 11px;
+}
+.VitaraHCPieChart .vitara-theme-custom .vitara-center-label {
+	font-family: Arial;
+	font-size: 16px;
+	color: black;
+}
+.vitara-theme-custom .highcharts-title{
+    font-size: 10px;
+} 
+.vitara-theme-custom .vitara-legend-text {
+    font-size: 9px;	
+}
+.vitara-theme-custom .highcharts-legend-item {
+    font-size: 9px !important;
+}
+*/

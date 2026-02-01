@@ -1,0 +1,8 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+ 	<table>
+    <!-- including color properties row -->
+      <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/ColorPropertiesRows.xml">
+      </mstrlayout:include>
+  </table>
+</mstrlayout:layout>

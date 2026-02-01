@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="1" desc="Org Chart World" drop-zones="plugins.OrgCharWorld.OrgCharWorldDropZones" editor-model="plugins.OrgCharWorld.OrgCharWorldEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="OrgCharWorld" widget-type="7"/>
+  </visualization-list>
+</visualizations>

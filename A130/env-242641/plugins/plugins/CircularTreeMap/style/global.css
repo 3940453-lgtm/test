@@ -1,0 +1,61 @@
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml   #mnuInsertWgCircularTreeMap {
+    background:url(images/circulartreemap.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgCircularTreeMap {
+    background:url(images/circulartreemap.svg) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+.custom-vis-layout.circulartreemap .node {
+    cursor: pointer;
+}
+
+.custom-vis-layout.circulartreemap .node:hover {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.custom-vis-layout.circulartreemap .node--leaf {
+    fill: white;
+}
+
+.custom-vis-layout.circulartreemap .label {
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+}
+
+.custom-vis-layout.circulartreemap .info {
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.custom-vis-layout.circulartreemap .label {
+    pointer-events: none;
+}
+
+
+/* HARDCODED CSS FOR WIDGET */
+
+/* Remove the "fillAlpha" from the FillGroup widget */
+.two-column-fill-group .vi-col2 .mstrmojo-Box .mstrmojo-vi-TwoColumnProp .vi-col2 {
+    display: none !important;
+}
+
+/* Format the color-spectrum fill colors */
+.color-spectrum-fill-group .vi-col2 .mstrmojo-Box .mstrmojo-vi-TwoColumnProp .vi-col1 .mstrmojo-ColorPickerBtn .cf {
+    pointer-events: none !important;
+    width: inherit !important;
+}
+
+.color-spectrum-fill-group .vi-col2 .mstrmojo-Box .mstrmojo-vi-TwoColumnProp .vi-col1 .mstrmojo-ColorPickerBtn .cf .btn {
+    display: none !important;
+}
+
+.color-spectrum-fill-group .vi-col2 .mstrmojo-Box .mstrmojo-vi-TwoColumnProp .vi-col1 .mstrmojo-ColorPickerBtn .cf .preview {
+    width: inherit !important;
+}
+
+.hide-block {
+    display: none !important;
+}

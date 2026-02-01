@@ -1,0 +1,51 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+  <table>
+    <tr>
+      <td colspan="2" align="right">Enable data labels</td>
+      <td>
+        <mstrlayout:render name="checkbox">
+          <mstrlayout:argument type="String" value="labelsEnable"/>
+          <mstrlayout:argument type="String" value="1"/>
+        </mstrlayout:render>  
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Horizontal Alignment</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="labelsAlign" />
+          <mstrlayout:argument type="string" value="default^Select|center^Center|left^Left|right^Right" />
+          <mstrlayout:argument type="String" value="left"/>
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Vertical Alignment</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="labelsVAlign" />
+          <mstrlayout:argument type="string" value="default^Select|top^Top|middle^Middle|bottom^Bottom" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Text style</td>
+      <td>
+        <b>B</b>
+        <mstrlayout:render name="checkbox">
+          <mstrlayout:argument type="String" value="labelBold" />
+        </mstrlayout:render>
+        <i><span style="font-weight:bold;">I</span></i>
+        <mstrlayout:render name="checkbox">
+          <mstrlayout:argument type="String" value="labelItalic" />
+        </mstrlayout:render>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="labelSize" />
+          <mstrlayout:argument type="string" value="default^Select|1^1|2^2|3^3|4^4|5^5|6^6|7^7|8^8|9^9|10^10|11^11|12^12|13^13|14^14|15^15|16^16|17^17|18^18|19^19|20^20" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    
+  </table>
+</mstrlayout:layout>

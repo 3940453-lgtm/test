@@ -1,0 +1,76 @@
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgD3Funnel {
+    background:url(images/icon.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgD3Funnel {
+    background:url(images/icon.svg) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuLayoutxml #mnuInsertWgD3Funnel {
+    background:url(images/icon.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuEditorLayoutxml  #mnuInsertWgD3Funnel {
+    background:url(images/icon.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+.custom-vis-layout.d3funnel body {
+ text-align: center;
+ }
+
+.custom-vis-layout.d3funnel div, .custom-vis-layout.d3funnel svg {
+ display: block;
+ margin: auto;
+ }
+
+.custom-vis-layout.d3funnel svg text {
+ text-shadow: rgb(0, 0, 0) 0px 0px 3px, rgb(68, 68, 68) 1px 1px 6px;
+ font-size: 14px;
+ fill: white;
+ }
+
+.custom-vis-layout.d3funnel .outer {
+ display: table;
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ }
+
+.custom-vis-layout.d3funnel .middle {
+ display: table-cell;
+ vertical-align: middle;
+ }
+
+.custom-vis-layout.d3funnel .inner {
+ display: -webkit-inline-flex;
+ display: inline-flex;
+ margin-left: auto;
+ margin-right: auto;
+ width: 100%;
+ }
+
+.custom-vis-layout.d3funnel path {
+
+ }
+
+.custom-vis-layout.d3funnel .title {
+ text-align: center;
+ font-size: 24px;
+ margin-bottom: 30px;
+ color: grey;
+ }
+
+.custom-vis-layout.d3funnel .funnel {
+ display: inline;
+ padding-left: 20px;
+ padding-right: 20px;
+ }
+
+.custom-vis-layout.d3funnel .trapezoid:hover {
+ stroke: #000;
+ stroke-width: 1.5px;
+}
+

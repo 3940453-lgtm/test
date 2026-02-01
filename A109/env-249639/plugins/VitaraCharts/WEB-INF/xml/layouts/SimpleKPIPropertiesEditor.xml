@@ -1,0 +1,28 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+    <div>
+    <mstrlayout:render name="Tabs">
+      <mstrlayout:argument type="String" value="Appearance" />
+      <!-- <mstrlayout:argument type="String" value="Axes" /> -->
+    </mstrlayout:render>
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="1" ty="tab">
+  ]]>
+    <table>
+
+    <tr>
+      <td colspan="2" align="right">Font Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="simpleKPIFontColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#000000" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+  </table>
+
+
+  </div>
+ </mstrlayout:layout>

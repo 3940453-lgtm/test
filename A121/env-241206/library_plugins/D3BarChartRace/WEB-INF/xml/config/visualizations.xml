@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="0" desc="D3BarChartRace" drop-zones="plugins.D3BarChartRace.D3BarChartRaceDropZones" editor-model="plugins.D3BarChartRace.D3BarChartRaceEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="D3BarChartRace" widget-type="7"/>
+  </visualization-list>
+</visualizations>

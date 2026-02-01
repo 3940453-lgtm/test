@@ -1,0 +1,27 @@
+.narrativesciencenlg section.ns-narrative {
+    user-select: text;
+}
+
+.narrativesciencenlg .ns-narrative .ns-section {
+    line-height: 130%;
+}
+
+.narrativesciencenlg .ns-narrative .ns-section-content {
+    margin-top: 14px;
+}
+
+/* Generate unicode bullets for better control over spacing */
+.narrativesciencenlg .ns-narrative .ns-section-content ul.ns-bullets {
+    list-style-type: none;
+}
+
+.narrativesciencenlg .ns-narrative .ns-section-content ul.ns-bullets li {
+    margin: 2px 0;
+}
+
+.narrativesciencenlg .ns-narrative .ns-section-content ul.ns-bullets li:before {
+    content: '\2022';
+    margin-right: 8px;
+    font-size: 140%;
+    vertical-align: middle;
+}

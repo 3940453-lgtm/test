@@ -1,0 +1,96 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+   <table>
+    <tr>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopStart0" />
+        </mstrlayout:render>
+      </td>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopEnd0" />
+        </mstrlayout:render>
+      </td>
+      <td style="width=30%">
+        <mstrlayout:render name="ColorPicker">
+          <mstrlayout:argument type="string" value="colorStopFillColor0" />
+          <mstrlayout:argument type="String" value="#FFFFFF" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopStart1" />
+        </mstrlayout:render>
+      </td>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopEnd1" />
+        </mstrlayout:render>
+      </td>
+      <td style="width=30%">
+        <mstrlayout:render name="ColorPicker">
+          <mstrlayout:argument type="string" value="colorStopFillColor1" />
+          <mstrlayout:argument type="String" value="#FFFFFF" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopStart2" />
+        </mstrlayout:render>
+      </td>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopEnd2" />
+        </mstrlayout:render>
+      </td>
+      <td style="width=30%">
+        <mstrlayout:render name="ColorPicker">
+          <mstrlayout:argument type="string" value="colorStopFillColor2" />
+          <mstrlayout:argument type="String" value="#FFFFFF" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopStart3" />
+        </mstrlayout:render>
+      </td>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopEnd3" />
+        </mstrlayout:render>
+      </td>
+      <td style="width=30%">
+        <mstrlayout:render name="ColorPicker">
+          <mstrlayout:argument type="string" value="colorStopFillColor3" />
+          <mstrlayout:argument type="String" value="#FFFFFF" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopStart4" />
+        </mstrlayout:render>
+      </td>
+      <td>
+        <mstrlayout:render name="Textbox">
+          <mstrlayout:argument type="string" value="colorStopEnd4" />
+        </mstrlayout:render>
+      </td>
+      <td style="width=30%">
+        <mstrlayout:render name="ColorPicker">
+          <mstrlayout:argument type="string" value="colorStopFillColor4" />
+          <mstrlayout:argument type="String" value="#FFFFFF" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+   
+  </table>
+</mstrlayout:layout>

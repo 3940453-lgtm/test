@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="0" desc="EChartGauge" drop-zones="plugins.EChartGauge.EChartGaugeDropZones" editor-model="plugins.EChartGauge.EChartGaugeEditorModel" is-mojo="true" metric-minimum="1" scope="16" style-name="EChartGauge" widget-type="7"/>
+  </visualization-list>
+</visualizations>

@@ -1,0 +1,40 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+   <table>
+    <tr>
+      <td colspan="2" align="right">Enable Legend</td>
+      <td>
+        <mstrlayout:render name="checkbox">
+          <mstrlayout:argument type="String" value="legendEnable" />
+          </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Items Layout</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="legendLayout" />
+          <mstrlayout:argument type="string" value="default^Select|horizontal^Horizontal|vertical^Vertical" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Horizontal Alignment</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="legendHAlignment" />
+          <mstrlayout:argument type="string" value="default^Select|center^Center|left^Left|right^Right" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Vertical Alignment</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="legendVAlignment" />
+          <mstrlayout:argument type="string" value="default^Select|top^Top|middle^Middle|bottom^Bottom" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+  </table>
+</mstrlayout:layout>

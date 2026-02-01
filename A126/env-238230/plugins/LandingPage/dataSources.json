@@ -1,0 +1,386 @@
+{
+	"Local Sources": {
+		"fileFromDisk": {
+			"name": "File from Disk",
+			"img": "../plugins/LandingPage/images/dataSources/fromDisk.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_file.htm"
+		},
+		"Clipboard": {
+			"name": "Clipboard",
+			"img": "../plugins/LandingPage/images/dataSources/clipboard.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_the_clipboard.htm"
+		},
+		"SampleFiles": {
+			"name": "Sample Files",
+			"img": "../plugins/LandingPage/images/dataSources/sampleFiles.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_sample_file.htm"
+		},
+		"Dropbox": {
+			"name": "Dropbox",
+			"img": "../plugins/LandingPage/images/dataSources/dropbox.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_dropbox.htm"
+		}
+	},
+	"Microstrategy Enterprise": {
+		"MstrAnalyticsPlatform": {
+			"name": "MicroStrategy Analytics Platform",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#adding_dataset_objects_directly_to_a_dashboard.htm"
+		},
+		"MstrDashboard": {
+			"name": "MicroStrategy Dashboard",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_a_microstrategy_file.htm"
+		}
+	},
+	"Online Sources": {
+		"fileFromURL": {
+			"name": "File from URL",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"PublicData": {
+			"name": "Public Data",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#Importing_data_by_scraping_a_web_page_public_data.htm"
+		},
+		"Facebook": {
+			"name": "Facebook",
+			"img": "../plugins/LandingPage/images/dataSources/facebook.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_Facebook.htm"
+		},
+		"Twitter": {
+			"name": "Twitter",
+			"img": "../plugins/LandingPage/images/dataSources/twitter.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_Twitter.htm"
+		}
+
+	},
+	"Amazon": {
+		"AmazonRedShift": {
+			"name": "Amazon Red Shift",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"WebServices": {
+			"name": "Web Services",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+	},
+	"Google":{
+		"GoogleAnalytics": {
+			"name": "Google Analytics",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#Importing_data_from_google_analytics.htm"
+		},
+		"GoogleBigQuery": {
+			"name": "Google Big Query",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#Importing_data_from_Google_BigQuery.htm"
+		},
+		"GoogleDrive": {
+			"name": "Google Drive",
+			"img": "../plugins/LandingPage/images/dataSources/gdrive.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_google_drive.htm"
+		}
+	},
+	"IBM": {
+		"IBM BigInsights": {
+			"name": "IBM BigInsights",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"IBM DB2 for i": {
+			"name": "IBM DB2 for i",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"IBM DB2 for LUW": {
+			"name": "IBM DB2 for LUW",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"IBM DB2 for z/OS": {
+			"name": "IBM DB2 for z/OS",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"IBM Informix": {
+			"name": "IBM Informix",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"IBM Informix XPS": {
+			"name": "IBM Informix XPS",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"IBM Netezza": {
+			"name": "IBM Netezza",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"IBM Red Brick ": {
+			"name": "IBM Red Brick ",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+
+	},
+	"Microsoft": {
+		"MicrosoftSql": {
+			"name": "Microsoft SQL(Database)",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"MicrosoftSqlServer": {
+			"name": "Microsoft SQL(Server)",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+
+	},
+	"Oracle": {
+		"Cognos": {
+			"name": "Cognos",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"MarialDB": {
+			"name": "MarialDB",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"MySQL": {
+			"name": "MySQL",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"OBIEE": {
+			"name": "OBIEE",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"Oracle": {
+			"name": "Oracle",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+
+	},
+	"Salesforce": {
+		"Salesforce.com": {
+			"name": "Salesforce.com",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#Importing_data_from_salesforce.htm"
+		}
+
+	},
+	"SAP": {
+		"SAP Business ": {
+			"name": "SAP Business ",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"SAP HANA": {
+			"name": "SAP HANA",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"SAP Sybase ASE": {
+			"name": "SAP Sybase ASE",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"SAP Sybase IQ": {
+			"name": "SAP Sybase IQ",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		}
+
+	},
+	"Teradata": {
+		"Teradata": {
+			"name": "Teradata",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Aster": {
+			"name": "Aster",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+	},
+	"Actian": {
+		"Actian Ingres": {
+			"name": "Actian Ingres",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Actian Matrix": {
+			"name": "Actian Matrix",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Actian Vectorwise": {
+			"name": "Actian Vectorwise",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+
+	},
+	"Apache": {
+		"Apache Cassandra ": {
+			"name": "Apache Cassandra ",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Apache EMR": {
+			"name": "Apache EMR",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Apache Hive": {
+			"name": "Apache Hive",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Spark SQL": {
+			"name": "Spark SQL",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+
+	},
+	"Cloudera": {
+		"Cloudera Hive": {
+			"name": "Cloudera Hive",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Impala": {
+			"name": "Impala",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+
+	},
+	"Pivotal": {
+		"Pivotal Greenplum": {
+			"name": "Pivotal Greenplum",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Pivotal HAWQ": {
+			"name": "Pivotal HAWQ",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Pivotal Hive": {
+			"name": "Pivotal Hive",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+
+	},
+	"Other Databases": {
+		"Altibase": {
+			"name": "Altibase",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Arcadia Platform": {
+			"name": "Arcadia Platform",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Composite": {
+			"name": "Composite",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"DataDirect Cloud": {
+			"name": "DataDirect Cloud",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Denodo": {
+			"name": "Denodo",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"EnterpriseDB": {
+			"name": "EnterpriseDB",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"HP Vertica": {
+			"name": "HP Vertica",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Infobright": {
+			"name": "Infobright",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Informatica": {
+			"name": "Informatica",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Kognitio": {
+			"name": "Kognitio",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"MemSQL": {
+			"name": "MemSQL",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"MongoDB": {
+			"name": "MongoDB",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"ParStream": {
+			"name": "ParStream",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Postgresql": {
+			"name": "Postgresql",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		},
+		"Presto": {
+			"name": "Presto",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#About_importing_data.htm"
+		}
+	},
+	"Other Hadoop Sources": {
+		"Hortonworks Hive": {
+			"name": "Hortonworks Hive",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"MapR Hive": {
+			"name": "MapR Hive",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"Phoenix": {
+			"name": "Phoenix",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		},
+		"Pig": {
+			"name": "Pig",
+			"img": "../plugins/LandingPage/images/dataSources/sourceMisc.png",
+			"link": "http://www2.microstrategy.com/producthelp/10/WebUser/WebHelp/Lang_1033/MicroStrategy_Web_Help.htm#importing_data_from_a_BI_source.htm"
+		}
+	}
+}

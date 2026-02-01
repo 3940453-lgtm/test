@@ -1,0 +1,69 @@
+<script>
+  // Define the MicroStrategy REST API endpoint
+  var apiUrl = "https://your-microstrategy-server/MicroStrategyLibrary/api/";
+
+  // Define the authentication credentials
+  var username = "your-username";
+  var password = "your-password";
+
+  // Make a POST request to create a dossier instance
+  fetch(apiUrl + "dossiers/{dossierId}/instances", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Basic " + btoa(username + ":" + password)
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Get the instance ID of the created dossier instance
+    var instanceId = data.instanceId;
+
+    // Make a GET request to get the list of prompts for the dossier instance
+    fetch(apiUrl + "dossiers/{dossierId}/instances/" + instanceId + "/prompts", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Basic " + btoa(username + ":" + password)
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Get the list of prompts
+      var prompts = data.prompts;
+
+      // Answer a specified prompt (replace {promptId} and {answer} with the actual prompt ID and answer)
+      prompts.forEach(prompt => {
+        if (prompt.promptId === "{promptId}") {
+          prompt.answer = "{answer}";
+        }
+      });
+
+      // Make a POST request to answer the prompts
+      fetch(apiUrl + "dossiers/{dossierId}/instances/" + instanceId + "/prompts", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": "Basic " + btoa(username + ":" + password)
+        },
+        body: JSON.stringify(prompts)
+      })
+      .then(response => {
+        // Redirect the page to the created dossier instance
+        window.location.href = apiUrl + "dossiers/{dossierId}/instances/" + instanceId;
+      })
+      .catch(error => {
+        // Handle any errors
+        console.error(error);
+      });
+    })
+    .catch(error => {
+      // Handle any errors
+      console.error(error);
+    });
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error(error);
+  });
+</script>

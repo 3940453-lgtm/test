@@ -1,0 +1,70 @@
+/**
+	Uncomment to introduce new colors for IBCS charts and make it available
+**/
+
+/** Standard View **/
+/* 
+.forecast-data.vitara-marker,
+.ibcs-data .vitara-marker,
+.forecast-data .vitara-point,
+.forecast-data.vitara-point,
+.vitara-point.ibcs-data,
+.ibcs-data .vitara-point,
+.vitara_stripes path{
+    fill: #323232;
+    stroke: #323232 !important;
+}
+
+.previous-data.ibcs-data .vitara-point,
+.previous-data.ibcs-data.vitara-point{
+    fill: #a6a6a6;
+    stroke: #a6a6a6 !important;
+}
+
+*/
+
+/** Delta View data with positive values **/
+/* 
+.vitara-point.ibcs-data.data-positive,
+.vitara-point.ibcs-data.data-positive .vitara-marker,
+.vitara_stripes_positive path{
+    fill: #8bb400;
+    stroke: #8bb400 !important;
+}
+*/
+
+/** Delta View data with negative values **/
+/* 
+.vitara-point.ibcs-data.data-negative,
+.vitara-point.ibcs-data.data-negative .vitara-marker,
+.vitara_stripes_negative path{
+    fill: #e52e2d;
+    stroke: #e52e2d !important;
+}
+*/
+
+/* Waterfall colors */
+/* .actual-data .vitara-point.ibcs-data.data-positive{
+    fill: #595959;
+    stroke: #595959 !important;
+}
+.planned-data .vitara-point.ibcs-data.data-positive{
+    fill: #ffffff !important;
+    stroke: #595959 !important;
+}
+.previous-data .vitara-point.ibcs-data.data-positive{
+    fill: #bfbfbf;
+    stroke: #bfbfbf !important;
+}
+.actual-data .vitara-point.ibcs-data.data-negative{
+    fill: #262626;
+    stroke: #262626 !important;
+}
+.previous-data .vitara-point.ibcs-data.data-negative{
+    fill: #808080;
+    stroke: #808080 !important;
+}
+.planned-data .vitara-point.ibcs-data.data-negative{
+    fill: #ffffff !important;
+    stroke: #262626 !important;
+} */

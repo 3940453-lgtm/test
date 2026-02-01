@@ -1,0 +1,287 @@
+/*Change the navigation bar color to white*/
+
+.NavBarWrapper.mstrX.clearfix {
+
+    background-color: #ffffff !important;
+
+}
+
+/*Change the Library text color to Limagrain red*/
+
+.mstrd-NavBarTitle {
+
+  color: #A41128 !important;
+
+}
+
+ 
+
+/*Change the search icon color to Limagrain red*/
+
+.mstrd-SearchBox > .icon-search:before {
+
+  color: #A41128;
+
+}
+
+/*Remove the search box border*/
+
+.mstrd-SearchBox {
+
+  border: none !important;
+
+}
+
+/*Replace the library icon with desired image*/
+
+.mstr-nav-icon.icon-library {
+
+  margin: 8px !important;
+
+  width: 32px;
+
+  height: 32px;
+
+  background-image: url(images/limagrain_logo_100.png);
+
+  background-size: cover !important;
+
+}
+
+/*Remove the existing library icon on the top left corner */
+
+.mstr-nav-icon.icon-library:before {
+
+  content: '';
+
+}
+
+/*Change the backgroud color to  gray*/
+
+.DossiersListContainer.clearfix {
+
+  background-color: #DCDCDC !important;
+
+}
+
+
+/*Change table of content button color*/
+.mstr-nav-icon.icon-toc:before {
+
+  color: #A41128 !important;
+
+}
+
+/*Change bookmark button color*/
+.mstr-nav-icon.icon-bookmark:before {
+
+  color: #A41128 !important;
+
+}
+
+/*Change reset button color*/
+.mstr-nav-icon.icon-resetfile:before {
+
+  color: #A41128 !important;
+
+}
+
+/*Change filter button color*/
+.mstr-nav-icon.icon-filter:before {
+
+  color: #A41128 !important;
+
+}
+
+/*Change share button color*/
+.mstr-nav-icon.icon-share:before {
+
+  color: #A41128 !important;
+
+}
+
+/*Change sort arrow color*/
+.mstrd-SortArrow.mstrd-SortArrow--descending:before {
+
+  color: #A41128 !important;
+
+}
+
+.mstrd-SortArrow:before {
+
+  color: #A41128 !important;
+
+}
+
+
+
+/*Change view button color*/
+.viewall {
+
+  color: #A41128 !important;
+
+}
+
+
+.viewless {
+
+  color: #A41128 !important;
+
+}
+
+/*change the reprompt button color */
+
+.mstr-nav-icon.icon-reprompt:before {
+
+  color: #A41128 !important;
+
+}
+
+/* change the right vertical bar color */
+
+.NavItemVerticalDivider {
+  border-right-color: #A41128 !important;
+}
+
+/* change the Library filter color */
+
+.mstrd-LibraryFilterContainer-button {
+
+  color: #A41128 !important;
+
+}
+
+/*******/
+
+/* change comment button color */
+.mstr-nav-icon.icon-comments {
+
+  color: #A41128 !important;
+
+}
+
+/*change navigation bar when you reduce page */
+.mstrd-HamburgerIconContainer-icon:not(.mstrd-HamburgerIconContainer-icon--open) span{
+
+    background: #A41128 !important;
+
+}
+
+/*change color for title when you reduce page
+.dossier-mobile-menu-option.has-thumbnail > * :last-child {
+    color: #A41128;
+}
+*/
+/* change color for title when you reduce page*/
+p.mstrd-MobileDossierNavBarTitle.mstrd-MobileDossierNavBarTitle--pageName {
+
+    color: #A41128;
+
+}
+
+/* change color for title when you reduce page*/  
+.mstrd-MobileDossierNavBarToc {
+
+    color: #A41128 !important;
+    
+}
+
+/* change notification button color*/
+.mstr-NotificationIcon {
+
+    color: #A41128;
+
+}
+
+/* change icon previous in search bar*/
+span.back-button {
+
+      color: #A41128 !important;
+
+}
+
+
+/*change number of filter condition you choose*/
+.mstrd-LibraryFilterContainer-applyCount {
+
+    color: #A41128 !important;
+
+}
+
+/*change the color of the search icon in the mobile view*/
+@media screen and (max-width: 600px) {
+
+  .mstrd-SearchBox > .icon-search::before {
+
+    color: #41b5ff;
+
+  }
+
+}
+
+/*Change notification button color*/
+.mstr-nav-icon.icon-bell:before {
+
+  color: #A41128 !important;
+
+}
+
+/*change filter number color*/
+.mstr-nav-filter-number {
+
+  color: #A41128 !important;
+
+}
+
+/*change nav icons colors when selected*/
+.mstrd-NavBarWrapper ul>.mstr-navbar-item.selected,
+.mstrd-SelectionModeNavItemContainer-icon--active,
+.mstrd-Button.mstrd-Button--clear,
+.mstrd-MultiSelectionToolbar-selectionIcon--checked,
+.mstrd-MultiSelectionToolbar-selectionIcon i:before,
+.mstrd-NavBarWrapper,
+.mstrd-MultiSelectionToolbar,
+.mstrd-SliderConfirmDialog .mstrd-SliderConfirmDialog-content,
+.mstrd-DeleteDossier,
+.mstrd-ResetNavItem .mstr-nav-icon[disabled]
+{
+    color: #A41128 !important;
+}
+
+.mstrd-MultiSelectionToolbar-selectionIcon--checked,
+.mstrd-MultiSelectionToolbar-selectionIcon--partial,
+.mstrd-MultiSelectionToolbar-selectionIcon
+{
+    border-color: #A41128 !important;
+}
+
+.mstrd-MultiSelectionToolbar-selectionIcon--partial:before
+{
+    background: #A41128 !important;
+}
+
+.mstrd-SearchBox.mstrd-SearchBox--expanded {
+    box-shadow: 0 0 0 2px #A41128 !important;
+}
+
+.mstrd-Button.mstrd-Button--outline {
+    border-color: #A41128 !important;
+    color: #A41128 !important;
+    background-color: transparent;
+}
+
+.mstrd-Button.mstrd-Button--outline:focus,
+.mstrd-Button.mstrd-Button--outline:active,
+.mstrd-Button.mstrd-Button--outline:hover
+{
+    background-color: rgba(164, 17, 40,.05) !important;
+}
+
+.mstrd-SliderConfirmDialog[disabled] div[role=button]
+{
+    color: rgba(164, 17, 40,.4) !important;
+}
+
+.mstrd-NavBarIconHoverCircle circle {
+    fill: rgba(164, 17, 40,.05) !important;
+}

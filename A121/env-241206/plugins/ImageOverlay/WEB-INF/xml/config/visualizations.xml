@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="0" desc="ImageOverlay" drop-zones="plugins.ImageOverlay.ImageOverlayDropZones" editor-model="plugins.ImageOverlay.ImageOverlayEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="ImageOverlay" widget-type="7"/>
+  </visualization-list>
+</visualizations>

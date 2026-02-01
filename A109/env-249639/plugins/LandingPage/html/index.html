@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="defaultLanguage" content="en-US">
+    <meta name="availableLanguages" content="en-US">
+    <!-- , es, fr, de, it, pt, ko, ja, zh -->
+    <!-- <link rel="localization" href="../plugins/LandingPage/locales/LandingPage.{locale}.ftl"> -->
+    <link rel="icon" href="../plugins/LandingPage/images/favicon.ico">
+    <title>MicroStrategy on Azure</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../plugins/LandingPage/stylesheets/materialize/materialize.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="../plugins/LandingPage/stylesheets/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a target="_blank" rel="noopener noreferrer" href="http://www.microstrategy.com/us/analytics/technology#cloud-platform"
+                        class="brand-logo">
+                        <div class="valign-wrapper" style="height:100%;">
+                            <div class="svg microstrategy-logo"></div>
+                        </div>
+                    </a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a id="header-documentation" target="_blank" rel="noopener noreferrer" class="wave-effect">Community</a>
+                        </li>
+                        <li>
+                            <a id="header-sign-out" class="wave-effect">Sign Out</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <a href="#" data-activates="mobile-nav" class="button-collapse">
+                    <i class="material-icons">menu</i>
+                </a>
+            </div>
+        </nav>
+
+    </div>
+    <ul class="side-nav center-align" id="mobile-nav">
+        <li>
+            <a id="header-documentation-mobile" target="_blank" rel="noopener noreferrer">Community</a>
+        </li>
+        <li>
+            <a id="header-sign-out-mobile" target="_blank" rel="noopener noreferrer">Sign Out</a>
+        </li>
+    </ul>
+
+    <div id="vNav" class="vNav hide-on-med-and-down">
+        <ul class="vNav">
+            <li>
+                <a href="#welcome-banner">
+                    <div class="svg vnav-solutions label tooltipped" data-tooltip="Solutions" data-delay="50"
+                        data-position="right"></div>
+                </a>
+            </li>
+            <li style="margin-bottom: -9px; margin-top: -9px;">
+                <a href="#resources">
+                    <div class="svg vnav-resources label tooltipped" data-tooltip="More Resources" data-delay="50"
+                        data-position="right"></div>
+                </a>
+            </li>
+            <li id="security-vnav">
+                <a href="#security">
+                    <div class="svg vnav-security label tooltipped" data-tooltip="Digital Identity and Mobile Telemetry"
+                        data-delay="50" data-position="right"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="welcome-banner" class="red-banner">
+        <div class="container center-align">
+            <h3>Welcome to MicroStrategy on Azure</h3>
+            <div class="container">
+                <p>MicroStrategy on Azure is designed to get organizations up and running quickly. Built on the
+                    MicroStrategy
+                    2020 Platform, it delivers powerful enterprise analytics and mobility.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="solutions" class="solutions-section par">
+        <div class="container center-align">
+            <div class="row solutions-intro">
+                <h4>Solutions</h4>
+                <div class="container">
+                    <p>Use data to make better decisions and build a smarter enterprise.</p>
+                </div>
+            </div>
+
+            <div id="solutions-panels" class="row">
+                <div class="col s12 l4 solutions-panel">
+                    <div>
+                        <div class="svg solutions-panel-create-icon" style="margin: 0 auto;"></div>
+                        <h5>CREATE</h5>
+                        <p>Create and tell a story with stunning visualizations using your data or any of the most
+                            popular data
+                            sources.
+                        </p>
+                        <a target="_blank" rel="noopener noreferrer" id="solutions-panel-create" class="waves-effect waves-light btn">Create
+                            Dossier</a>
+                    </div>
+                </div>
+                <div class="col s12 l4 solutions-panel">
+                    <div>
+                        <div class="svg solutions-panel-share-icon" style="margin: 0 auto;"></div>
+                        <h5>SHARE</h5>
+                        <p>Create additional MicroStrategy Web users so you can share content and collaborate on
+                            dashboards.</p>
+                        <a target="_blank" rel="noopener noreferrer" id="solutions-panel-share" class="waves-effect waves-light btn">Manage
+                            Users</a>
+                    </div>
+                </div>
+                <div class="col s12 l4 solutions-panel">
+                    <div>
+                        <div class="svg solutions-panel-manage-icon" style="margin: 0 auto;"></div>
+                        <h5>MANAGE</h5>
+                        <p>Scale and customize your environment to meet your needs. Easily schedule starting, stopping,
+                            and
+                            upgrading your environment.</p>
+                        <a target="_blank" rel="noopener noreferrer" id="solutions-panel-manage" class="waves-effect waves-light btn"
+                            href="https://provision.customer.cloud.microstrategy.com">Manage Environment</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="resources" class="resources-section par">
+        <div class="container center-align">
+            <div class="row resources-intro">
+                <h4>More Resources</h4>
+                <div class="container">
+                    <p>Links to additional MicroStrategy tools to help you get even more from your data.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="resources-cards" class="container">
+            <div class="row">
+                <!-- MSTR Web -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-mstr"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">MicroStrategy Web</div>
+                                    <p>Create and consume analytical applications using your favorite web browser.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-web-launch-mobile"
+                                            class="blue-text">Launch</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-web-settings-mobile"
+                                            class="blue-text">Configure</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-web-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Launch</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-web-settings"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">settings</i>
+                                            </a>
+                                            <p>Configure</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MSTR Library -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-library"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">MicroStrategy Library</div>
+                                    <p>Go beyond traditional dashboards and reports by adding collaboration, responsive
+                                        design,
+                                        and a variety of content.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-library-launch-mobile"
+                                            class="blue-text">Launch</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-library-settings-mobile"
+                                            class="blue-text">Configure</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-library-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Launch</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-library-settings"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">settings</i>
+                                            </a>
+                                            <p>Configure</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MSTR Workstation -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-mstr"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">MicroStrategy Workstation</div>
+                                    <p>Download Workstation and generate insights offline OR when connected to the
+                                        server.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a id="resources-cards-workstation-apple-mobile" class="blue-text">Mac</a>
+                                    </div>
+                                    <div>
+                                        <a id="resources-cards-workstation-windows-mobile" class="blue-text">Windows</a>
+                                    </div>
+                                    <div>
+                                        <a id="resources-cards-workstation-settings-mobile" class="blue-text">Configure</a>
+                                    </div>
+                                    <!-- <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-workstation-launch-mobile" class="blue-text">Learn More</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div style="margin-left: 0px; margin-right: 0px;" class="center-align inline-block">
+                                        <div>
+                                            <a id="resources-cards-workstation-apple" class="btn-floating btn-large waves-effect white">
+                                                <div class="valign-wrapper" style="height: 100%">
+                                                    <div class="svg-apple"></div>
+                                                </div>
+                                            </a>
+                                            <p>Mac</p>
+                                        </div>
+                                    </div>
+                                    <div style="margin-left:25px; margin-right:25px;" class="center-align inline-block">
+                                        <div>
+                                            <a id="resources-cards-workstation-windows" class="btn-floating btn-large waves-effect white">
+                                                <div class="valign-wrapper" style="height: 100%">
+                                                    <div class="svg-windows"></div>
+                                                </div>
+                                            </a>
+                                            <p>Windows</p>
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 0px; margin-right: 0px;" class="center-align inline-block">
+                                        <div>
+                                            <a id="resources-cards-workstation-settings" class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">settings</i>
+                                            </a>
+                                            <p>Configure</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="center-align inline-block">
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-workstation-launch" class="btn-floating btn-large waves-effect white">
+                                            <i class="material-icons blue-text">launch</i>
+                                        </a>
+                                        <p>Learn More</p>
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MSTR Mobile Admin -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-mstr-gear"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">MicroStrategy Mobile Administration</div>
+                                    <p>Administrate the MicroStrategy Mobile configuration, governing, and preference
+                                        settings.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-admin-settings-mobile"
+                                            class="blue-text">Configure</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-admin-settings"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">settings</i>
+                                            </a>
+                                            <p>Configure</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MSTR Mobile App -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-mstr-mobile"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">MicroStrategy Mobile App</div>
+                                    <p>Experience existing visualizations, reports and dossiers on your iPhone, iPad,
+                                        and Android
+                                        devices.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-file_download-mobile"
+                                            class="blue-text">Download</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-settings-mobile"
+                                            class="blue-text">Configure</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-launch-mobile"
+                                            class="blue-text">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div style="margin-left: 0px; margin-right: 0px;" class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Learn More</p>
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 25px; margin-right: 25px;" class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-file_download"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">file_download</i>
+                                            </a>
+                                            <p>Download</p>
+                                        </div>
+                                    </div>
+                                    <div style="margin-left:0px; margin-right:0px;" class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-mobile-settings"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">settings</i>
+                                            </a>
+                                            <p>Configure</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MSTR Library App -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-library-mobile"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">MicroStrategy Library Mobile App</div>
+                                    <p>Go beyond traditional dashboards and reports by adding collaboration, responsive
+                                        design,
+                                        and a variety of content.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-dossier-file_download-mobile"
+                                            class="blue-text">Download</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-dossier-settings-mobile"
+                                            class="blue-text">Configure</a>
+                                    </div>
+                                    <!-- <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-dossier-launch-mobile" class="blue-text">Learn More</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-dossier-file_download"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">file_download</i>
+                                            </a>
+                                            <p>Download</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-dossier-settings"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">settings</i>
+                                            </a>
+                                            <p>Configure</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="center-align inline-block">
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-dossier-launch" class="btn-floating btn-large waves-effect white">
+                                            <i class="material-icons blue-text">launch</i>
+                                        </a>
+                                        <p>Learn More</p>
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MSTR Desktop -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-desktop"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">MicroStrategy Desktop</div>
+                                    <p>Download the powerful data discovery tool that allows users to access data and
+                                        build
+                                        dashboards.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a id="resources-cards-desktop-apple-mobile" class="blue-text">Mac</a>
+                                    </div>
+                                    <div>
+                                        <a id="resources-cards-desktop-windows-mobile" class="blue-text">Windows</a>
+                                    </div>
+                                    <div>
+                                        <a id="resources-cards-desktop-settings-mobile" class="blue-text tooltipped"
+                                            data-delay="50" data-position="top">Configure</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-desktop-launch-mobile"
+                                            class="blue-text">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div style="margin-left: 0px; margin-right: 0px;" class="center-align inline-block">
+                                        <div>
+                                            <a id="resources-cards-desktop-apple" class="btn-floating btn-large waves-effect white">
+                                                <div class="valign-wrapper" style="height: 100%">
+                                                    <div class="svg-apple"></div>
+                                                </div>
+                                            </a>
+                                            <p>Mac</p>
+                                        </div>
+                                    </div>
+                                    <div style="margin-left:25px; margin-right:25px;" class="center-align inline-block">
+                                        <div>
+                                            <a id="resources-cards-desktop-windows" class="btn-floating btn-large waves-effect white">
+                                                <div class="valign-wrapper" style="height: 100%">
+                                                    <div class="svg-windows"></div>
+                                                </div>
+                                            </a>
+                                            <p>Windows</p>
+                                        </div>
+                                    </div>
+                                    <div style="margin-left: 0px; margin-right: 0px;" class="center-align inline-block">
+                                        <div>
+                                            <a id="resources-cards-desktop-settings" class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">settings</i>
+                                            </a>
+                                            <p>Configure</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-desktop-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Learn More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- RDP -->
+                <div id="resources-cards-remote-desktop-gateway" class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-purple-db"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">Remote Desktop Gateway</div>
+                                    <p>Access all of your machines using a web browser.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-remote-gateway-launch-mobile"
+                                            class="blue-text">Launch</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-remote-gateway-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Launch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- HyperIntelligence -->
+                <div id="resources-cards-hyperintelligence" class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-mstr"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">HyperIntelligence&trade;</div>
+                                    <p>Transform your business with zero-click insights. Available everywhere, all the time, for everyone.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-hyperintelligence-file_download-mobile"
+                                            class="blue-text">Download</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-hyperintelligence-launch-mobile" class="blue-text">Learn More</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="resources-cards-hyperintelligence-help-mobile"
+                                            class="blue-text">Help</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-hyperintelligence-file_download"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">file_download</i>
+                                            </a>
+                                            <p>Download</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-hyperintelligence-launch" class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Learn More</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="resources-cards-hyperintelligence-help"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">help</i>
+                                            </a>
+                                            <p>Help</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="connections" class="connections-section">
+
+        <div id="connections-main-row" class="row container valign-wrapper-md-plus-1-and-up">
+            <div class="col s12 l4">
+                <div class="row">
+                    <div>
+                        <div class="valign-wrapper" style="width: fit-content; margin: 0 auto;">
+                            <i class="material-icons blue-text medium" style="float:right;">link</i>
+                            <div class="connections-header left-align">
+                                <h5>Essential connections</h5>
+                                <p>Useful links to applications and servers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l8 line">
+                <div class="row connections-connections">
+                    <div class="row">
+                        <div class="col s6">
+                            <h6>Connect to Database</h6>
+                            <a class="tooltipped" data-delay="50" data-position="top" href="javascript:void(0)" id="rds-endpoint"></a>
+                        </div>
+                        <div class="col s6">
+                            <h6>Intelligence Server Address</h6>
+                            <div id="intelligence-server-address"></div>
+                            <!-- <a class="tooltipped" data-delay="50" data-position="top" href="javascript:void(0)" id="intelligence-server-address"></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <h6>MicroStrategy RESTful APIs</h6>
+                            <a class="tooltipped" data-delay="50" data-position="top" href="javascript:void(0)" id="restful-api"></a>
+                        </div>
+                        <div class="col s6">
+                            <h6>VNC Address</h6>
+                            <div id="vnc-address"></div>
+                            <!-- <a class="tooltipped" data-delay="50" data-position="top" href="javascript:void(0)" id="vnc-address"></a> -->
+                        </div>
+                        <div class="col s6">
+                            <h6>RDP Address</h6>
+                            <div id="rdp-address"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <h6>Developer Machine Name</h6>
+                            <a class="tooltipped" data-delay="50" data-position="top" href="javascript:void(0)" id="developer-machine-name"></a>
+                        </div>
+                        <div class="col s6">
+                            <h6>Tomcat SDK</h6>
+                            <a class="tooltipped" data-delay="50" data-position="top" href="javascript:void(0)" id="tomcat-sdk"></a>
+                        </div>
+                        <div class="col s6">
+                            <h6>Data Server Address</h6>
+                            <div id="data-server-address"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="security" class="security-section par">
+        <div class="container center-align">
+            <div class="row security-intro">
+                <h4>Digital Identity and Mobile Telemetry</h4>
+                <div class="container">
+                    <p>Deploy actionable identity intelligence to manage, protect, and optimize enterprise assets,
+                        resources, and devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="security-cards" class="container">
+            <div class="row">
+                <!-- Identity Manager -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-identity-manager"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">Identity Manager</div>
+                                    <p>Provision digital credentials, manage user roles, and grant or revoke system
+                                        access.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="security-cards-network-manager-launch-mobile"
+                                            class="blue-text">Launch</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="security-cards-network-manager-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Launch</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MSTR Badge -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-badge"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">Badge</div>
+                                    <p>Deploy digital credentials to employees, customers, suppliers, and parters for
+                                        convenient physical and logical access.</p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="security-cards-badge-file_download-mobile"
+                                            class="blue-text">Download</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="security-cards-badge-launch-mobile"
+                                            class="blue-text">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="security-cards-badge-file_download"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">file_download</i>
+                                            </a>
+                                            <p>Download</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="security-cards-badge-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Learn More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Communicator -->
+                <div class="col s12 l6 xl4 hover-reveal">
+                    <div class="card horizontal">
+                        <div class="card-image valign-wrapper">
+                            <div class="svg card-communicator"></div>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content valign-wrapper">
+                                <div>
+                                    <div class="card-title">Communicator</div>
+                                    <p>Enable communication with individuals and groups based on user location and/or
+                                        directory attributes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="security-cards-communicator-file_download-mobile"
+                                            class="blue-text">Download</a>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" rel="noopener noreferrer" id="security-cards-communicator-launch-mobile"
+                                            class="blue-text">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-reveal hide-on-med-and-down">
+                            <div class="row valign-wrapper">
+                                <div class="center-align" style="width: 100%;">
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="security-cards-communicator-file_download"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">file_download</i>
+                                            </a>
+                                            <p>Download</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-align inline-block">
+                                        <div>
+                                            <a target="_blank" rel="noopener noreferrer" id="security-cards-communicator-launch"
+                                                class="btn-floating btn-large waves-effect white">
+                                                <i class="material-icons blue-text">launch</i>
+                                            </a>
+                                            <p>Learn More</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../plugins/LandingPage/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../plugins/LandingPage/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../plugins/LandingPage/javascripts/materialize/js/bin/materialize.js"></script>
+    <script src="../plugins/LandingPage/javascripts/lib/clipboard-polyfill.js"></script>
+    <script src="../plugins/LandingPage/javascripts/main.js"></script>
+</body>
+
+</html>

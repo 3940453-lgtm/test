@@ -1,0 +1,8 @@
+<shortcut-list name="fontPicker">
+  <shortcut desc="Montserrat" feature-id="montserrat" name="Montserrat">
+    <attributes>
+      <attribute name="style" source="const" value="font-family: Montserrat"/>
+      <attribute name="value" source="const" value="Montserrat"/>
+    </attributes>
+  </shortcut>
+</shortcut-list>

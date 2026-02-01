@@ -1,0 +1,8 @@
+<visualizations>
+    <visualization-list name="ajax">
+        <visualization id="SmartKPIWidget" desc="Smart KPI widget" scope="19" projects="" style-name="SmartKPIWidget" is-mojo="true" metric-minimum="1" widget-type="7" editor-model="plugins.SmartKPIWidget.SmartKPIWidgetEditorModel" drop-zones="plugins.SmartKPIWidget.SmartKPIWidgetDropZones"/>
+    </visualization-list>
+    <visualization-list name="ipad" view-mode="71" show-in-web="false">
+        <visualization id="SmartKPIWidget" desc="Smart KPI widget" scope="19" projects="" style-name="SmartKPIWidget" is-mojo="true" metric-minimum="1" widget-type="7" editor-model="plugins.SmartKPIWidget.SmartKPIWidgetEditorModel" drop-zones="plugins.SmartKPIWidget.SmartKPIWidgetDropZones"/>
+    </visualization-list>
+</visualizations>

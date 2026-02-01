@@ -1,0 +1,166 @@
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCBarChart>div>div {
+    background-image: url("icons/barChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCColumnChart>div>div {
+    background-image: url("icons/columnChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCStackedBarChart>div>div {
+    background-image: url("icons/stackedBarChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCStackedColumnChart>div>div {
+    background-image: url("icons/stackedColumnChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCPieChart>div>div {
+    background-image: url("icons/donutChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCLineChart>div>div {
+    background-image: url("icons/lineChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCAreaChart>div>div {
+    background-image: url("icons/areaChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCBubbleChart>div>div {
+    background-image: url("icons/bubbleChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCScatterChart>div>div {
+    background-image: url("icons/scatterChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCSpacer>div>div {
+    background-image: url("icons/spacer.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCFilterChart>div>div {
+    background-image: url("icons/filterChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCSparklineChart>div>div {
+    background-image: url("icons/sparklineChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCHeatmapChart>div>div {
+    background-image: url("icons/heatmap.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCFunnelChart>div>div {
+    background-image: url("icons/funnelChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCBulletChart>div>div {
+    background-image: url("icons/bulletChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCWaterfallChart>div>div {
+    background-image: url("icons/waterfallChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-D3KPIAnimationChart>div>div {
+    background-image: url("icons/gauge.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraD3CalHeatMapChart>div>div {
+    background-image: url("icons/gauge.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraHCTrellisChart>div>div {
+    background-image: url("icons/gauge.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-SimpleKPIChart>div>div {
+    background-image: url("icons/kpi.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-D3SunburstChart>div>div {
+    background-image: url("icons/sunburstChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCTornadoChart>div>div {
+    background-image: url("icons/tornadoChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCColumnRangeChart>div>div {
+    background-image: url("icons/columnRangeChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCKPIRingChart>div>div {
+    background-image: url("icons/kpiRing.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraD3CalHeatMapChart>div>div {
+    background-image: url("icons/calendarHeatmap.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraHCTrellisChart>div>div {
+    background-image: url("icons/trellisChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-GridChart>div>div {
+    background-image: url("icons/grid.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraMekkoChart>div>div {
+    background-image: url("icons/mekkoChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraD3WordCloudStyle>div>div {
+    background-image: url("icons/wordCloudChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraWordCloudStyle>div>div {
+    background-image: url("icons/wordCloudChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-D3WaffleChart>div>div {
+    background-image: url("icons/waffleChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCDumbbellChart>div>div {
+    background-image: url("icons/dumbbellChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraMicroChart>div>div {
+    background-image: url("icons/microChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCHistogramChart>div>div {
+    background-image: url("icons/histogramChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-D3CirclePackingChart>div>div {
+    background-image: url("icons/circlePackingChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCSlopeChart>div>div {
+    background-image: url("icons/slopeChart.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCAngularGaugeChart>div>div {
+    background-image: url("icons/angularGauge.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCSankeyChart>div>div {
+    background-image: url("icons/sankey.png");
+    background-position: 0 0;
+}
+/*
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-VitaraDrillChart>div>div {
+    background-image: url("icons/sankey.png");
+    background-position: 0 0;
+}
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCTileMapChart>div>div {
+    !* background-image: url("icons/slopeChart.png"); *!
+    !* background-position: 0 0; *!
+}
+
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-HCDrillChart2>div>div {
+    !* background-image: url("icons/slopeChart.png"); *!
+    !* background-position: 0 0; *!
+}*/

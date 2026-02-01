@@ -1,0 +1,59 @@
+#Version = 2.3
+
+#start a line with # mark for comments
+#use commas to separate multiple values of a property
+
+#color palette customization
+#palette.<paletteName>=hexValue1,hexValue2, (hash sign in the hex value is optional). you can use
+#palette.list = <paletteName>,<paletteName> (List all the color palettes to be included)
+#palette.defaultPalette = <paletteName> (Specify which palette defined here should be the default palette)
+
+palette.defaultPalette = RNST1
+palette.list= RNST1,RNST2
+palette.RNST1=0E2D6D,009779,2AA8E0,0073B1,041645,96D4E8,000E1F,EC008C
+palette.RNST2=0e2d6d,009779,041645,2aa8e0,0073B1,96d4e8,e8e4d8,ffd380,ea5a00,f9a608,ec008c
+
+#printServerURL=http://localhost:7088/
+licenseServerURL=https://cloud.vitara.co/licenseserver/api/
+
+#used for limiting the number of series (colors) that will be allowed while choosing create series by
+#attribute
+seriesLimit=50
+
+#grid custom images
+#gridCustomImages=<ImageName1>,<ImageName2>,<ImageName3>, (Mention all the custom image names here. Add the #images under VitaraCharts/custom/images/ with the same above image names with .png extension)
+#uncomment the line below for a sample of custom icons
+#gridCustomImages=diamondAnimated.gif, cloud-download
+
+#Specify user privilege for enabling Vitara Property Editor in MSTR documents
+#Default Value: Web Document Design - 125 (as defined in DSSXML User Privileges)
+#checkPrivilegeForPropertiesEditor=125
+
+#specify user access control levels for enabling Vitara Property Editor in MSTR documents 
+#choose from the following access control levels - read, write, use, execute, fullcontrol, delete
+#accessControlLevels=read, write
+
+#Metric suffixes used to shorten high numbers in axis labels. 
+#empty-value, space, null are discarded.
+shortFormatSymbols=k,M,B,T,P,E
+
+#Support for right to left(RTL) in VitaraCharts
+#rtlSupport=true
+
+#Fonts Customization
+#font.customFonts=<List of custom fonts comma separated>
+#font.defaultFont=<Name of the font to be set as default>
+
+#Formatting options for negative values [Shortened(Default) format]
+#possible values are 
+#      -1 use Microstrategy formatting, 
+#       0 use a minus sign, 
+#       1 use paranthesis.
+metricNegativeValueFormat=-1
+
+#Enable/Disable context menu in presentation mode. Enabled by default.
+#set 1 to enable and 0 to disable.
+statePresentation.contextMenu=1
+
+#Enable/Disable URL Links within chart labels/tooltip. Disabled by default.
+security.allowURLLinks=0

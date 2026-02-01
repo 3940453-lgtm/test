@@ -1,0 +1,16 @@
+.mstrmojo-VIGallery .mstrmojo-VIGalleryList .item.ic-WordsmithNLG>div>div {
+    background-image: url(images/icon.png);
+    background-position: 0 0;	    
+	margin: 5px;
+}
+
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgWordsmithNLG {
+    background:url(images/icon.png)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgWordsmithNLG {
+    background:url(images/icon.png)  no-repeat scroll 4px;
+    background-size: 16px;
+}

@@ -1,0 +1,5 @@
+<visualizations>
+   <visualization-list name="ajax" view-mode="51">
+		<visualization id="Mapbox" desc="Geospatial Service" desc-id="mstrWeb.15751" scope="0" style-name="MapboxVisualizationStyle" />
+   </visualization-list>
+</visualizations>

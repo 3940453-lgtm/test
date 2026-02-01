@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="0" desc="NarrativeScienceNLG" drop-zones="plugins.NarrativeScienceNLG.NarrativeScienceNLGDropZones" editor-model="plugins.NarrativeScienceNLG.NarrativeScienceNLGEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="NarrativeScienceNLG" widget-type="7"/>
+  </visualization-list>
+</visualizations>

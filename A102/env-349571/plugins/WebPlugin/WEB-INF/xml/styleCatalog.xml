@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE StyleCatalog SYSTEM "styleCatalog.dtd">
+<StyleCatalog version="2.0">
+  <TransformDefns>
+    <TransformDefn class="com.sdk.samples.transforms.CustomProjectsTransform" name="CustomProjectsTransform"/>
+    <TransformDefn class="com.sdk.samples.transforms.CustomProjectsTransform2" name="CustomProjectsTransform2"/>
+    <TransformDefn class="com.sdk.samples.transforms.CustomProjectsTransform3" name="CustomProjectsTransform3"/>
+  </TransformDefns>
+  <Styles>
+    <Style name="ProjectsStyle" transform="CustomProjectsTransform3"/>
+  </Styles>
+</StyleCatalog>

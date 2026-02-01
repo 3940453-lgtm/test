@@ -1,0 +1,15 @@
+<!DOCTYPE block SYSTEM "../dtds/blockLibrary.dtd">
+
+ 
+
+          <!-- Frame processor --> 
+
+                 <block>
+
+                      <assignments>
+
+                            <property name="timeout">240000</property>
+
+                       </assignments>
+
+                   </block>

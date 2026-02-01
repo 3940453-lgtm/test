@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- include the embeddinglib.js from the library -->
+    <script src="https://analytics-dev.limagrain.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+</head>
+<body onload="showDossier()">
+<div id="myDossier" height="100%" width="100%"></div>
+<script>
+
+    var BASE_URL = "https://analytics-dev.limagrain.com/MicroStrategyLibrary";
+    var projectId = "1969863E11E9F53C745A0080EF450A6D";
+    var dossierId = "420ECD4711E820BEB5590080EFE5F8EE";
+
+    var placeHolderDiv = document.getElementById("myDossier");
+
+	console.log(login);
+	console.log(BASE_URL);
+	
+	console.log(getCookie(""));
+	console.log(document.cookie);
+	console.log(document.cookie.split(';')[0]);
+	console.log(document.cookie);
+	console.log(document.cookie.split(';').find(row => row.startsWith('iSession=')).split('=')[1]);
+	getCookie("iSession");
+
+    function showDossier() {
+        var dossierUrl = BASE_URL + '/app/' + projectId + '/' + dossierId;
+        microstrategy.dossier.create({
+            placeholder: placeHolderDiv,
+            url: dossierUrl,
+            enableCustomAuthentication: true,
+            enableResponsive: true,
+            customAuthenticationType: microstrategy.dossier.CustomAuthenticationType.AUTH_TOKEN,
+            getLoginToken: getCookie("iSession")
+        });
+    }
+
+    function login() {
+
+    }
+	
+	
+	function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+</script>
+
+</body>
+</html>

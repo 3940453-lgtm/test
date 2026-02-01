@@ -1,0 +1,16 @@
+<mc>
+	<!-- ESRI map configuration -->
+	<ec>
+		<apps>
+			
+		</apps>
+	</ec>
+
+	<!-- Google map configuration -->
+	<!-- <gc></gc> -->
+
+	<!-- MapBox configuration -->
+	<mbc>
+		<tk></tk>
+	</mbc>
+</mc>

@@ -1,0 +1,144 @@
+<mc>
+	<!-- ESRI map configuration -->
+	<ec>
+		<!-- The following nodes are used for on-premises map integration -->
+		<bms>
+			<bm key="default"> </bm>
+		</bms>
+		<pjs>
+		</pjs>
+		<!-- End of nodes used for on-premises map integration -->
+
+		<!-- The following nodes are used for cloud-based map integration -->
+
+		<layers>
+			<layer id="1"
+					title="US-States"
+					ml="https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_States_Generalized/FeatureServer/0"/>
+			<layer id="2"
+					title="US-ZipCodes"
+					ml="https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_ZIP_Codes/FeatureServer/0"/>
+			<layer id="3"
+					title="US-Counties"
+					ml="https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Counties_Generalized/FeatureServer/0"/>
+			<layer id="4"
+					title="World-Countries Detailed"
+					ml="https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/World_Countries/FeatureServer/0" />
+			<layer id="5"
+					title="World-Countries Generalized"
+					ml="https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/World_Countries_(Generalized)/FeatureServer/0" />
+			<layer id="6"
+					title="World-Admin-Divisions"
+					ml="https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/World_Administrative_Divisions/FeatureServer/0"/>
+			<layer id="7"
+					title="World-Continents"
+					ml="https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/World_Continents/FeatureServer/0"/>
+			<layer id="8"
+					title="Administrative Areas level 1"
+					ml="kml/ADM_Shape_1.kml">
+					<shapeKeys>
+						<shapeKey key="DESC" path="/ExtendedData/Data[@name='DESC']/value"/>
+					</shapeKeys>
+			</Layer>
+
+		</layers>
+		<!-- The following values identify the geo-role of the primary (roleId) and secondary (sfr) geo attributes in the <shape> node     
+			roleId 1 = "City"
+			roleId 2 = "State"
+			roleId 3 = "Country"
+			roleId 4 = "Location"
+			roleId 5 = "Latitiude"
+			roleId 6 = "Longitude"
+			roleId 7 = "Other"
+			roleId 8 = "ZipCode"
+			roleId 9 = "County"
+		End of values that identify geo-role of the primary (roleId) and secondary (sfr) geo attributes -->
+		<shapes>
+			<shape id="100"
+					default="true"
+					qf="['STATE_NAME']"
+					ea="state_name"
+					layerId="1" />
+			<shape id="200"
+					qf="['state_abbr']"
+					ea="state_abbr"
+					layerId="1" />
+			<shape id="300"
+					qf="['ZIP']"
+					ea="ZIP"
+					layerId="2"/>
+			<shape id="4"
+					qf="['ISO','Country']"
+					ea="Country"
+					layerId="5" />
+			<shape id="5"
+					qf="['NAME']"
+					ea="NAME"
+					sf="COUNTRY"
+					sfr="3"
+					layerId="6" />
+			<shape id="6"
+					roleId="9"
+					type="Polygon"
+					qf="['NAME']"
+					ea="NAME"
+					sf="STATE_NAME"
+					sfr="2"
+					pk="FID"
+					layerId="3" />
+			<shape id="7"
+					desc="Countries of World (ISO)"
+					roleId="3"
+					type="Polygon"
+					descWeb="mstrweb.9229"
+					descFlash="mstr.1622"
+					descDesktop="26973"
+					qf="['ISO','Country']"
+					ea="ISO"
+					layerId="5" />
+			<shape id="8"
+					desc="Continent of World by Name"
+					roleId="3"
+					type="Polygon"
+					descWeb="mstrweb.9229"
+					descFlash="mstr.1622"
+					descDesktop="26973"
+					qf="['CONTINENT']"
+					ea="CONTINENT"
+					layerId="7" />
+			<shape id="9"
+					desc="Continent of World by FID"
+					roleId="3"
+					type="Polygon"
+					descWeb="mstrweb.9229"
+					descFlash="mstr.1622"
+					descDesktop="26973"
+					qf="['FID']"
+					ea="FID"
+					layerId="7" />
+			<shape id="11"
+					custom="true"
+					plugin="ConnectorForMaps"
+					desc="Country Admin Level 1"
+					descWeb="mstrweb.7777i"
+					descFlash="mstr.6666i"
+					descDesktop="5555i"
+					roleId="7"
+					type="Polygon"
+					default="false"
+					shapeCat="1004"
+					shapeKey="DESC"
+					layerId="8" />
+		</shapes>
+
+		<!-- End of Nodes used for cloud-based map integration -->
+	</ec>
+
+	<!-- Google map configuration -->
+	<!-- <gc></gc> -->
+
+	<!-- MapBox configuration -->
+	<mbc>
+		<tk/>
+	</mbc>
+</mc>

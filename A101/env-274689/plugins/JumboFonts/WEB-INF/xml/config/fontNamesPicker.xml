@@ -1,0 +1,14 @@
+<shortcut-list name="fontPicker">
+  <shortcut desc="Jumbo TheSans" name="pkrJumbo TheSans">
+    <attributes>
+      <attribute name="style" source="const" value="font-family:Jumbo TheSans"/>
+      <attribute name="value" source="const" value="Jumbo TheSans"/>
+    </attributes>
+  </shortcut>
+  <shortcut desc="JumboMindset" name="pkrJumboMindset">
+    <attributes>
+      <attribute name="style" source="const" value="font-family:JumboMindset"/>
+      <attribute name="value" source="const" value="JumboMindset"/>
+    </attributes>
+  </shortcut>
+</shortcut-list>

@@ -1,0 +1,35 @@
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml #mnuInsertWgOrgChart {
+    background:url(images/icon.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgOrgChart {
+    background:url(images/icon.svg) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuLayoutxml #mnuInsertWgOrgChart {
+    background:url(images/icon.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertIPhoneWidgetMenuEditorLayoutxml  #mnuInsertWgOrgChart {
+    background:url(images/icon.svg)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+.custom-vis-layout.orgchart td.google-visualization-orgchart-node {
+ border: 1px solid lightgray;
+ padding: 8px 16px;
+ border-radius: 4px;
+ box-shadow: rgba(0, 0, 0, 0.0784314) 0px -2px 0px 0px inset, rgba(0, 0, 0, 0.2) 0px 1px 1px 0px, rgba(0, 0, 0, 0.0980392) 0px 2px 4px 0px;
+ transition: all 0.2s ease-out;
+ background: white;
+ }
+
+.custom-vis-layout.orgchart .google-visualization-orgchart-linebottom {
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: rgb(31, 119, 180);
+ }
+

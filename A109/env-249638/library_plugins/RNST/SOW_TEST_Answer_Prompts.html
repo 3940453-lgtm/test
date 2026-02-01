@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+   <title>Share of Wallet 2.0</title>
+    <style>
+      pre {
+        width: 100;
+      }
+
+    </style>
+    <script type="text/javascript" src="https://renasant-test.cloud.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+  </head>
+	<body>
+		<div id="myDossier"></div>
+
+<script type="text/javascript">
+
+/* These are the parameters ----------------------------- */
+baseRestURL = "https://renasant-test.cloud.microstrategy.com/MicroStrategyLibrary";
+loginPage	= "https://renasant-test.cloud.microstrategy.com/MicroStrategyLibrary/auth/ui/loginPage"
+projectID   = "86A65C099B458BC7EA30E08A7062983F";
+dossierID   = "1E9BC0BB3841834926CF1598DBD41318";
+promptID	= "F27C71654C2211A4174B5DAAE1D1050E";
+username    = "mstr_lib_edit";
+password    = "";
+
+//dossier link with parameter - file://psfilesrv1/UserFolder/go010818/My%20Documents/MicroStrategy/Scripts/SOW_TEST_Answer_Prompts.html?param=390930
+/* End of configuration parameters  ----------------------------- */
+
+
+var urlParams = new URLSearchParams(window.location.search);
+var inputParam = urlParams.get('param');
+
+/* Generate some helper variables and functions */
+/*
+const loginOptions = {
+	method: 'POST',
+	credentials: 'include', // include cookie //
+	mode: 'cors', // set as CORS mode for cross origin resource sharing //
+	headers: { 'Content-Type': 'application/json' },
+	body: JSON.stringify({
+		// loginMode: 1  // Login as Standard User. //
+		"loginMode": 16, // ldap login mode //
+		"username": username,
+		"password": password
+	})
+};
+
+// Function to fetch auth token from REST API //
+const getAuthToken = () => {
+	return fetch(baseRestURL + '/api/auth/login', loginOptions).then((response) => {
+		if (response.ok) {
+			return response.headers.get('x-mstr-authToken');
+		} else if (response.status === 401) {
+			// try again //
+			throw new Error('Login failed');
+		} else {
+			response.json().then((json) => {
+				console.log(json);
+			});
+		}
+	}).catch((error) => {
+		console.log(error);
+	});
+};
+*/
+const getlogin = {
+	method: 'GET',
+	credentials: 'include', /* include cookie */
+	mode: 'cors', /* set as CORS mode for cross origin resource sharing */
+	headers: { 'Content-Type': 'application/json' }
+	};
+
+const getToken = () => {
+	return fetch(baseRestURL + '/api/auth/token',getlogin).then((response) => {
+		if (response.ok) {
+			return response.headers.get('x-mstr-authToken');
+		} else if (response.status === 401) {
+			/* try again */
+			window.location.href = loginPage
+		} else {
+			response.json().then((json) => {
+				console.log(json);
+				throw new Error('Login failed');
+			});
+		}
+	}).catch((error) => {
+		console.log(error);
+	});
+};
+			
+/* ----------------------------- */
+/* This is where we fetch the auth token and then use it to get data */
+/* This uses helper functions that are defined further down. */
+getToken()
+.then(token => {
+   // Make a POST request to create a dossier instance
+	fetch(
+		baseRestURL + '/api/dossiers/' + dossierID + '/instances',
+		{
+			method: 'POST',
+			credentials: 'include', /* include cookie */
+			mode: 'cors', /* set as CORS mode for cross origin resource sharing */
+			headers: {
+				'Content-Type': 'application/json',
+				'Accept': 'application/json',
+				'X-MSTR-AuthToken': token,
+				'X-MSTR-ProjectID': projectID
+			}
+		}
+	).then(response => {
+		return response.json();
+	}).then(instance => {
+		/* ------------ */
+		/* Use the data */
+		/* ------------ */
+		console.log(instance);
+		var instanceID = instance.mid;	   
+
+	   // Make a GET request to get the list of prompts for the dossier instance
+		fetch(
+			baseRestURL + '/api/documents/' + dossierID + '/instances/' + instanceID + '/prompts?id=' + dossierID + '&instanceId=' + instanceID,
+			{
+				method: 'GET',
+				credentials: 'include', // include cookie //
+				mode: 'cors', // set as CORS mode for cross origin resource sharing //
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json',
+					'X-MSTR-AuthToken': token,
+					'X-MSTR-ProjectID': projectID
+				}
+			}
+		).then(response => {
+		return response.json();
+		}).then(prompts => {
+		/* ------------ */
+		/* Use the data */
+		/* ------------ */
+			console.log(prompts);	
+		   // Answer a specified prompt using the input parameter (replace {promptId} with the actual prompt ID)
+			prompts.forEach(prompt => {
+				  if (prompts.promptId === promptID) {
+					prompts.answers = inputParam;
+	//				prompts.answer = '390930';			
+				  }
+				});
+			console.log(JSON.stringify(prompts));
+			console.log(inputParam);
+			console.log(promptID);
+			var raw = JSON.stringify({
+					  "prompts": [
+						{
+						  "id": promptID,
+						  "type": "VALUE",
+						  "answers": inputParam,
+						  "defaultAnswer": inputParam,
+						  "required":true,
+						  "closed": false,
+						  "dataType": "NUMERIC"
+						}
+					  ]
+					});
+			console.log(raw);
+		   // Make a PUT request to answer the prompts
+		fetch(
+			baseRestURL + '/api/documents/' + dossierID + '/instances/' + instanceID + '/prompts/answers',
+			{
+				method: 'PUT',
+				credentials: 'include', // include cookie //
+				mode: 'cors', // set as CORS mode for cross origin resource sharing //
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json',
+					'X-MSTR-AuthToken': token,
+					'X-MSTR-ProjectID': projectID
+				},
+				body: raw
+				//JSON.stringify(prompts)
+			}
+			).then(response => response.text())
+			 .then(result => console.log(result))
+			 .catch(error => console.log('error', error));
+
+		  // Redirect the page to the created dossier instance
+//				console.log(baseRestURL + '/api/' + 'dossiers/' + dossierID + '/instances/' + instanceID);	  
+//	 		    window.location.href = baseRestURL + '/api/' + 'dossiers/' + dossierID + '/instances/' + instanceID; 
+				var placeHolderDiv = document.getElementById("myDossier");
+				var dossierUrl = baseRestURL + '/app/' + projectID + '/' + dossierID;
+				var objinstance = instance;
+				microstrategy.dossier.create({
+				  placeholder: placeHolderDiv,
+				  url: dossierUrl,
+				  instance: objinstance,
+				  enableResponsive: true,
+				  containerHeight: '1000px',
+		  	      dockedTOC: {
+					dockedPosition: "left",
+					theme: "dark",
+					canClose: false,
+					dockChangeable: false,
+					isDocked: true
+					},
+        }).then(dossier => {
+          d = dossier
+        }).catch(e => {
+          console.log(e.message)
+        });
+
+		}).catch((error) => {
+			console.log(error);
+		});	
+		}).catch((error) => {
+			console.log(error);
+		});	
+}).catch(error => { console.log(error); });
+/* ----------------------------- */
+</script>
+
+</body>
+</html>

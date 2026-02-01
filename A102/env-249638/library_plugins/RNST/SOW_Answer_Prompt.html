@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Example</title>
+    <script type="text/javascript" src="https://renasant.cloud.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+    <!-- This is for the playground button. You don't need it in your application.  -->
+    <script type="text/javascript" src="js/jsfiddle.js"></script>    
+  </head>
+
+  <body>
+
+    <div>
+      <div>Server:<input type="text" id="baseURL" value="https://renasant.cloud.microstrategy.com/MicroStrategyLibrary" size="100"></div>
+      <div>ProjectID: <input type="text" id="projectId" value="521FF83011EA9C6E9EBD0080EFC5F3D9" size="100"></div>
+      <div>DossierID: <input type="text" id="dossierId" value="161BFA9511EA9BA3253C0080EFB5FE8D" size="100"></div>
+
+      <p>The <input type="submit" onclick="autoLogin()" value="autoLogin()" /> function can be used to automatically show dossier if the user has already logged in.</p>
+      <p>Otherwise, you can click <input type="submit" onclick="login('1048576')" value="Login with SAML" /> or <input type="submit" onclick="login('4194304')" value="Login with OIDC" />to log in. 
+      </p>
+      <p>This solution works on MicroStrategy 2021+, except Update 2. See another example for Update 2. This solution works for both SAML (loginMode=1048576) and OIDC (loginMode=4194304) authentications. Just need to change the loginMode parameter.</p>
+      <p>
+        If you need this for MicroStrategy 2020, you need to add login-dialog.jsp to your library server under auth directory. You can find a copy in MicroStrategy 2021 Library Server.
+      </p>
+    </div>
+
+    <div id="myDossier"></div>
+
+    <script type="text/javascript">
+
+  // Define the MicroStrategy REST API endpoint
+  var apiUrl = "https://renasant.cloud.microstrategy.com/MicroStrategyLibrary/api/";
+
+  // Define the SAML login endpoint
+  var samlLoginUrl = "https://renasant.cloud.microstrategy.com/MicroStrategyLibrary";
+  
+  // Define Project
+  var projectId = "521FF83011EA9C6E9EBD0080EFC5F3D9";	//Share+Wallet (PROD)
+  
+  // Define Dossier
+  var dossierID = "161BFA9511EA9BA3253C0080EFB5FE8D";	//Share of Wallet Results (PROD)
+  
+  // Define prompt
+  var promptId = "F27C71654C2211A4174B5DAAE1D1050E";	//Customer Value Prompt (TEST and PROD)
+
+  // Define the authentication credentials
+  var username = "your-username";
+  var password = "your-password";
+
+  // Get the input parameter value from the URL query string
+  var urlParams = new URLSearchParams(window.location.search);
+  var inputParam = urlParams.get('param');
+
+      //Fetch auth token
+      function getAuthToken() {
+        let options = {
+          method: "GET",
+          credentials: "include", // Including cookie
+          mode: "cors", // Setting as cors mode for cross origin
+          headers: { "content-type": "application/json" },
+        };
+        const baseURL = document.getElementById("baseURL").value;
+        return fetch( baseURL + "/api/auth/token",options
+        ).then((response) => {
+          if (response.ok) {
+            return response.headers.get("x-mstr-authtoken");
+          }
+          else {
+            // Log the response json if it failed
+            return null
+          }
+        }).catch((error) => {
+          // Log the error if failed
+          return null
+        })
+      }
+
+      function login(mode) {
+
+        //listen to the message will be sent from MicroStrategy Library login page
+        window.addEventListener("message", messageEventListener);
+
+        const baseURL = document.getElementById("baseURL").value;
+
+        //need to store the tab. close it later.
+        this.newTab = window.open(baseURL + "/auth/login-dialog.jsp?loginMode="+mode+"&callback-origin="
+        + encodeURIComponent(location.origin), "_blank");
+      };
+
+
+  // Make a POST request to log in via SAML
+  fetch(samlLoginUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      username: username,
+      password: password
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Get the authentication token from the response
+    var authToken = data.authToken;
+
+    // Make a POST request to create a dossier instance
+    fetch(apiUrl + "dossiers/" + dossierId + "/instances", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-MSTR-AuthToken": authToken,
+		"X-MSTR-ProjectID": projectId
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Get the instance ID of the created dossier instance
+      var instanceId = data.instanceId;
+
+      // Make a GET request to get the list of prompts for the dossier instance
+      fetch(apiUrl + "dossiers/" + dossierId + "/instances/" + instanceId + "/prompts", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "X-MSTR-AuthToken": authToken,
+		  "X-MSTR-ProjectID": projectId
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Get the list of prompts
+        var prompts = data.prompts;
+
+        // Answer a specified prompt using the input parameter (replace {promptId} with the actual prompt ID)
+        prompts.forEach(prompt => {
+          if (prompt.promptId === promptId) {
+            prompt.answer = inputParam;
+          }
+        });
+
+        // Make a POST request to answer the prompts
+        fetch(apiUrl + "dossiers/" + dossierId + "/instances/" + instanceId + "/prompts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-MSTR-AuthToken": authToken
+          },
+          body: JSON.stringify(prompts)
+        })
+        .then(response => {
+          // Redirect the page to the created dossier instance
+          window.location.href = apiUrl + "dossiers/" + dossierId + "/instances/" + instanceId;
+        })
+        .catch(error => {
+          // Handle any errors
+          console.error(error);
+        });
+      })
+      .catch(error => {
+        // Handle any errors
+        console.error(error);
+      });
+    })
+    .catch(error => {
+      // Handle any errors
+      console.error(error);
+    });
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error(error);
+  });
+</script>
+
+  </body>
+
+</html>

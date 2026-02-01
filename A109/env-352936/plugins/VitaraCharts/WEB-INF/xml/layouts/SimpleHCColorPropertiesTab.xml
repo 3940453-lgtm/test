@@ -1,0 +1,71 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+  <!-- including color properties row -->
+  <!-- <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/ColorPropertiesRows.xml">
+  </mstrlayout:include> -->
+
+ 	<table>
+    <tr>
+        <td style="font-weight:bold;" colspan="3">Series Colors</td>
+    </tr>
+    <tr>
+        <td colspan="2">Color Palette</td>
+        <td>
+          <mstrlayout:render name="SelectBox">
+            <mstrlayout:argument type="String" value="seriesColors" /> <!-- prop name for 'even row'-->
+            <mstrlayout:argument type="String" value="default^Select|Corporate1^Corporate1|Corporate2^Corporate2|Corporate3^Corporate3|Accent^Accent|Paired^Paired|Pastel1^Pastel 1|Pastel2^Pastel 2|Set1^Set 1|Set2^Set 2|Set3^Set 3" />
+          </mstrlayout:render>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="right">Invert the palette</td>
+        <td>
+          <mstrlayout:render name="checkbox">
+            <mstrlayout:argument type="String" value="invertColors" />
+            </mstrlayout:render>
+        </td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold;" colspan="3">Chart Area</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Background Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="chartAreaBGColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#ffffff" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td style="font-weight:bold;" colspan="3">Plot Area</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Background Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="plotAreaBGColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#ffffff" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Border Width</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="plotAreaBorderWidth" />
+          <mstrlayout:argument type="string" value="0^Select|1^1|2^2|3^3|4^4|5^5|6^6|7^7|8^8|9^9|10^10|11^11|12^12|13^13|14^14|15^15|16^16|17^17|18^18|19^19|20^20" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right">Border Color</td>
+      <td>
+        <mstrlayout:render name="colorPicker">
+          <mstrlayout:argument type="String" value="plotAreaBorderColor" /> <!-- prop name for 'even row'-->
+          <mstrlayout:argument type="String" value="#ffffff" /> <!-- default val -->
+        </mstrlayout:render>
+      </td>
+    </tr>
+    </table>
+</mstrlayout:layout>

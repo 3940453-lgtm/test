@@ -1,0 +1,7 @@
+<visualizations>
+
+  <visualization-list name="ajax" show-in-web="true">
+    <visualization desc="A3 Export Visualization" id="a3ExportVisualization" drop-zones="plugins.A3ExportVisualization.A3ExportDropZones"  editor-model="plugins.A3ExportVisualization.A3ExportEditorModel" is-mojo="true" attribute-minimum="0" metric-minimum="0"  scope="19" style-name="a3ExportVisualization"/>
+  </visualization-list>
+
+</visualizations>

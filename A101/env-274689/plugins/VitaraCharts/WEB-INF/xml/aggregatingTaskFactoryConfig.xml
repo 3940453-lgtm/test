@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE aggregatingTaskFactory SYSTEM "aggregatingTaskFactory.dtd">
+<aggregatingTaskFactory>
+  <tasks>
+    <task adminTask="false" class="com.vitara.tasks.vgar.VitaraAccessRights" registerAs="VitaraGetAccessRights"/>
+    <task adminTask="false" class="com.vitara.tasks.vlm.VitaraLMT" registerAs="VitaraLMT"/>
+    <task adminTask="false" class="com.vitara.tasks.vfl.VitaraFileLoader" registerAs="VitaraFileLoader"/>
+  </tasks>
+</aggregatingTaskFactory>

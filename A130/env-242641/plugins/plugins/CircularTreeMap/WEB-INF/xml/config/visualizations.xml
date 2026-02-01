@@ -1,0 +1,15 @@
+<visualizations>
+    <visualization-list name="ajax"
+                        show-in-web="true"
+                        view-mode="51">
+        <visualization attribute-minimum="1"
+                       desc="Circular TreeMap"
+                       drop-zones="plugins.CircularTreeMap.CircularTreeMapDropZones"
+                       editor-model="plugins.CircularTreeMap.CircularTreeMapEditorModel"
+                       is-mojo="true"
+                       metric-minimum="1"
+                       scope="19"
+                       style-name="CircularTreeMap"
+                       widget-type="7"/>
+    </visualization-list>
+</visualizations>

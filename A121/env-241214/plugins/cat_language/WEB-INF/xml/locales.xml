@@ -1,0 +1,32 @@
+<locales resource-bundle="resources.MessagesBundle" version="1.0">
+    <!-- ref. http://msdn2.microsoft.com/en-us/library/ms776294.aspx -->
+
+    <locale locale-id="-1" language="" country="" desc="Default" desc-id="mstrWeb.959" char-set="" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="1030" language="da" country="DK" desc="Danish" desc-id="mstrWeb.4998" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="1031" language="de" country="DE" desc="Deutsch" desc-id="mstrWeb.949" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="2055" language="de" country="CH" desc="German (Switzerland)" desc-id="mstrWeb.4739" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" help-locale-id="1031"/>
+    <locale locale-id="1043" language="nl" country="NL" desc="Dutch (Netherlands)" desc-id="mstrWeb.4737" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="3082" language="es" country="ES" desc="Espa&#241;ol" desc-id="mstrWeb.1375" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="1033" language="en" country="US" desc="English (US)" desc-id="mstrWeb.950" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="2057" language="en" country="GB" desc="English (UK)" desc-id="mstrWeb.2295" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" help-locale-id="1033"/>
+    <locale locale-id="1049" language="ru" country="RU" desc="Russian" desc-id="mstrWeb.6046" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1251" char-set-help="UTF-8" />
+    <locale locale-id="1045" language="pl" country="PL" desc="Polish" desc-id="mstrWeb.6047" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1250" char-set-help="UTF-8" />
+    <locale locale-id="1036" language="fr" country="FR" desc="Fran&#231;ais" desc-id="mstrWeb.952" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="4108" language="fr" country="CH" desc="Fran&#231;ais (Switzerland)" desc-id="mstrWeb.4738" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" help-locale-id="1036"/>
+    <locale locale-id="2060" language="fr" country="BE" desc="French (Belgium)" desc-id="mstrWeb.6114" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" help-locale-id="1036"/>
+    <locale locale-id="1040" language="it" country="IT" desc="Italiano" desc-id="mstrWeb.953" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="2064" language="it" country="CH" desc="Italian (Switzerland)" desc-id="mstrWeb.4740" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" help-locale-id="1040"/>
+    <locale locale-id="1041" language="ja" country="JP" desc="Japanese" desc-id="mstrWeb.954" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="932" char-set-help="UTF-8" />
+    <locale locale-id="1042" language="ko" country="KR" desc="Korean" desc-id="mstrWeb.955" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="949" char-set-help="UTF-8" />
+    <locale locale-id="1046" language="pt" country="BR" desc="Portugu&#234;s (Brasil)" desc-id="mstrWeb.1035" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="1053" language="sv" country="SE" desc="Svenska" desc-id="mstrWeb.956" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    <locale locale-id="2052" language="zh" country="CN" desc="Chinese (Simplified)" desc-id="mstrWeb.2816" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="936" char-set-help="UTF-8" />
+    <locale locale-id="1028" language="zh" country="TW" desc="Chinese (Traditional)" desc-id="mstrWeb.2903" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="950" char-set-help="UTF-8" />
+	<locale locale-id="1027" language="cat" country="ES" desc="" desc-id="" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="1252" />
+    
+    <!-- supported - locale declaration mappings that are not displayed in the languages preferences -->    
+    <!-- examples
+     <supported locale-id="3098" language="sr" country="CS" desc="Serbian (Cyrillic)" desc-id="mstrWeb.4640" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="950" />
+     <supported locale-id="2074" language="sh" country="CS" desc="Serbian (Latin)" desc-id="mstrWeb.4641" char-set="UTF-8" char-set-excel="UnicodeLittle" codepage="65001" codepage-excel="950" />
+    -->
+</locales>

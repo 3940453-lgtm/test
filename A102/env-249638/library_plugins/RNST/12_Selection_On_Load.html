@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script type="text/javascript"
+    src="https://demo.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+  <!-- This is for the jsfiddle button. You don't need it in your application.  -->
+  <script type="text/javascript" src="js/jsfiddle.js"></script>
+
+</head>
+
+<body>
+
+  <div>This example shows how to make selections on visualization on the initial load. This example contains hard-coded object IDs. </div>
+
+  <div id="mydossier"></div>
+  <script type="text/javascript">
+
+    var url = "https://demo.microstrategy.com/MicroStrategyLibrary/app/EC70648611E7A2F962E90080EFD58751/69AF3E7DB548FD6E23C57E9B71DD966B"
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      let container = document.getElementById("mydossier")
+      //This page has multiple visualizations
+
+      microstrategy.dossier.create({
+        url: url,
+        enableResponsive: true,
+        placeholder: container,
+        containerHeight: '800px',
+        enableCollaboration: false,
+        dockedTOC: {
+          canClose: true,
+          dockChangeable: false,
+          isDocked: false
+        },
+        navigationBar: {
+          enabled: false
+        },
+        visualizationSelectedElements: [
+          {
+            visualizationkey: "K59",
+            selection: {
+              attributeElements: [
+                {
+                  attribute: {
+                    id: "8D679D3711D3E4981000E787EC6DE8A4",
+                    name: "Category" //This is optional
+                  },
+                  elements: [
+                    {
+                      id: "h3;8D679D3711D3E4981000E787EC6DE8A4",
+                      name: "Movies" //This is optional
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        ]
+      }).then((dossier) => {
+        // 
+      })
+    })
+
+  </script>
+</body>
+
+</html>

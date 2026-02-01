@@ -1,0 +1,28 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+
+  <table>
+
+    <tr>
+      <td colspan="2" align="right">MainLabel Horizontal Alignment</td>
+      <td>
+          <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="mainlabel_horizontal" />
+          <mstrlayout:argument type="string" value="center^Center|left^Left|right^Right" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="right">MainLabel Vertical Alignment</td>
+      <td>
+        <mstrlayout:render name="SelectBox">
+          <mstrlayout:argument type="string" value="mainlabel_vertical" />
+          <mstrlayout:argument type="string" value="middle|Middle|top^Top|bottom^Bottom" />
+        </mstrlayout:render>
+      </td>
+    </tr>
+
+  </table>
+
+  </mstrlayout:layout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sankey icon</title>
+    <defs>
+        <linearGradient x1="20.65568%" y1="85.1799662%" x2="79.34432%" y2="15.0947968%" id="linearGradient-1">
+            <stop stop-color="#FFBB28" offset="0%"></stop>
+            <stop stop-color="#8B95E4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="17.7642418%" x2="0%" y2="84.9605211%" id="linearGradient-2">
+            <stop stop-color="#8B95E4" offset="0%"></stop>
+            <stop stop-color="#85C836" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#85C836" offset="0%"></stop>
+            <stop stop-color="#FFBB28" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#8B95E4" offset="0%"></stop>
+            <stop stop-color="#FC7D2C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#3B92ED" offset="0%"></stop>
+            <stop stop-color="#FFBB28" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="85.7959594%" y1="57.2502061%" x2="14.2040406%" y2="39.8513571%" id="linearGradient-6">
+            <stop stop-color="#3B92ED" offset="0%"></stop>
+            <stop stop-color="#8B95E4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="13.2653061%" y1="22.2527394%" x2="86.7346939%" y2="74.7265393%" id="linearGradient-7">
+            <stop stop-color="#3B92ED" offset="0%"></stop>
+            <stop stop-color="#8B95E4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="ICONOGRAPHY-New-format-panel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-2" transform="translate(-1265.000000, -312.000000)">
+            <g id="Icon-+-Info" transform="translate(973.000000, 305.000000)">
+                <g id="Sankey-Diagram" transform="translate(285.000000, 0.000000)">
+                    <g id="Sankey-icon" transform="translate(7.000000, 7.000000)">
+                        <rect id="Combined-Shape" fill="#3B92ED" x="0" y="0" width="2.8125" height="8.4375"></rect>
+                        <rect id="Rectangle-Copy-12" fill="#8B95E4" x="14.0625" y="0" width="2.8125" height="15"></rect>
+                        <rect id="Rectangle-Copy-8" fill="#FFBB28" x="0" y="11.25" width="2.8125" height="7.5"></rect>
+                        <rect id="Rectangle-Copy-9" fill="#85C836" x="0" y="21.5625" width="2.8125" height="8.4375">
+                        </rect>
+                        <rect id="Rectangle-Copy-10" fill="#FC7D2C" x="27.1875" y="0" width="2.8125" height="5.625">
+                        </rect>
+                        <rect id="Rectangle-Copy-11" fill="#FFBB28" x="14.0625" y="17.8125" width="2.8125"
+                            height="12.1875"></rect>
+                        <rect id="Rectangle-Copy-13" fill="#3B92ED" x="27.1875" y="9.375" width="2.8125"
+                            height="20.625"></rect>
+                        <g id="lines" transform="translate(2.075893, 0.000000)" opacity="0.280000001">
+                            <path
+                                d="M0.736607143,11.2668824 C3.21472392,11.2668824 8.56352639,0.0244244869 11.9866071,0.0244244869 C11.9866071,1.14198891 11.9866071,3.13776571 11.9866071,4.52246189 C9.73741112,4.52246189 4.09308932,14.7094769 0.736607143,14.7094769 C0.736607143,13.4301525 0.736607143,12.7679655 0.736607143,11.2668824 Z"
+                                id="Rectangle-Copy-14" fill="url(#linearGradient-1)"></path>
+                            <path
+                                d="M0.736607143,14.7169436 C4.39469803,14.7169436 8.88880413,17.8177786 11.9866071,17.8177786 C11.9866071,19.8343907 11.9866071,21.758811 11.9866071,23.4375 C9.30361648,23.4375 3.94123944,18.7478982 0.736607143,18.7478982 C0.736607143,17.2338354 0.736607143,15.7150458 0.736607143,14.7169436 Z"
+                                id="Rectangle-Copy-8" fill="#FFBB28"></path>
+                            <path
+                                d="M0.736607143,21.5625 C1.53153526,21.5625 7.08586592,14.1708581 11.9866071,13.125 C11.9866071,14.3510397 11.9866071,14.0173013 11.9866071,15 C6.60528715,16.5091735 3.21807972,23.4375 0.736607143,23.4375 C0.736607143,24.0617911 0.736607143,22.2270219 0.736607143,21.5625 Z"
+                                id="Rectangle-Copy-9" fill="url(#linearGradient-2)"></path>
+                            <polygon id="Rectangle-Copy-9" fill="url(#linearGradient-3)"
+                                points="0.736607143 23.4375 11.9866071 23.4375 11.9866071 30 0.736607143 30"></polygon>
+                            <rect id="Rectangle-Copy-10" fill="url(#linearGradient-4)" x="14.7991071" y="0"
+                                width="10.3125" height="5.625"></rect>
+                            <rect id="Rectangle-Copy-11" fill="url(#linearGradient-5)" x="14.7991071" y="17.8129864"
+                                width="10.3125" height="12.1875"></rect>
+                            <path
+                                d="M14.7991071,5.625 C19.400936,5.625 20.4009645,9.375 25.1116071,9.375 L25.1116071,17.8129864 C20.5703884,17.8129864 20.5703884,15 14.7991071,15.0001995 C14.7991071,12.6170748 14.7991071,7.63392857 14.7991071,5.625 Z"
+                                id="Rectangle-2-Copy" fill="url(#linearGradient-6)"></path>
+                            <path
+                                d="M0.736607143,0 C6.36160714,0 8.64886135,4.52008929 11.9866071,4.52008929 C11.9866071,8.31120356 11.9866071,12.9236362 11.9866071,13.125 C8.13396618,13.125 4.12572035,8.4375 0.736607143,8.4375 C0.736607143,8.76683229 0.736607143,0 0.736607143,0 Z"
+                                id="Rectangle-Copy-7" fill="url(#linearGradient-7)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

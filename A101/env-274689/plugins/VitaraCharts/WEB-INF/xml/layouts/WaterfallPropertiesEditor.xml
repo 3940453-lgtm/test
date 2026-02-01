@@ -1,0 +1,32 @@
+<!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+    <div>
+    <mstrlayout:render name="Tabs">
+      <mstrlayout:argument type="String" value="Appearance, Axes, Data Labels, Tooltip" />
+      <!-- <mstrlayout:argument type="String" value="Axes" /> -->
+    </mstrlayout:render>
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="1" ty="tab">
+  ]]>
+    <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/WaterfallColorPropertiesTab.xml"></mstrlayout:include>
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="2" ty="tab">
+  ]]>
+  <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/AxisPropertiesTab.xml"></mstrlayout:include>
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="3" ty="tab">
+  ]]>
+  <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/DataLabelsPropertiesTab.xml"></mstrlayout:include>
+  <![CDATA[
+    </div>
+    <div class="mstrTabContainer" curtab="4" ty="tab">
+  ]]>
+  <mstrlayout:include file="/plugins/VitaraCharts/WEB-INF/xml/layouts/TooltipPropertiesTab.xml"></mstrlayout:include>
+  <![CDATA[
+    </div>
+  ]]>
+  </div>
+ </mstrlayout:layout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Narrative Science Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="85.1799662%" x2="100%" y2="15.0947968%" id="linearGradient-1">
+            <stop stop-color="#FF915D" offset="0%"></stop>
+            <stop stop-color="#8B95E4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="12.5687153%" x2="0%" y2="90.5952052%" id="linearGradient-2">
+            <stop stop-color="#8B95E4" offset="0%"></stop>
+            <stop stop-color="#85C836" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#85C836" offset="0%"></stop>
+            <stop stop-color="#FF915D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#8B95E4" offset="0%"></stop>
+            <stop stop-color="#85C836" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#1C91DC" offset="0%"></stop>
+            <stop stop-color="#FF915D" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="57.2502061%" x2="0%" y2="39.8513571%" id="linearGradient-6">
+            <stop stop-color="#1C91DC" offset="0%"></stop>
+            <stop stop-color="#8B95E4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="22.2527394%" x2="100%" y2="74.7265393%" id="linearGradient-7">
+            <stop stop-color="#1C91DC" offset="0%"></stop>
+            <stop stop-color="#8B95E4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Narrative-Science-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sankey-Copy">
+            <rect id="Rectangle-5" fill="#FFFFFF" x="0" y="0" width="30" height="30"></rect>
+            <g id="Group-2">
+                <rect id="Combined-Shape" fill="#1C91DC" x="0" y="0" width="3" height="8.5"></rect>
+                <rect id="Rectangle-Copy-12" fill="#8B95E4" x="14" y="0" width="3" height="16"></rect>
+                <rect id="Rectangle-Copy-8" fill="#FF915D" x="0" y="11" width="3" height="8"></rect>
+                <rect id="Rectangle-Copy-9" fill="#85C836" x="0" y="21.5" width="3" height="8.5"></rect>
+                <rect id="Rectangle-Copy-10" fill="#85C836" x="27" y="0" width="3" height="6.5"></rect>
+                <rect id="Rectangle-Copy-11" fill="#FF915D" x="14" y="18" width="3" height="12"></rect>
+                <rect id="Rectangle-Copy-13" fill="#1C91DC" x="27" y="8.5" width="3" height="21.5"></rect>
+                <g id="lines" transform="translate(2.214286, 0.000000)" opacity="0.280000001">
+                    <path d="M0.785714286,11.0180079 C3.2087618,11.0180079 8.438702,0.0260527861 11.7857143,0.0260527861 C11.7857143,1.21812151 11.7857143,3.34695009 11.7857143,4.82395935 C9.5865004,4.82395935 4.06760797,14.6901086 0.785714286,14.6901086 C0.785714286,13.325496 0.785714286,12.6191632 0.785714286,11.0180079 Z" id="Rectangle-Copy-14" fill="url(#linearGradient-1)"></path>
+                    <path d="M0.785714286,14.6980731 C4.36251427,14.6980731 8.75675134,18.0056305 11.7857143,18.0056305 C11.7857143,20.1566834 11.7857143,21.7811584 11.7857143,23.57176 C9.16234564,23.57176 3.91913254,18.997758 0.785714286,18.997758 C0.785714286,17.3827577 0.785714286,15.7627155 0.785714286,14.6980731 Z" id="Rectangle-Copy-8" fill="#FF915D"></path>
+                    <path d="M0.785714286,21.5025177 C1.56297734,21.5025177 10.0042474,13.3823256 11.7857143,13.3823256 C11.7857143,14.6901012 11.7857143,14.9530393 11.7857143,16.0012512 C9.78722501,16.0012512 3.21204303,23.5714286 0.785714286,23.5714286 C0.785714286,24.2373391 0.785714286,22.2113411 0.785714286,21.5025177 Z" id="Rectangle-Copy-9" fill="url(#linearGradient-2)"></path>
+                    <rect id="Rectangle-Copy-9" fill="url(#linearGradient-3)" x="0.785714286" y="23.5838497" width="11" height="6.41615029"></rect>
+                    <rect id="Rectangle-Copy-10" fill="url(#linearGradient-4)" x="14.7857143" y="0" width="10" height="6.5"></rect>
+                    <rect id="Rectangle-Copy-11" fill="url(#linearGradient-5)" x="14.7857143" y="18.0005188" width="10" height="11.9994812"></rect>
+                    <path d="M14.7857143,6.50242327 C17.951147,6.50242327 20.9279543,8.50880126 24.7833478,8.50880126 L24.7833478,18.0005188 C22.0033649,18.0005188 18.6513261,16.0002128 14.7857143,16.0002128 C14.7857143,13.4582132 14.7857143,8.64528041 14.7857143,6.50242327 Z" id="Rectangle-2-Copy" fill="url(#linearGradient-6)"></path>
+                    <path d="M0.785714286,0 C6.28571429,0 8.52214062,4.82142857 11.7857143,4.82142857 C11.7857143,8.8652838 11.7857143,13.1780691 11.7857143,13.3928571 C8.01868757,13.3928571 4.09951387,8.57142857 0.785714286,8.57142857 C0.785714286,8.92271635 0.785714286,0 0.785714286,0 Z" id="Rectangle-Copy-7" fill="url(#linearGradient-7)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

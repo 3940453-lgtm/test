@@ -1,0 +1,5 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="1" desc="Google Annotation Chart " is-mojo="true" metric-minimum="1" scope="19" style-name="GoogleAnnotationChart" editor-model="plugins.GoogleAnnotationChart.GoogleAnnotationChartEditorModel" drop-zones="plugins.GoogleAnnotationChart.GoogleAnnotationChartDropZones" widget-type="7"/>
+  </visualization-list>
+</visualizations>

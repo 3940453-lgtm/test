@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Example</title>
+    <style>
+      pre {
+        width: 100;
+      }
+
+    </style>
+    <script type="text/javascript" src="https://renasant-test.cloud.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"></script>
+    <!-- This is for the jsfiddle button. You don't need it in your application.  -->
+    <script type="text/javascript" src="js/jsfiddle.js"></script>        
+  </head>
+
+  <body>
+
+    <div>
+      <div>Server:<input type="text" id="baseURL" value="https://renasant-test.cloud.microstrategy.com/MicroStrategyLibrary" size="100"></div>
+      <div>ProjectID: <input type="text" id="projectId" value="86A65C099B458BC7EA30E08A7062983F" size="100"></div>
+      <div>DossierID: <input type="text" id="dossierId" value="F184AE19564A2164EBD5F4B64F47E351" size="100"></div>
+      <div>Username:<input type="text" id="username" value="guest" /></div>
+      <div>Password: <input type="password" id="password" /></div>
+      <div>
+        <span>Auth Mode:</span>
+        <select label="Auth Mode" id="loginMode">
+           <option value="1">Standard</option>
+          <option value="16">LDAP</option>
+		  <option value="1048576">SSO-SAML</option>
+        </select>
+      </div>
+      <div><input type="submit" value="Create Dossier Instance" onclick="createDossierInstance()" /></div>
+
+      <div><pre id="dossierInstance">Dossier instance json goes here.</pre></div>
+      <div><input type="submit" value="Show Dossier" onclick="showDossier()" /></div>
+    </div>
+
+    <div id="myDossier"></div>
+
+    <script type="text/javascript">
+      function createDossierInstance() {
+
+        var baseURL = document.getElementById("baseURL").value
+        var username = document.getElementById("username").value
+        var password = document.getElementById("password").value
+        var loginMode = parseInt(document.getElementById("loginMode").value)
+
+        var options = {
+          method: 'POST',
+          credentials: 'include', // Including cookie
+          mode: 'cors', // Setting as cors mode for cross origin
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            loginMode,
+            username,
+            password
+          })
+        };
+
+        fetch(baseURL + '/api/auth/login', options)
+          .then(function(response) {
+            if (response.ok) {
+              const authToken = response.headers.get('x-mstr-authToken')
+              const dossierId = document.getElementById('dossierId').value
+              const projectId = document.getElementById('projectId').value
+              const options = {
+                method: 'POST',
+                credentials: 'include', // Including cookie
+                mode: 'cors', // Setting as cors mode for cross origin
+                headers: {
+                  'content-type': 'application/json',
+                  "accept": "application/json",
+                  "x-mstr-authtoken": authToken,
+                  "x-mstr-projectid": projectId,
+                }
+              }
+
+              fetch(baseURL + '/api/dossiers/' + dossierId + '/instances', options)
+                .then(response => {
+                  response.json().then(json => {
+                    document.getElementById('dossierInstance').innerText = JSON.stringify(json, null, 2)
+                  })
+                })
+
+            } else {
+              response.json().then(json => {
+                console.log(json);
+              });
+            }
+          }).catch(error => {
+            console.log(error);
+          });
+      }
+
+      function showDossier() {
+        var baseURL = document.getElementById("baseURL").value
+        var projectId = document.getElementById("projectId").value
+        var dossierId = document.getElementById("dossierId").value
+        var dossierInstance = JSON.parse(document.getElementById("dossierInstance").innerText)
+        var placeHolderDiv = document.getElementById("myDossier");
+        var dossierUrl = baseURL + '/app/' + projectId + '/' + dossierId;
+
+        microstrategy.dossier.create({
+          placeholder: placeHolderDiv,
+          url: dossierUrl,
+          instance: dossierInstance,
+          enableResponsive: true,
+          containerHeight: '1000px',
+        }).then(dossier => {
+          d = dossier
+        }).catch(e => {
+          console.log(e.message)
+        });
+      }
+
+    </script>
+
+  </body>
+
+</html>

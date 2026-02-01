@@ -1,0 +1,205 @@
+
+#RwMenuModel_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuLayoutxml   #mnuInsertWgD3BoxPlot {
+    background:url(images/icon.png)  no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+#RwMenuModelEditor_WEB-INFxmllayoutsblocksInsertDHTMLWidgetMenuEditorLayoutxml #mnuInsertWgD3BoxPlot {
+    background:url(images/icon.png) no-repeat scroll 4px;
+    background-size: 16px;
+}
+
+
+.custom-vis-layout.d3boxplot body {
+    overflow: auto;
+  }
+
+.custom-vis-layout.d3boxplot .custom-vis-layout.d3boxplot{ 
+	overflow: scroll;
+}
+.custom-vis-layout.d3boxplot .chartBoxPlot rect {
+  fill: #c5e3ed;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+.custom-vis-layout.d3boxplot .chartBoxPlot .barLabel {
+  fill: white;
+  text-anchor: end;
+}
+.custom-vis-layout.d3boxplot .axisLabel {
+  color: black;
+  fill: black;
+}
+
+.custom-vis-layout.d3boxplot .median-line { 
+  stroke: black;  
+}
+.custom-vis-layout.d3boxplot .line { 
+  stroke-width: 2;
+}
+.custom-vis-layout.d3boxplot .min-line { 
+  stroke: red;
+}
+.custom-vis-layout.d3boxplot .max-line{
+  stroke: green;
+}
+
+ .custom-vis-layout.d3boxplot .toolTip {
+	   color: black;
+	   display: none;
+ }
+
+.custom-vis-layout.d3boxplot .dotted-line { 
+  stroke-width: 1.5;
+  stroke-dasharray: 5,5;
+}
+
+.custom-vis-layout.d3boxplot .outlier { 
+  stroke: black;
+}
+#outlierToolTip {
+  background: lightgrey;
+  color: black;
+  width: 70px;
+  height: auto;
+  text-align: center;
+  visibility: hidden;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  padding: 6px 6px 6px 6px;  
+  font-size: 12px;
+}
+
+#outlierToolTip :after {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid lightgrey;
+    top:24px;
+	left:30px
+} 
+
+#toolTipOver strong{
+	font-size: 14px;
+}
+#toolTipOver {
+  background: lightgrey;
+  color: black;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  visibility: hidden;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;  
+  font-size: 12px;
+}
+
+
+#toolTipOver:after {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    border-left:8px solid lightgrey;
+	left: 170px;
+    top:50px;
+} 
+
+#toolTipOver .left {
+	float: left;
+	padding-bottom: 4px;
+}
+#toolTipOver .right {
+	float: right;
+	padding-bottom: 4px;
+}
+
+
+#toolTip strong{
+	font-size: 16px;
+}
+#toolTip {
+  background: lightgrey;
+  color: black;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  visibility: hidden;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;  
+  font-size: 12px;
+}
+ #toolHeader {
+    border-bottom: solid #000;
+    border-width: 1px;
+}
+	
+#toolTip:after {
+    content:'';
+    display:block;
+    width:0;
+    height:0;
+    position:absolute;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    border-right:8px solid lightgrey;
+    left:-8px;
+    top:50px;
+}
+
+ #toolTip .left {
+	float: left;
+	padding-bottom: 4px;
+}
+ #toolTip .right {
+	float: right;
+	padding-bottom: 4px;
+}
+.custom-vis-layout.d3boxplot div.toolTipContainer {
+  position: absolute;	
+  text-align: center;	
+  width: 60px;	
+  height: 28px;		
+  padding: 2px;	
+  font: 12px sans-serif;	
+  background: lightsteelblue;	
+  border: 0px;					
+  border-radius: 8px;
+ /*  pointer-events: none;	This line needs to be removed */
+	
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.custom-vis-layout.d3boxplot .tick line {
+    stroke: grey;
+    opacity: 0.7;
+
+}
+
+
+
+
+
+

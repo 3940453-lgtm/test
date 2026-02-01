@@ -1,0 +1,6 @@
+<!DOCTYPE aggregatingTaskFactory SYSTEM "dtds/aggregatingTaskFactory.dtd">
+<aggregatingTaskFactory>
+  <tasks>
+	<task registerAs="usherQR" class="com.microstrategy.web.app.tasks.UsherQRCodeTask"/>
+  </tasks>
+</aggregatingTaskFactory>

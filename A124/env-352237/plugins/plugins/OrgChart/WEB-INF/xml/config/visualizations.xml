@@ -1,0 +1,9 @@
+<visualizations>
+  <visualization-list name="ajax" show-in-web="true" view-mode="51">
+    <visualization attribute-minimum="0" desc="Org Chart" drop-zones="plugins.OrgChart.OrgChartDropZones" editor-model="plugins.OrgChart.OrgChartEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="OrgChart" widget-type="7"/>
+  </visualization-list>
+  <visualization-list name="ipad" show-in-web="false" view-mode="71">
+    <visualization attribute-minimum="0" desc="Org Chart" drop-zones="plugins.OrgChart.OrgChartDropZones" editor-model="plugins.OrgChart.OrgChartEditorModel" is-mojo="true" metric-minimum="0" scope="19" style-name="OrgChart" widget-type="7"/>
+  </visualization-list>
+
+</visualizations>

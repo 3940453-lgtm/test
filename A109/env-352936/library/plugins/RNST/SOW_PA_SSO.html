@@ -1,0 +1,97 @@
+<script>
+  // Define the MicroStrategy REST API endpoint
+  var apiUrl = "https://your-microstrategy-server/MicroStrategyLibrary/api/";
+
+  // Define the SAML login endpoint
+  var samlLoginUrl = "https://your-saml-server/saml/login";
+
+  // Define the authentication credentials
+  var username = "your-username";
+  var password = "your-password";
+
+  // Get the input parameter value from the URL query string
+  var urlParams = new URLSearchParams(window.location.search);
+  var inputParam = urlParams.get('param');
+
+  // Make a POST request to log in via SAML
+  fetch(samlLoginUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      username: username,
+      password: password
+    })
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Get the authentication token from the response
+    var authToken = data.authToken;
+
+    // Make a POST request to create a dossier instance
+    fetch(apiUrl + "dossiers/{dossierId}/instances", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-MSTR-AuthToken": authToken
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Get the instance ID of the created dossier instance
+      var instanceId = data.instanceId;
+
+      // Make a GET request to get the list of prompts for the dossier instance
+      fetch(apiUrl + "dossiers/{dossierId}/instances/" + instanceId + "/prompts", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "X-MSTR-AuthToken": authToken
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Get the list of prompts
+        var prompts = data.prompts;
+
+        // Answer a specified prompt using the input parameter (replace {promptId} with the actual prompt ID)
+        prompts.forEach(prompt => {
+          if (prompt.promptId === "{promptId}") {
+            prompt.answer = inputParam;
+          }
+        });
+
+        // Make a POST request to answer the prompts
+        fetch(apiUrl + "dossiers/{dossierId}/instances/" + instanceId + "/prompts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-MSTR-AuthToken": authToken
+          },
+          body: JSON.stringify(prompts)
+        })
+        .then(response => {
+          // Redirect the page to the created dossier instance
+          window.location.href = apiUrl + "dossiers/{dossierId}/instances/" + instanceId;
+        })
+        .catch(error => {
+          // Handle any errors
+          console.error(error);
+        });
+      })
+      .catch(error => {
+        // Handle any errors
+        console.error(error);
+      });
+    })
+    .catch(error => {
+      // Handle any errors
+      console.error(error);
+    });
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error(error);
+  });
+</script>

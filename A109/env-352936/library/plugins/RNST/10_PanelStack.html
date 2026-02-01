@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script
+      type="text/javascript"
+      src="https://demo.microstrategy.com/MicroStrategyLibrary/javascript/embeddinglib.js"
+    ></script>
+    <!-- This is for the jsfiddle button. You don't need it in your application.  -->
+    <script type="text/javascript" src="js/jsfiddle.js"></script>
+  </head>
+  <body>
+    <div>
+      This example shows how to use Embedding SDK for Dossier with PanelStacks.
+    </div>
+
+    <div id="panelStacksPanel"></div>
+
+    <div id="mydossier"></div>
+    <script type="text/javascript">
+      var url = "https://demo.microstrategy.com/MicroStrategyLibrary/app/EC70648611E7A2F962E90080EFD58751/5587CB0B11EB8297835E0080AFEB08B5";
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        let container = document.getElementById("mydossier");
+        
+        microstrategy.dossier
+          .create({
+            url: url,
+            enableResponsive: true,
+            placeholder: container,
+            containerHeight: "1000px",
+            enableCollaboration: false,
+            dockedTOC: {
+              canClose: true,
+              dockChangeable: false,
+              isDocked: false,
+            },
+            navigationBar: {
+              enabled: false,
+            },
+          })
+          .then((dossier) => {
+            d = dossier;
+            
+            d.registerEventHandler(microstrategy.dossier.EventType.ON_PAGE_SWITCHED, updatePanels);
+            d.registerEventHandler(microstrategy.dossier.EventType.ON_PAGE_LOADED, updatePanels);
+            d.registerEventHandler(microstrategy.dossier.EventType.ON_PANEL_SWITCHED, handlePanelSwitched);
+            updatePanels();
+          });
+      });
+
+      //Populate the panel selector
+      updatePanels = function () {
+        d.getCurrentPagePanelStacks()
+          .then((currentPagePanelStacks) => {
+            let panelStacksPanel = document.getElementById("panelStacksPanel");
+            while (panelStacksPanel.firstChild) {
+              panelStacksPanel.removeChild(panelStacksPanel.lastChild);
+            }
+
+            for (panelStack of currentPagePanelStacks) {
+              let nameSpan = document.createElement("span");
+              nameSpan.innerText = panelStack.name;
+              panelStacksPanel.appendChild(nameSpan);
+              let s = document.createElement("select");
+              s.setAttribute("onchange", "selectPanel(this)");
+              for (panel of panelStack.panels) {
+                let o = document.createElement("option");
+                o.value = panel.key;
+                o.innerText = panel.name;
+                s.appendChild(o);
+              }
+              panelStacksPanel.appendChild(s);
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      };
+
+      selectPanel = function (item) {
+        d.switchPanel(item.value)
+          .then((switchPanel) => {
+            console.log("Panel switched to "+switchPanel.currentPanel);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      };
+
+      handlePanelSwitched = function(e) {
+        console.log("Panel switched.", e)
+      }
+    </script>
+  </body>
+</html>
